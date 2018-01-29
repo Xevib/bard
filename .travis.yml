@@ -26,8 +26,6 @@ before_script:
   - psql -c "create extension postgis" -U postgres -h localhost -d changewithin
   - psql -f changewithin/schema.sql -U postgres -h localhost -d changewithin
 script:
- - pwd
- - ls
  - ./update_pot.sh
  - PYTHONPATH="." coverage run --include=changewithin/changewithin.py test/test.py && coverage report
  - coveralls
