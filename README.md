@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/Xevib/changewithin/badge.svg?branch=master)](https://coveralls.io/github/Xevib/changewithin?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Xevib/bard/badge.svg?branch=master)](https://coveralls.io/github/Xevib/bard?branch=master)
 
 # Changewithin
 
