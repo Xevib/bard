@@ -1,0 +1,12 @@
+lxml
+pystache==0.5.3
+requests
+modestmaps>=1.4.2
+jinja2
+configobj
+osmapi
+osconf
+raven
+click
+osmium
+psycopg2

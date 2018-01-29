@@ -1,0 +1,21 @@
+### Summary ###
+{{date}}
+
+{{_('Total changesets')}}: {{stats.total}}
+{{_('Total building footprint changes')}}: {{stats.buildings}}
+{{_('Total address changes')}}: {{stats.addresses}}
+{{limit_exceed}}
+
+
+{% if stats.limit_exceed %}
+
+{% for changeset in changesets %}
+--- Changeset #{{changeset.id}} ---
+URL: http://openstreetmap.org/browse/changeset/{{changeset.id}}
+{{_('User')}}: http://openstreetmap.org/user/{{changeset.details}}{{changeset.user}}{{changeset.details}}
+{{_('Comment')}}: {{changeset.comment}}
+
+{{bldg_count}}{{_('Changed buildings')}} ({{changeset.bldg_count}}): {{changeset.wids}}{{changeset.bldg_count}}
+{{addr_count}}{{_('Changed addresses')}} ({{changeset.addr_count}}): {{changeset.addr_chg_nids}} {{changeset.addr_chg_way}}{{changeset.addr_count}}
+{% endfor %}
+{% endif %}

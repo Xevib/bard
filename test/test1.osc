@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osmChange version="0.6" generator="CGImap 0.6.0 (15706 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <modify>
+  <node id="771988068" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:19:43Z" user="5R-MFT" uid="3417876" lat="41.9821983" lon="2.8234987">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772061724" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:19:43Z" user="5R-MFT" uid="3417876" lat="41.9821912" lon="2.8231204">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772079715" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:20:08Z" user="5R-MFT" uid="3417876" lat="41.9820597" lon="2.8230264">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <create>
+  <node id="4880791637" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T21:20:30Z" user="5R-MFT" uid="3417876" lat="41.9820449" lon="2.8229217">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </create>
+ <modify>
+  <way id="61946626" visible="true" version="4" changeset="49033608" timestamp="2017-05-27T21:20:30Z" user="5R-MFT" uid="3417876">
+   <nd ref="772125310"/>
+   <nd ref="772214375"/>
+   <nd ref="772136812"/>
+   <nd ref="4880791637"/>
+   <nd ref="772048067"/>
+   <nd ref="772227041"/>
+   <nd ref="772180934"/>
+   <nd ref="772075311"/>
+   <nd ref="771981262"/>
+   <nd ref="772192621"/>
+   <nd ref="772206583"/>
+   <tag k="bicycle" v="designated"/>
+   <tag k="highway" v="residential"/>
+   <tag k="local_code" v="0140"/>
+   <tag k="maxspeed" v="30"/>
+   <tag k="motor_vehicle" v="yes"/>
+   <tag k="name" v="Plaça de Catalunya"/>
+   <tag k="name:ca" v="Plaça de Catalunya"/>
+   <tag k="oneway" v="yes"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="surface" v="asphalt"/>
+  </way>
+ </modify>
+ <create>
+  <node id="4880795046" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T21:23:13Z" user="5R-MFT" uid="3417876" lat="41.9823945" lon="2.8219678">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </create>
+ <modify>
+  <node id="772105658" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:23:13Z" user="5R-MFT" uid="3417876" lat="41.9824635" lon="2.8219531"/>
+ </modify>
+ <modify>
+  <node id="772209629" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:23:13Z" user="5R-MFT" uid="3417876" lat="41.9825033" lon="2.8219728"/>
+ </modify>
+ <modify>
+  <node id="772265347" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T21:23:13Z" user="5R-MFT" uid="3417876" lat="41.9824057" lon="2.8219121"/>
+ </modify>
+ <modify>
+  <way id="61946827" visible="true" version="4" changeset="49033608" timestamp="2017-05-27T21:23:13Z" user="5R-MFT" uid="3417876">
+   <nd ref="772265347"/>
+   <nd ref="4880795046"/>
+   <nd ref="772220284"/>
+   <nd ref="772141890"/>
+   <tag k="bicycle" v="designated"/>
+   <tag k="highway" v="residential"/>
+   <tag k="local_code" v="0569"/>
+   <tag k="maxspeed" v="30"/>
+   <tag k="motor_vehicle" v="yes"/>
+   <tag k="name" v="Avinguda de Sant Francesc"/>
+   <tag k="name:ca" v="Avinguda de Sant Francesc"/>
+   <tag k="oneway" v="-1"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </way>
+ </modify>
+ <modify>
+  <node id="783947407" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:24:47Z" user="5R-MFT" uid="3417876" lat="41.9812275" lon="2.8203793">
+   <tag k="amenity" v="parking"/>
+   <tag k="parking" v="motorcycle"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783947296" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:33:27Z" user="5R-MFT" uid="3417876" lat="41.9797253" lon="2.8222939">
+   <tag k="amenity" v="bicycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949422" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:33:27Z" user="5R-MFT" uid="3417876" lat="41.9796189" lon="2.8223316">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949025" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:35:19Z" user="5R-MFT" uid="3417876" lat="41.9802974" lon="2.8218437">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783948385" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:35:20Z" user="5R-MFT" uid="3417876" lat="41.9801396" lon="2.8220616">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783946693" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:36:08Z" user="5R-MFT" uid="3417876" lat="41.9795589" lon="2.8208258">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <create>
+  <node id="4880808082" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T21:40:28Z" user="5R-MFT" uid="3417876" lat="41.9796093" lon="2.8223689">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </create>
+ <modify>
+  <node id="783948824" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:40:29Z" user="5R-MFT" uid="3417876" lat="41.9794602" lon="2.8210482">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949422" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T21:40:29Z" user="5R-MFT" uid="3417876" lat="41.9795738" lon="2.8222726">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <way id="361235069" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T21:40:29Z" user="5R-MFT" uid="3417876">
+   <nd ref="772219985"/>
+   <nd ref="771985076"/>
+   <nd ref="1942373327"/>
+   <nd ref="772190344"/>
+   <nd ref="4880808082"/>
+   <nd ref="772123222"/>
+   <tag k="highway" v="residential"/>
+   <tag k="local_code" v="0089"/>
+   <tag k="maxspeed" v="50"/>
+   <tag k="name" v="Plaça de Calvet i Rubalcaba"/>
+   <tag k="name:ca" v="Plaça de Calvet i Rubalcaba"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+   <tag k="surface" v="asphalt"/>
+  </way>
+ </modify>
+ <modify>
+  <node id="783949280" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:41:43Z" user="5R-MFT" uid="3417876" lat="41.9802968" lon="2.8203911">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="vehicle" v="no"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772104992" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:46Z" user="5R-MFT" uid="3417876" lat="41.9812086" lon="2.8231891"/>
+ </modify>
+ <modify>
+  <node id="772242204" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:46Z" user="5R-MFT" uid="3417876" lat="41.9821691" lon="2.8230010"/>
+ </modify>
+ <modify>
+  <node id="772123023" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9816946" lon="2.8231031"/>
+ </modify>
+ <modify>
+  <node id="772125310" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9822164" lon="2.8230186"/>
+ </modify>
+ <modify>
+  <node id="772222429" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9818602" lon="2.8230771"/>
+ </modify>
+ <modify>
+  <node id="772259864" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9813423" lon="2.8231593">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949107" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9813465" lon="2.8219829">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949705" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9812831" lon="2.8228905">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772079715" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9821008" lon="2.8230157">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949280" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T21:58:47Z" user="5R-MFT" uid="3417876" lat="41.9802968" lon="2.8203911">
+   <tag k="amenity" v="motorcycle_parking"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772192621" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:01:09Z" user="5R-MFT" uid="3417876" lat="41.9813315" lon="2.8229825">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <create>
+  <node id="4880829700" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876" lat="41.9813525" lon="2.8232160"/>
+ </create>
+ <create>
+  <node id="4880829701" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876" lat="41.9813549" lon="2.8232446"/>
+ </create>
+ <create>
+  <node id="4880829702" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876" lat="41.9813270" lon="2.8229125"/>
+ </create>
+ <create>
+  <way id="496371206" visible="true" version="1" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876">
+   <nd ref="4880829701"/>
+   <nd ref="4880829700"/>
+   <nd ref="772259864"/>
+   <nd ref="772192621"/>
+   <nd ref="4880829702"/>
+   <tag k="highway" v="footway"/>
+  </way>
+ </create>
+ <modify>
+  <way id="336870799" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876">
+   <nd ref="3439531861"/>
+   <nd ref="4880829702"/>
+   <nd ref="3439531859"/>
+   <tag k="highway" v="footway"/>
+  </way>
+ </modify>
+ <modify>
+  <node id="772192621" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876" lat="41.9813329" lon="2.8229823">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772259864" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876" lat="41.9813476" lon="2.8231585">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <way id="62125851" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876">
+   <nd ref="775062592"/>
+   <nd ref="775062460"/>
+   <nd ref="775062464"/>
+   <nd ref="775062597"/>
+   <nd ref="775062457"/>
+   <nd ref="775062592"/>
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="parking" v="surface"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </way>
+ </modify>
+ <modify>
+  <way id="52985669" visible="true" version="7" changeset="49033608" timestamp="2017-05-27T22:04:17Z" user="5R-MFT" uid="3417876">
+   <nd ref="671241418"/>
+   <nd ref="671241419"/>
+   <nd ref="671241420"/>
+   <nd ref="671241414"/>
+   <nd ref="671241415"/>
+   <nd ref="4880829700"/>
+   <nd ref="671241416"/>
+   <nd ref="671241417"/>
+   <nd ref="671241437"/>
+   <nd ref="671241438"/>
+   <nd ref="671241439"/>
+   <nd ref="671241440"/>
+   <nd ref="671241443"/>
+   <nd ref="671241444"/>
+   <nd ref="671241445"/>
+   <nd ref="671241446"/>
+   <nd ref="671241447"/>
+   <nd ref="671241448"/>
+   <nd ref="671241449"/>
+   <nd ref="671241418"/>
+   <tag k="area" v="yes"/>
+   <tag k="highway" v="pedestrian"/>
+   <tag k="name" v="Plaça Catalunya"/>
+   <tag k="surface" v="concrete"/>
+  </way>
+ </modify>
+ <modify>
+  <node id="772207418" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:05:26Z" user="5R-MFT" uid="3417876" lat="41.9811927" lon="2.8233130">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772048511" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:08:23Z" user="5R-MFT" uid="3417876" lat="41.9811819" lon="2.8232129"/>
+ </modify>
+ <modify>
+  <node id="775062467" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:08:23Z" user="5R-MFT" uid="3417876" lat="41.9811844" lon="2.8234215"/>
+ </modify>
+ <modify>
+  <node id="772012059" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:08:23Z" user="5R-MFT" uid="3417876" lat="41.9812019" lon="2.8235683">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772174836" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:08:23Z" user="5R-MFT" uid="3417876" lat="41.9812185" lon="2.8236887"/>
+ </modify>
+ <modify>
+  <node id="772207418" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:08:23Z" user="5R-MFT" uid="3417876" lat="41.9811820" lon="2.8232792">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783946362" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:14:11Z" user="5R-MFT" uid="3417876" lat="41.9821402" lon="2.8232232">
+   <tag k="amenity" v="bicycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="783949624" visible="true" version="2" changeset="49033608" timestamp="2017-05-27T22:14:11Z" user="5R-MFT" uid="3417876" lat="41.9821246" lon="2.8229213">
+   <tag k="amenity" v="motorcycle_parking"/>
+   <tag k="source" v="Ajuntament de Girona"/>
+  </node>
+ </modify>
+ <modify>
+  <node id="772125310" visible="true" version="3" changeset="49033608" timestamp="2017-05-27T22:14:11Z" user="5R-MFT" uid="3417876" lat="41.9821937" lon="2.8230015"/>
+ </modify>
+ <modify>
+  <node id="772079715" visible="true" version="4" changeset="49033608" timestamp="2017-05-27T22:14:11Z" user="5R-MFT" uid="3417876" lat="41.9820487" lon="2.8230354">
+   <tag k="highway" v="crossing"/>
+  </node>
+ </modify>
+</osmChange>

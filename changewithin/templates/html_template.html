@@ -1,0 +1,33 @@
+<style='font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#333;max-width:600px;'>
+    <p style='float:right;'>{{date}}</p>
+    <h1 style='margin-bottom:10px;'>{{_('Summary')}}</h1>
+    <ul style='font-size:15px;line-height:17px;list-style:none;margin-left:0;padding-left:0;'>
+        <li>{{_('Total changesets')}}: <strong>{{stats.total}}</strong></li>
+        {% for watch_tag in tags %}
+        <li>{{_('Total changes of')}} {{watch_tag}}: <strong>{{stats[watch_tag]}}</strong></li>
+        {% endfor %}
+
+    </ul>
+    {% if stats.limit_exceed %}
+        <p style='font-size:13px;font-style:italic;'>{{limit_exceed}}</p>
+    {% else %}
+    {% for changeset in changesets %}
+        <h2 style='border-bottom:1px solid #ddd;padding-top:15px;padding-bottom:8px;'>{{_('Changeset')}}<a href='http://openstreetmap.org/browse/changeset/{{changeset}}' style='text-decoration:none;color:#3879D9;'> #{{changeset}}</a></h2>
+        <p style='font-size:14px;line-height:17px;margin-bottom:20px;'>
+            <a href='http://openstreetmap.org/user/{{changesets[changeset].user}}' style='text-decoration:none;color:#3879D9;font-weiht:bold;'>{{changesets[changeset].user}}</a>
+        </p>
+        {% for watch_tag in tags%}
+            {{watch_tag}}<br>
+            <p style='font-size:14px;line-height:17px;margin-bottom:0;'>
+                {{_('Nodes changed')}}: {% for node in changesets[changeset]['nids'][watch_tag]%}<a href="http://www.openstreetmap.org/node/{{node}}">{{node}}</a> {% endfor %}
+            </p>
+            <p style='font-size:14px;line-height:17px;margin-top:5px;margin-bottom:20px;'>
+                {{_('Ways changed')}} :  {% for way in changesets[changeset]['wids'][watch_tag] %}<a href="http://www.openstreetmap.org/way/{{way}}">{{way}}</a> {% endfor %}
+            </p>
+            <p style='font-size:14px;line-height:17px;margin-top:5px;margin-bottom:20px;'>
+                {{_('Relations changed')}} :  {% for rel in changesets[changeset]['rids'][watch_tag] %}<a href="http://www.openstreetmap.org/relation/{{rel}}">{{rel}}</a> {% endfor %}
+            </p>
+        {% endfor %}
+    {% endfor%}
+    {% endif %}
+</div>

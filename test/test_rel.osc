@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osmChange version="0.6" generator="CGImap 0.6.0 (17635 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <modify>
+  <relation id="343535" visible="true" version="24" changeset="41928815" timestamp="2016-09-05T11:44:31Z" user="Cuenqui" uid="3649461">
+   <member type="node" ref="30894545" role="admin_centre"/>
+   <member type="way" ref="45321964" role="outer"/>
+   <member type="way" ref="45347764" role="outer"/>
+   <member type="way" ref="360601365" role="outer"/>
+   <member type="way" ref="360666562" role="outer"/>
+   <member type="way" ref="360601366" role="outer"/>
+   <member type="way" ref="45321907" role="outer"/>
+   <member type="way" ref="360607317" role="outer"/>
+   <member type="way" ref="360607316" role="outer"/>
+   <member type="way" ref="360607320" role="outer"/>
+   <member type="way" ref="45360524" role="outer"/>
+   <member type="way" ref="360608464" role="outer"/>
+   <member type="way" ref="360608461" role="outer"/>
+   <member type="way" ref="360610598" role="outer"/>
+   <member type="way" ref="360610600" role="outer"/>
+   <member type="way" ref="45360529" role="outer"/>
+   <member type="way" ref="45360525" role="outer"/>
+   <member type="way" ref="360662129" role="outer"/>
+   <member type="way" ref="360881902" role="outer"/>
+   <member type="way" ref="360662130" role="outer"/>
+   <member type="way" ref="360813350" role="outer"/>
+   <member type="way" ref="360814176" role="outer"/>
+   <member type="way" ref="360814178" role="outer"/>
+   <member type="way" ref="361107896" role="outer"/>
+   <member type="way" ref="361107895" role="outer"/>
+   <member type="way" ref="403628373" role="outer"/>
+   <member type="way" ref="403628377" role="outer"/>
+   <member type="way" ref="45324988" role="outer"/>
+   <member type="way" ref="45323006" role="outer"/>
+   <member type="way" ref="45360528" role="outer"/>
+   <tag k="admin_level" v="8"/>
+   <tag k="boundary" v="administrative"/>
+   <tag k="idee:name" v="Girona"/>
+   <tag k="ine:municipio" v="17079"/>
+   <tag k="is_in" v="Europe, Spain, Catalunya, Girona, Comarques gironines, Gironès"/>
+   <tag k="is_in:àmbit" v="Comarques gironines"/>
+   <tag k="is_in:àmbit_code" v="02"/>
+   <tag k="is_in:comarca" v="Gironès"/>
+   <tag k="is_in:comarca_code" v="20"/>
+   <tag k="is_in:continent" v="Europe"/>
+   <tag k="is_in:country" v="Spain"/>
+   <tag k="is_in:country_code" v="ES"/>
+   <tag k="is_in:province" v="Girona"/>
+   <tag k="is_in:province_code" v="17"/>
+   <tag k="is_in:region" v="Catalunya"/>
+   <tag k="is_in:region_code" v="09"/>
+   <tag k="name" v="Girona"/>
+   <tag k="name:an" v="Chirona"/>
+   <tag k="name:ar" v="جرندة"/>
+   <tag k="name:ast" v="Xerona"/>
+   <tag k="name:be" v="Херона"/>
+   <tag k="name:ca" v="Girona"/>
+   <tag k="name:es" v="Gerona"/>
+   <tag k="name:eu" v="Girona"/>
+   <tag k="name:fa" v="خرنا"/>
+   <tag k="name:fr" v="Gérone"/>
+   <tag k="name:gl" v="Xirona"/>
+   <tag k="name:he" v="ז'ירונה"/>
+   <tag k="name:ja" v="ジローナ"/>
+   <tag k="name:ko" v="지로나"/>
+   <tag k="name:lad" v="Djirona"/>
+   <tag k="name:lt" v="Cherona"/>
+   <tag k="name:lv" v="Žirona"/>
+   <tag k="name:nl" v="Gerona"/>
+   <tag k="name:pt" v="Gerunda"/>
+   <tag k="name:ru" v="Херона"/>
+   <tag k="name:sr" v="Ђирона"/>
+   <tag k="name:uk" v="Жірона"/>
+   <tag k="name:zh" v="赫罗纳"/>
+   <tag k="population" v="96236"/>
+   <tag k="population:date" v="2009"/>
+   <tag k="short_name" v="GRN"/>
+   <tag k="source" v="BDLL25, EGRN, Instituto Geográfico Nacional"/>
+   <tag k="type" v="boundary"/>
+   <tag k="wikidata" v="Q7038"/>
+   <tag k="wikipedia" v="ca:Girona"/>
+  </relation>
+ </modify>
+</osmChange>

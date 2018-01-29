@@ -1,0 +1,67 @@
+# Translations template for PROJECT.
+# Copyright (C) 2016 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2016-08-24 09:01+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: templates/html_template.html:3
+msgid "Summary"
+msgstr ""
+
+#: templates/html_template.html:5 templates/text_template.txt:4
+msgid "Total changesets"
+msgstr ""
+
+#: templates/html_template.html:7
+msgid "Total changes of"
+msgstr ""
+
+#: templates/html_template.html:15
+msgid "Changeset"
+msgstr ""
+
+#: templates/html_template.html:22
+msgid "Nodes changed"
+msgstr ""
+
+#: templates/html_template.html:25
+msgid "Ways changed"
+msgstr ""
+
+#: templates/text_template.txt:5
+msgid "Total building footprint changes"
+msgstr ""
+
+#: templates/text_template.txt:6
+msgid "Total address changes"
+msgstr ""
+
+#: templates/text_template.txt:15
+msgid "User"
+msgstr ""
+
+#: templates/text_template.txt:16
+msgid "Comment"
+msgstr ""
+
+#: templates/text_template.txt:18
+msgid "Changed buildings"
+msgstr ""
+
+#: templates/text_template.txt:19
+msgid "Changed addresses"
+msgstr ""
+

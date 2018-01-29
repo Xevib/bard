@@ -1,0 +1,3438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osmChange version="0.6" generator="CGImap 0.6.0 (20171 thorn-01.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <create>
+  <node id="4847793820" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9809228" lon="2.8223700">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DEPARTAMENT DE TREBALL, AFERS SOCIALS I FAMÍLIES"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794821" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9811115" lon="2.8221237">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SISTEMA D' EMERGÈNCIES MÈDIQUES"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794822" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9806906" lon="2.8221673">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGENCIA DE SALUT PÚBLICA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794823" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9809507" lon="2.8223970">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DEPARTAMENT DE SALUT (GENERALITAT)"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794824" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9753466" lon="2.8170024">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS DE VALORACIÓ I ORIENTACIÓ A PERSONES AMB DISCAPACITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794825" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9811505" lon="2.8205010">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DELEGACIÓ DEL MINISTERI D'ECONOMIA I HISENDA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794826" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9807777" lon="2.8222454">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DE TRANSPORTS"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794827" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9809172" lon="2.8217033">
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGISTRES DE PATENTS I MARQUES"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794828" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:43Z" user="lluisvicens" uid="13446" lat="41.9811338" lon="2.8216732">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI TERRITORIAL DEL JOC I D'ESPECTACLES A GIRONA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794829" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9809719" lon="2.8216582">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA DE RESIDUS DE CATALUNYA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794830" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9845234" lon="2.8209602">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DEPARTAMENT D'AGRICULTURA I PESCA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794831" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9672159" lon="2.8406707">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ DE RECERCA DE L'AIGUA"/>
+   <tag k="office" v="research"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794832" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9808368" lon="2.8222979">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA DE L'HABITATGE DE CATALUNYA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794833" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9842233" lon="2.8231608">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ D'AVALUACIONS MÈDIQUES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794834" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9842992" lon="2.8231848">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ DE LA SALUT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794835" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9810065" lon="2.8224466">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI CATALÀ DE TRÀNSIT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794836" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9811115" lon="2.8217048">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI CATALÀ DE LA SALUT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794837" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9809820" lon="2.8224181">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ DE LES DONES"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794838" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9808636" lon="2.8223235">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ ASSISTÈNCIA I SERVEIS SOCIALS"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794839" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9807509" lon="2.8222198">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CATALÀ DE L'ADOPCIÓ"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794840" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9810333" lon="2.8224676">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DE JUSTÍCIA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794841" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9811539" lon="2.8216357">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS D'AGRICULTURA, RAMADERIA, PESCA, ALIMENTACIÓ I MEDI NATURAL"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794842" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:44Z" user="lluisvicens" uid="13446" lat="41.9808938" lon="2.8223475">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DE TERRITORI I SOSTENIBILITAT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794843" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9810389" lon="2.8221012">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS D'INTERIOR"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794844" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9810858" lon="2.8222964">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS D'ENSENYAMENT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794845" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9809451" lon="2.8216762">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS D'EMPRESA I CONEIXEMENT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794846" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9809987" lon="2.8216312">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DE GOVERNACIÓ, ADMINISTRACIONS PÚBLIQUES I HABITATGE"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794847" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9810858" lon="2.8217273">
+   <tag k="building" v="public"/>
+   <tag k="name" v="GENERALITAT DE CATALUNYA. DELEGACIÓ TERRITORIAL DEL GOVERN"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794848" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9866596" lon="2.8222164">
+   <tag k="amenity" v="courthouse"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="JUTJATS DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794849" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9771554" lon="2.8170759">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA TRIBUTÀRIA DE CATALUNYA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794850" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9668098" lon="2.8365409">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DIPSALUT. ORGANISME DE SALUT PÚBLICA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794851" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9808067" lon="2.8222679">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA CATALANA DEL CONSUM"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794852" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9841452" lon="2.8111748">
+   <tag k="amenity" v="courthouse"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUDIÈNCIA PROVINCIAL - PALAU DE JUSTÍCIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794853" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9842426" lon="2.8260565">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DIPUTACIÓ DE GIRONA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794854" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9624163" lon="2.8154305">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CONSELL COMARCAL DEL GIRONÈS"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794855" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9829420" lon="2.8246079">
+   <tag k="building" v="public"/>
+   <tag k="name" v="BISBAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794856" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:45Z" user="lluisvicens" uid="13446" lat="41.9840425" lon="2.8196468">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SUBDELEGACIÓ DEL GOVERN"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794857" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9863016" lon="2.8229083">
+   <tag k="amenity" v="post_office"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CORREUS I TELÈGRAFS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794858" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9713049" lon="2.8146219">
+   <tag k="amenity" v="post_office"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CORREUS. SUCURSAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794859" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9638960" lon="2.8036032">
+   <tag k="amenity" v="post_office"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CORREUS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794860" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9835968" lon="2.8180380">
+   <tag k="amenity" v="post_office"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CORREUS. SUCURSAL 2"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794861" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9865524" lon="2.8223786">
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGISTRE CIVIL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794862" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9900676" lon="2.8254692">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="POLICIA NACIONAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794863" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9736233" lon="2.8259772">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="COMANDÀNCIA DE LA GUÀRDIA CIVIL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794864" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9844118" lon="2.8208941">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PROTECCIÓ CIVIL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794865" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9776939" lon="2.8252658">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="POLICIA DE LA GENERALITAT. MOSSOS D'ESQUADRA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794866" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9604527" lon="2.8064554">
+   <tag k="amenity" v="fire_station"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGIÓ D'EMERGÈNCIES DE GIRONA - BOMBERS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794867" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9873090" lon="2.8232072">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'ATENCIÓ A LA VÍCTIMA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794868" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9807207" lon="2.8221973">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ACCIÓ DEPARTAMENT D'EMPRESA I OCUPACIÓ"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794869" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9718859" lon="2.8132813">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DELEGACIÓ D'HISENDA. AGÈNCIA TRIBUTÀRIA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794870" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:46Z" user="lluisvicens" uid="13446" lat="41.9753100" lon="2.8216100">
+   <tag k="building" v="public"/>
+   <tag k="name" v="TRESORERIA TERRITORIAL DE LA SEGURETAT SOCIAL ADMINISTRACIÓ NÚMERO 2"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794871" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9795042" lon="2.8108084">
+   <tag k="building" v="public"/>
+   <tag k="name" v="TRESORERIA TERRITORIAL DE LA SEGURETAT SOCIAL ADMINISTRACIÓ NÚMERO 1"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794872" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9863439" lon="2.8294212">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT D'ESTUDIS GIRONINS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794873" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9636659" lon="2.8293819">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CONSELL D'ESTUDIANTS DE LA UNIVERSITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794874" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9818061" lon="2.8246755">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'ATENCIÓ PER A IMMIGRANTS I REFUGIATS"/>
+   <tag k="social_facility:for" v="migrant"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794875" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9859802" lon="2.8252496">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT D'ESTUDIS NAHMÀNIDES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794876" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9819342" lon="2.8201658">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI DE COSTES DEL MINISTERI DE MEDI AMBIENT"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794877" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9842781" lon="2.8255685">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS TERRITORIALS DE CULTURA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794878" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9841999" lon="2.8255279">
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGISTRE DE LA PROPIETAT INTEL·LECTUAL DE CATALUNYA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794879" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9636329" lon="2.8129664">
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGISTRE MERCANTIL I DE BÉNS MOBLES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794880" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9743547" lon="2.8202350">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSPECCIÓ DE TREBALL"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794881" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9850045" lon="2.8201231">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CREU ROJA"/>
+   <tag k="office" v="ngo"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794882" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9846216" lon="2.8210984">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SUBDELEGACIÓ DEL GOVERN. OFICINA D'ESTRANGERIA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794883" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9815466" lon="2.8167229">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT NACIONAL DE LA SEGURETAT SOCIAL"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794884" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:47Z" user="lluisvicens" uid="13446" lat="41.9801686" lon="2.8125839">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT NACIONAL D'ESTADÍSTICA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794885" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9839927" lon="2.8252540">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA CATALANA DE L'AIGUA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794886" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9631706" lon="2.8127838">
+   <tag k="building" v="public"/>
+   <tag k="name" v="REGISTRE PROPIETAT GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794887" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9818706" lon="2.8201778">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PREFECTURA PROVINCIAL DE TRÀNSIT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794888" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9812242" lon="2.8205461">
+   <tag k="building" v="public"/>
+   <tag k="name" v="GERÈNCIA TERRITORIAL DEL CADASTRE"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794889" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9811237" lon="2.8147551">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI DE SOLIDARITAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794890" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9865016" lon="2.8260323">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE D'ACOLLIMENT LA SOPA"/>
+   <tag k="social_facility" v="soup_kitchen"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794891" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9848222" lon="2.8316448">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL DE TORRE GIRONELLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794892" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9734945" lon="2.8093551">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE PÚBLIC DE FORMACIÓ D'ADULTS NOU DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794893" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9746741" lon="2.8425380">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL FONT DE LA PÓLVORA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794894" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9696638" lon="2.8166494">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL SANT PAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794895" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9965189" lon="2.8041838">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP DR. VILAPLANA. GERMANS SÀBAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794896" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="42.0125861" lon="2.8252347">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CONSULTORI LOCAL PONT MAJOR. CAP SARRIÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794897" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:48Z" user="lluisvicens" uid="13446" lat="41.9979926" lon="2.8200967">
+   <tag k="amenity" v="hospital"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="HOSPITAL UNIVERSITARI DE GIRONA DR. JOSEP TRUETA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794898" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9952677" lon="2.8130084">
+   <tag k="amenity" v="nursing_home"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="RESIDÈNCIA PER A GENT GRAN PUIG D'EN ROCA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794899" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9841463" lon="2.8231426">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP SANTA CLARA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794900" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9830207" lon="2.8116015">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP GÜELL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794901" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9789320" lon="2.8205255">
+   <tag k="amenity" v="hospital"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CLÍNICA GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794902" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9796140" lon="2.8204977">
+   <tag k="amenity" v="hospital"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CLÍNICA DR. BOFILL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794903" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9762956" lon="2.8249769">
+   <tag k="amenity" v="hospital"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CLÍNICA QUIRÚRGICA ONYAR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794904" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9724265" lon="2.8412563">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794905" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9722510" lon="2.8277662">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794906" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9717396" lon="2.8052676">
+   <tag k="amenity" v="clinic"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAP CAN GIBERT DEL PLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794907" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9580327" lon="2.8238472">
+   <tag k="amenity" v="nursing_home"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="RESIDÈNCIA ASSISTIDA CREU DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794908" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9830803" lon="2.8247516">
+   <tag k="amenity" v="townhall"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AJUNTAMENT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794909" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9880025" lon="2.8246925">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BASÍLICA DE SANT FELIU"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794910" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:49Z" user="lluisvicens" uid="13446" lat="41.9843579" lon="2.8259497">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DEL CARME"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794911" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9851109" lon="2.8268028">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DEL SEMINARI"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794912" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9838832" lon="2.8223107">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DE SANTA SUSANNA DEL MERCADAL"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794913" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9569757" lon="2.8222879">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DE PALAU SACOSTA"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794914" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9674074" lon="2.8212178">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA PALAU SACOSTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794915" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9946264" lon="2.8017821">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA GERMANS SÀBAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794916" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9666037" lon="2.8217045">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'OCUPACIÓ DE CATALUNYA (SOC)"/>
+   <tag k="office" v="employment_agency"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794917" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9629368" lon="2.8052201">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="POLICIA DE LA GENERALITAT - MOSSOS D'ESQUADRA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794918" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9697232" lon="2.8205463">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA DE TRAMITACIÓ DEL DNI I PASSAPORT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794919" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="42.0111305" lon="2.8251071">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="FEDAC PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847794920" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9950531" lon="2.8369908">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="MONTJUÏC GIRONA INTERNATIONAL SCHOOL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795521" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9936532" lon="2.8028712">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT CARLES RAHOLA I LLORENS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795522" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:50Z" user="lluisvicens" uid="13446" lat="41.9815160" lon="2.8251712">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MUNICIPAL D'ART"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795523" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9819314" lon="2.8209591">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CONSERVATORI DE MÚSICA ISAAC ALBÉNIZ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795524" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9801478" lon="2.8187285">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA VEDRUNA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795525" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9787572" lon="2.8256181">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT JAUME VICENS VIVES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795526" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9775008" lon="2.8214783">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA LA SALLE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795527" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9770501" lon="2.8222673">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE FORMACIÓ D'ADULTS GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795528" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9764710" lon="2.8188640">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA DR. MASMITJÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795529" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9761302" lon="2.8163521">
+   <tag k="amenity" v="music_school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MUNICIPAL DE MÚSICA. CASA ENSESA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795530" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9818039" lon="2.8115748">
+   <tag k="amenity" v="language_school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA OFICIAL D'IDIOMES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795531" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9810814" lon="2.8117202">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT ESCOLA D'HOSTALERIA I TURISME"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795532" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9804121" lon="2.8105853">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MARISTES GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795533" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9771512" lon="2.8128527">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="FEDAC SANT NARCÍS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795534" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9709194" lon="2.8043123">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795535" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:51Z" user="lluisvicens" uid="13446" lat="41.9691897" lon="2.8072048">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BELL-LLOC DEL PLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795536" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9712997" lon="2.8200118">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT SANTIAGO SOBREQUÉS I VIDAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795537" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9696425" lon="2.8421237">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA SAGRADA FAMÍLIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795538" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9642853" lon="2.8277450">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT DE MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795539" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9561823" lon="2.8192415">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA LES ALZINES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795540" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9505003" lon="2.8167319">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MONTESSORI PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795541" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9911053" lon="2.7974281">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA ESGLÉSIA DE DOMENY"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795542" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9757912" lon="2.8142768">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA MUNICIPAL D'ATENCIÓ AL CIUTADÀ-PROJECTE FERROVIARI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795543" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9806032" lon="2.8216852">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI SANTA CATERINA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795544" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9745166" lon="2.8429110">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT SECTOR EST - INFANTS"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795545" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9845562" lon="2.8249619">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC BARRI VELL MERCADAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795546" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9746270" lon="2.8193614">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA CARLES RAHOLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795547" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9847843" lon="2.8274343">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU DEL SEMINARI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795548" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:52Z" user="lluisvicens" uid="13446" lat="41.9517544" lon="2.8151957">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTES DE TENNIS DEL CLUB DE TENNIS GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="tennis"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795549" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9928672" lon="2.8206717">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA PARATGE RISSEC"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795550" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9769668" lon="2.8247484">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANTA MARIA DE VISTA ALEGRE"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795551" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9697406" lon="2.8418505">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA PALOL D'ONYAR- VILA-ROJA"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795552" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="42.0121894" lon="2.8254127">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795553" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9768083" lon="2.8057672">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'ATENCIÓ A LA GENT GRAN I LES DEPENDÈNCIES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795554" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9777623" lon="2.8069979">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795555" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9627623" lon="2.8299890">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE DOCUMENTACIÓ EUROPEA DE LA UNIVERSITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795556" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9836864" lon="2.8224001">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU DEL CINEMA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795557" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9878717" lon="2.8253294">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DE SANT LLUC"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795558" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9914210" lon="2.8175124">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE FONTAJAU"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795559" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="42.0069322" lon="2.8223293">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI PARROQUIAL PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795560" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:53Z" user="lluisvicens" uid="13446" lat="41.9900404" lon="2.8396888">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI SANT DANIEL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795561" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9569050" lon="2.8225921">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI PALAU SACOSTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795562" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9725583" lon="2.8366125">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI MUNICIPAL DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795563" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9731187" lon="2.8025726">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MONTFALGARS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795564" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9943074" lon="2.8044064">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA TAIALÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795565" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9869580" lon="2.8232816">
+   <tag k="amenity" v="theatre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SALA LA PLANETA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795566" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9746114" lon="2.8231975">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FACULTAT D'INFERMERIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795567" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9851452" lon="2.8278504">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="FACULTAT DE TURISME"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795568" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9850359" lon="2.8279345">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FACULTAT DE LLETRES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795569" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9732190" lon="2.8093674">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI MUNICIPAL D'OCUPACIÓ"/>
+   <tag k="office" v="employment_agency"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795570" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9945313" lon="2.8210423">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL DE SANT PONÇ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795571" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9831903" lon="2.8248195">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA INFORMACIÓ I ATENCIÓ CIUTADANA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795572" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9711441" lon="2.8107782">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL EL TREN"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795573" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9702431" lon="2.8162846">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI DE LLEURE LA PAULECA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795574" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:54Z" user="lluisvicens" uid="13446" lat="41.9938450" lon="2.8091609">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL TER"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795575" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9804018" lon="2.8201521">
+   <tag k="amenity" v="police"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="POLICIA MUNICIPAL DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795576" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9744061" lon="2.8096933">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA JARDINS D'IGNASI BOSCH"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795577" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9838162" lon="2.8251560">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ALBERG - RESIDÈNCIA CERVERÍ DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="hostel"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795578" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9712442" lon="2.8228406">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'INFORMACIÓ I ATENCIÓ A LES DONES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795579" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9798983" lon="2.8171351">
+   <tag k="amenity" v="bus_station"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESTACIÓ D'AUTOBUSOS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795580" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9952003" lon="2.8336784">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL DE MONTJUIC"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795581" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9875381" lon="2.8259943">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE LA CATEDRAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795582" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9871715" lon="2.8253218">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DEL COL·LEGI D'ARQUITECTES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795583" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9836576" lon="2.8259396">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU HISTÒRIC DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795584" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9965738" lon="2.8138387">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LLAR INFANTIL NOSTRA SRA. DE LA MISERICÒRDIA"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795585" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9607685" lon="2.8124631">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA GIRONA 2"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795586" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9725490" lon="2.8294169">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA PERICOT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795587" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:55Z" user="lluisvicens" uid="13446" lat="41.9611469" lon="2.8068007">
+   <tag k="building" v="public"/>
+   <tag k="name" v="GIRONA + NETA. SERVEI MUNICIPAL DE NETEJA DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795588" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9730592" lon="2.8147927">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.CASSIÀ COSTAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795589" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9704789" lon="2.8444818">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P. VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795590" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9725800" lon="2.8025426">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.MONTFALGARS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795591" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9699684" lon="2.8167135">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT PALAU - ADOLESCENTS"/>
+   <tag k="social_facility:for" v="juvenile"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795592" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="42.0123562" lon="2.8254957">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DEL PONT MAJOR"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795593" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9877961" lon="2.8245573">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT FELIU LA MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795594" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9751809" lon="2.8106121">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT NARCÍS"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795595" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9568084" lon="2.8219115">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT MIQUEL PALAU SACOSTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795596" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9500229" lon="2.8081433">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA BALEARS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795597" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9746248" lon="2.8236540">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE LA UNIVERSITAT DE GIRONA - EMILI GRAHIT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795598" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9781444" lon="2.8065997">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA SALVADOR ALLENDE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795599" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9859512" lon="2.8252526">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU D'HISTÒRIA DELS JUEUS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795600" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9891693" lon="2.8300069">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL DE LA PUJADA A LA TORRASSA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795601" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:56Z" user="lluisvicens" uid="13446" lat="41.9778671" lon="2.8266066">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL VISTA ALEGRE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795602" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9719897" lon="2.8071848">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT GÜELL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795603" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="42.0111873" lon="2.8232046">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA CARME AUGUET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795604" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9900835" lon="2.8274764">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MONTJUÏC"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795605" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9815945" lon="2.8246280">
+   <tag k="building" v="public"/>
+   <tag k="name" v="UNITAT MUNICIPAL D' ANALISI TERRITORIAL"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795606" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9795008" lon="2.8227516">
+   <tag k="amenity" v="marketplace"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="MERCAT MUNICIPAL D'ABASTAMENTS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795607" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9722679" lon="2.8020974">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL D'ESPORTS SANTA EUGÈNIA-MONTFALGARS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795608" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9700819" lon="2.8268778">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA CIUTAT DE FIGUERES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795609" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9714426" lon="2.8046601">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA CAN GIBERT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795610" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9750768" lon="2.8104521">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT SANT NARCÍS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795611" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9734965" lon="2.8237086">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CASAL BISBE CARTANYÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795612" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9785319" lon="2.8274503">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SOCIOTECA ANNEXA JOAQUIM FRANCH"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795613" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9847723" lon="2.8266858">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DEL SEMINARI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795614" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:57Z" user="lluisvicens" uid="13446" lat="41.9749522" lon="2.8116096">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC SANT NARCÍS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795615" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9831460" lon="2.8247894">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU ADMINISTRATIU MUNICIPAL"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795616" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9579013" lon="2.8216156">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA JOCS OLÍMPICS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795617" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9848728" lon="2.8315902">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PUNT DE LECTURA DE TORRE GIRONELLA LOCAL SOCIAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795618" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="42.0122257" lon="2.8254305">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC PONT MAJOR"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795619" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9720687" lon="2.8110643">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="GEiEG COMPLEX ESPORTIU PAVELLÓ LLUÍS BACHS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847795620" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="42.0123229" lon="2.8250556">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT ADOLESCENTS PONT MAJOR"/>
+   <tag k="social_facility:for" v="juvenile"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796621" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9735367" lon="2.8069728">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANTA EUGÈNIA DE TER"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796622" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9844185" lon="2.8259743">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DEL CARME"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796623" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9911523" lon="2.7970810">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DE DOMENY"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796624" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9757181" lon="2.8428003">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE DIA FONT DE LA PÓLVORA"/>
+   <tag k="social_facility" v="day_care"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796625" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9612675" lon="2.8070229">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DEIXALLERIA MUNICIPAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796626" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:58Z" user="lluisvicens" uid="13446" lat="41.9840503" lon="2.8249784">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA POPULAR DE L'ATENEU 24 DE JUNY"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796627" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9811820" lon="2.8213957">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ANTIC HOSPITAL DE STA. CATERINA - ESPAI EXPOSICIÓ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="gallery"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796628" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9827095" lon="2.8254577">
+   <tag k="amenity" v="theatre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="TEATRE MUNICIPAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796629" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9804800" lon="2.8202812">
+   <tag k="building" v="public"/>
+   <tag k="name" v="UNITAT DE PREVENCIÓ DE RISCOS LABORALS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796630" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9786407" lon="2.8202991">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA VERD"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796631" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9856564" lon="2.8116210">
+   <tag k="amenity" v="concert_hall"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUDITORI DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796632" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9851255" lon="2.8210290">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA JOAN BRUGUERA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796633" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9958921" lon="2.8034044">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL BALDUFA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796634" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9859319" lon="2.8273167">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG RECTORAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796635" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9731271" lon="2.8395866">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL GRUP SANT DANIEL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796636" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9620914" lon="2.8299515">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FACULTAT DE DRET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796637" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9585678" lon="2.8217716">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL PALAU -SACOSTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796638" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9916524" lon="2.8096005">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BALANDRAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796639" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9940312" lon="2.8150225">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL LA GUINGUETA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796640" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:57:59Z" user="lluisvicens" uid="13446" lat="41.9853007" lon="2.8274036">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG EDIFICI SEMINARI MENOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796641" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="42.0107262" lon="2.8236110">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL EL PONT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796642" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9649193" lon="2.8209868">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA D'EDUCACIÓ ESPECIAL DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796643" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9751984" lon="2.8023815">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="L'ATENEU EUGÈNIENC"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796644" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9937691" lon="2.8090912">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC TER"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796645" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9797855" lon="2.8119399">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE MEDIACIÓ FAMILIAR DE GIRONA (PUNT DE TROBADA)"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796646" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="42.0238066" lon="2.8375574">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA COL·LEGI CAMPDORÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796647" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9839516" lon="2.8180469">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'ESTUDIS DE LA CAMBRA AGRÀRIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796648" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9937026" lon="2.8089806">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA ANTÒNIA ADROHER"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796649" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="42.0002542" lon="2.8242337">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA C. D'INVESTIGACIONS ARQUEOLÒGIQUES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796650" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9806233" lon="2.8152068">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DEL COL·LEGI D'APARELLADORS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796651" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9749717" lon="2.8116011">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL DE SANT NARCÍS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796652" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9777260" lon="2.8070112">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL DE SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796653" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:00Z" user="lluisvicens" uid="13446" lat="41.9729120" lon="2.8289266">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL - CASAL D'AVIS DE MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796654" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9644239" lon="2.8194495">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ PALAU 2. PISTA D'HOQUEI I PATINATGE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796655" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9754103" lon="2.8026667">
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL PLA DE BARRIS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796656" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9588795" lon="2.8143514">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.PROFESSOR PERICOT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796657" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9776892" lon="2.8070442">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC SANTA EUGÈNIA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796658" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9749901" lon="2.8115916">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC SANT NARCÍS"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796659" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9958868" lon="2.8171323">
+   <tag k="amenity" v="nursing_home"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE JOAN SUÑER"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796660" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9866151" lon="2.8139453">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="swimming_pool"/>
+   <tag k="name" v="PISCINES MUNICIPALS D'ESTIU - ZONA ESPORTIVA DE LA DEVESA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796661" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9611983" lon="2.8283127">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="ESTADI MUNICIPAL DE MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796662" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9732949" lon="2.8095416">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT ADOLESCENTS DE SANT NARCÍS"/>
+   <tag k="social_facility:for" v="juvenile"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796663" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9815745" lon="2.8251946">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT BARRI VELL - ADOLESCENTS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796664" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9761365" lon="2.8012475">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA GERMANS SÀBAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796665" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9681243" lon="2.8214885">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ELS QUÍMICS ESPAI JOVE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796666" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:01Z" user="lluisvicens" uid="13446" lat="41.9794567" lon="2.8213643">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DELS PARES CLARETIANS"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796667" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9643801" lon="2.8143007">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA ESCOLAR CEIP MARTA MATA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796668" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9836440" lon="2.8222589">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT D'ESTUDIS DEL MUSEU DEL CINEMA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796669" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9890680" lon="2.8260624">
+   <tag k="building" v="public"/>
+   <tag k="name" v="BÒLIT - CAPELLA DE SANT NICOLAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="gallery"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796670" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9817216" lon="2.8253129">
+   <tag k="amenity" v="concert_hall"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUDITORI DEL CENTRE CULTURAL LA MERCÈ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796671" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9689316" lon="2.8514711">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI NOU DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796672" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9716671" lon="2.8040078">
+   <tag k="amenity" v="grave_yard"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CEMENTIRI SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796673" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9900640" lon="2.8260733">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE JOVE DE SALUT INTEGRAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796674" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9841331" lon="2.8214945">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA EIXIMENIS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796675" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="42.0040959" lon="2.8241896">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT NARCÍS XIFRA MASMITJÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796676" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9618261" lon="2.8307394">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG ESTUDIS CIÈNCIES ECONÒMIQUES I EMPRESARIALS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796677" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9942537" lon="2.8152707">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA FONTAJAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796678" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:02Z" user="lluisvicens" uid="13446" lat="41.9793347" lon="2.8169506">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESTACIÓ DE TRENS"/>
+   <tag k="public_transport" v="station"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="train" v="yes"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796679" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9906829" lon="2.8076483">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA DE DOMENY"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796680" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9883633" lon="2.8246554">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA MUNICIPAL D'HABITATGE"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796681" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9729641" lon="2.8419927">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC ONYAR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796682" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9815527" lon="2.8211689">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CASA DE CULTURA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796683" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9871432" lon="2.8253233">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU HISTÒRIC DEL COL·LEGI D'ARQUITECTES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796684" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9848728" lon="2.8266435">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU CAPITULAR DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796685" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9846159" lon="2.8249556">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL DEL BARRI VELL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796686" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9835046" lon="2.8249217">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA MUNICIPAL D'ESCOLARITZACIÓ"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796687" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9639805" lon="2.8137181">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL GARBI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796688" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9568286" lon="2.8258704">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL TORRES DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796689" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="42.0106475" lon="2.8221767">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL DEL PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796690" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9699048" lon="2.8170699">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA SANT PAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796691" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:03Z" user="lluisvicens" uid="13446" lat="41.9941566" lon="2.8048872">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.TAIALÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796692" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9983700" lon="2.8032216">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL DE GERMANS SÀBAT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796693" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9765001" lon="2.8264742">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA VISTA ALEGRE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796694" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9950087" lon="2.8323858">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA MONTJUÏC"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796695" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9708862" lon="2.8190119">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC PLA DE PALAU"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796696" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9643607" lon="2.8188632">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="swimming_pool"/>
+   <tag k="name" v="PISCINA MUNICIPAL DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796697" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9862623" lon="2.8127139">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTES DE TENNIS I PÀDEL DE LA DEVESA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="tennis"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796698" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9867557" lon="2.8196666">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI CÍVIC LA ROSALEDA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796699" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9750125" lon="2.8115743">
+   <tag k="amenity" v="theatre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="TEATRE DEL CENTRE CÍVIC DE SANT NARCÍS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796700" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9873579" lon="2.8258797">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CATEDRAL DE GIRONA"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796701" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9819567" lon="2.8241027">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESGLÉSIA DEL SAGRAT COR"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796702" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9865575" lon="2.8278471">
+   <tag k="building" v="public"/>
+   <tag k="historic" v="ruins"/>
+   <tag k="name" v="CASERNA DELS ALEMANYS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796703" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:04Z" user="lluisvicens" uid="13446" lat="41.9780550" lon="2.8066598">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI MARFÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796704" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9868657" lon="2.8245253">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SALA LA CARBONERA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="gallery"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796705" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9860537" lon="2.8247444">
+   <tag k="building" v="public"/>
+   <tag k="historic" v="building"/>
+   <tag k="name" v="CASA MASÓ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796706" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9703851" lon="2.8449413">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796707" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9855145" lon="2.8273496">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FACULTAT D'EDUCACIÓ I PSICOLOGIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796708" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9777644" lon="2.8266306">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT BARRI VELL - INFANTS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796709" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9671135" lon="2.8371776">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FUNDACIÓ UNIVERSITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796710" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9833592" lon="2.8228941">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRAL ELÈCTRICA DEL MOLÍ"/>
+   <tag k="power" v="substation"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796711" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9746048" lon="2.8441443">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA FONT DE LA PÓLVORA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796712" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9640858" lon="2.8264286">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA D'EDUCACIÓ ESPECIAL FONT DE L'ABELLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796713" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9591657" lon="2.8145316">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BOSC DE LA PABORDIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796714" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9721992" lon="2.8074215">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT CASAL CAN GIBERT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796715" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9972067" lon="2.8247675">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE L'ASSOCIACIÓ DE VEÏNS DE PEDRET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796716" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9843201" lon="2.8262613">
+   <tag k="building" v="public"/>
+   <tag k="name" v="UNITAT DE PUBLICACIONS DE LA DIPUTACIÓ DE GIRONA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796717" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:05Z" user="lluisvicens" uid="13446" lat="41.9869736" lon="2.8250679">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE L'ARXIU MUNICIPAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796718" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9576847" lon="2.8274382">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="GEiEG COMPLEX ESPORTIU PALAU-SACOSTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796719" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9870313" lon="2.8250647">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE RECERCA I DIFUSIÓ DE LA IMATGE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847796720" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9728620" lon="2.8418408">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL DE VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797421" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9720804" lon="2.8415196">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL D'ESPORTS VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797422" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9881346" lon="2.8257092">
+   <tag k="building" v="public"/>
+   <tag k="historic" v="building"/>
+   <tag k="name" v="BANYS ÀRABS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797423" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="42.0106692" lon="2.8232037">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.CARME AUGUET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797424" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9945899" lon="2.8163731">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL DE FONTAJAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797425" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="42.0059127" lon="2.8221099">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797426" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9741394" lon="2.8428058">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P. FONTDE LA PÒLVORA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797427" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9710067" lon="2.8059810">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P.DALMAU CARLES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797428" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9710153" lon="2.8104830">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P. MAREDE DEU DEL MON"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797429" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9730250" lon="2.8420720">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT SECTOR EST - ADOLESCENTS"/>
+   <tag k="social_facility:for" v="juvenile"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797430" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:06Z" user="lluisvicens" uid="13446" lat="41.9955462" lon="2.8035197">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT INFANTS ESQUERRA DEL TER"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797431" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9730034" lon="2.8024465">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA ESCOLAR MONTFOLLET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797432" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9833922" lon="2.8210562">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESPAI CÍVIC MERCADAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797433" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="42.0129334" lon="2.8442261">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE CAMPDORÀ"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797434" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9777283" lon="2.8179106">
+   <tag k="amenity" v="nursing_home"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="GERMANETES DELS POBRES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797435" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9813610" lon="2.8162595">
+   <tag k="building" v="public"/>
+   <tag k="name" v="LA FARINERA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797436" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9708499" lon="2.8191050">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA ERNEST LLUCH"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797437" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9845492" lon="2.8279345">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CARTOTECA DE LA UNIVERSITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797438" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9734315" lon="2.8237584">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE L'ESCOLA DE L'ESPLAI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797439" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="42.0003948" lon="2.8242300">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU D'ARQUEOLOGIA SUBAQUÀTICA DE CATALUNYA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797440" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9831881" lon="2.8237756">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OFICINA DE TURISME DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="information"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797441" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9745244" lon="2.8237891">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="FACULTAT DE MEDICINA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797442" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9814991" lon="2.8210429">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SALA DE LECTURA GIRONA CENTRE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797443" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:07Z" user="lluisvicens" uid="13446" lat="41.9567053" lon="2.8042860">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCORXADOR DEL GIRONÈS, SA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797444" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9848217" lon="2.8266634">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT SUPERIOR DE CIÈNCIES RELIGIOSES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797445" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9735879" lon="2.8152560">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA CASSIÀ COSTAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797446" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9713885" lon="2.8062453">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA DALMAU CARLES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797447" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9894447" lon="2.8350328">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL ESCOLES DE SANT DANIEL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797448" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="42.0240633" lon="2.8375072">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL ESCOLES DE CAMPDORÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797449" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9814047" lon="2.8245980">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AGÈNCIA DE PROMOCIÓ ECONÒMICA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797450" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9644914" lon="2.8144327">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MARTA MATA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797451" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9835491" lon="2.8249466">
+   <tag k="building" v="public"/>
+   <tag k="name" v="LA CASETA SERVEIS EDUCATIUS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797452" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9779568" lon="2.8067123">
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEI D'INFORMACIÓ JUVENIL DE L'ESPAI MARFÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797453" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9833288" lon="2.8129620">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA SANT SALVADOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797454" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9816230" lon="2.8210414">
+   <tag k="amenity" v="concert_hall"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUDITORI JOSEP VIADER. CASA DE CULTURA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797455" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="42.0122646" lon="2.8254493">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797456" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9728093" lon="2.8240088">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CASAL CÍVIC MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797457" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:08Z" user="lluisvicens" uid="13446" lat="41.9908866" lon="2.8241435">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA DE PEDRET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797458" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9763732" lon="2.8012205">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797459" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9875734" lon="2.8259938">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU DE LA CATEDRAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797460" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9907378" lon="2.8104557">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL D'ESPORTS GIRONA-FONTAJAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797461" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9711923" lon="2.8455972">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL DE VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797462" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9797662" lon="2.8056938">
+   <tag k="amenity" v="college"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAN PO VELL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797463" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9812046" lon="2.8210905">
+   <tag k="amenity" v="concert_hall"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUDITORI JOSEP IRLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797464" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9832157" lon="2.8123266">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT SALVADOR D'HORTA"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797465" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9739747" lon="2.8237383">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT JOSEP"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797466" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9837973" lon="2.8223305">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DEL MERCADAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797467" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9888083" lon="2.8333409">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT DANIEL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797468" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9948432" lon="2.8090068">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA TORRE DE TAIALÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797469" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9806745" lon="2.8157091">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="L'ESTACIÓ ESPAI JOVE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797470" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9592651" lon="2.8145376">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA ESCOLAR CEIP BOSC DE LA PABORDIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797471" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:09Z" user="lluisvicens" uid="13446" lat="41.9971258" lon="2.8247903">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC PEDRET"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797472" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9842810" lon="2.8263574">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU DE LA DIPUTACIÓ DE GIRONA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797473" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9644931" lon="2.8296200">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA POLITÈCNICA SUPERIOR - UDG"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797474" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9634075" lon="2.8285019">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE D'INFORMACIÓ I ASSESSORAMENT DELS ESTUDIANTS UDG"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797475" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9888279" lon="2.8264173">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="historic" v="monastery"/>
+   <tag k="name" v="MONESTIR DE SANT PERE DE GALLIGANTS"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797476" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9797553" lon="2.8228057">
+   <tag k="building" v="public"/>
+   <tag k="name" v="LABORATORI MUNICIPAL. PROTECCIÓ DE LA SALUT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797477" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9763148" lon="2.8207409">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL SOCIAL AV DE L'EIXAMPLE"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797478" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9711584" lon="2.8239399">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA PLA DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797479" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9784426" lon="2.8272160">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA ANNEXA - JOAN PUIGBERT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797480" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9739345" lon="2.8425904">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA FONT DE LA PÓLVORA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797481" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9705149" lon="2.8205253">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA MIGDIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797482" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9737727" lon="2.8424906">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL CAVALL FORT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797483" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:10Z" user="lluisvicens" uid="13446" lat="41.9625425" lon="2.8289489">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="UdG FACULTAT DE CIÈNCIES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797484" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9675110" lon="2.8365829">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARC CIENTÍFIC I TECNOLÒGIC UNIVERSITAT DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797485" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9699002" lon="2.8442661">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA VILA-ROJA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797486" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9711886" lon="2.8184141">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA PARC DEL MIGDIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797487" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9815409" lon="2.8196115">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE DIA GIRONA"/>
+   <tag k="social_facility" v="day_care"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797488" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9733932" lon="2.8094996">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT INFANTS SANT NARCÍS"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797489" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9720523" lon="2.8044526">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="swimming_pool"/>
+   <tag k="name" v="PISCINA MUNICIPAL DE SANTA EUGÈNIA-CAN GIBERT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797490" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9810657" lon="2.8220982">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU CENTRAL ADMINSTRATIU DE LA GENERALITAT A GIRONA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797491" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9849299" lon="2.8266311">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU DIOCESÀ DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797492" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9813489" lon="2.8246070">
+   <tag k="building" v="public"/>
+   <tag k="name" v="EQUIP D'ATENCIÓ A LA INFÀNCIA I A L'ADOLESCÈNCIA"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797493" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9857993" lon="2.8115429">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PALAU DE CONGRESSOS DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797494" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9659640" lon="2.8238938">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="MAS ABELLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797495" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9869448" lon="2.8250671">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU D'HISTÒRIA DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797496" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:11Z" user="lluisvicens" uid="13446" lat="41.9840218" lon="2.8252735">
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSPAI. CENTRE DE LA IMATGE. DIPUTACIÓ DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797497" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9703086" lon="2.8052038">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="CAMP DE FUTBOL MUNICIPAL DE CAN GIBERT DEL PLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="sport" v="soccer"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797498" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9856589" lon="2.8322073">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA TORRE GIRONELLA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797499" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9759845" lon="2.8241691">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA CARME"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797500" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9893358" lon="2.8305858">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA LA TORRASSA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797501" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9733241" lon="2.8389224">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA GRUP SANT DANIEL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797502" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9729200" lon="2.8419159">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC ONYAR"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797503" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="42.0063651" lon="2.8228163">
+   <tag k="amenity" v="prison"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE PENITENCIARI DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797504" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9943675" lon="2.8216422">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="GEiEG COMPLEX ESPORTIU SANT PONÇ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797505" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9756313" lon="2.8079918">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL D'ESPORTS DE SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797506" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9895315" lon="2.8271777">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CAPELLA DE SANTA LLUCIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="gallery"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797507" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9758332" lon="2.8025945">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797508" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9862491" lon="2.8255097">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="INSTITUT D'ESTUDIS NAHMÀNIDES - BIBLIOTECA ELIEZER E. SCHALIT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797509" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:12Z" user="lluisvicens" uid="13446" lat="41.9696053" lon="2.8270526">
+   <tag k="amenity" v="kindergarten"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA BRESSOL L'OLIVERA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797510" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9798425" lon="2.8171261">
+   <tag k="building" v="public"/>
+   <tag k="name" v="AUTORITAT TERRITORIAL DE LA MOBILITAT - ATM"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797511" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9447089" lon="2.8140887">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="CENTRE ESPORTIU ESCOLA VEDRUNA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797512" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9749299" lon="2.8116277">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PUNT DE LECTURA DE SANT NARCíS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797513" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9700499" lon="2.8164973">
+   <tag k="amenity" v="place_of_worship"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="PARRÒQUIA DE SANT PAU"/>
+   <tag k="religion" v="christian"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797514" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9961389" lon="2.8041438">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CASAL DE JUBILATS DE TAIALÀ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797515" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9844599" lon="2.8280276">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE LA UNIVERSITAT DE GIRONA - CAMPUS DEL BARRI VELL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797516" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9709303" lon="2.8188049">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CÍVIC PLA DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797517" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9976537" lon="2.8196964">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE L'HOSPITAL DR. JOSEP TRUETA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797518" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9714066" lon="2.8070258">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="LOCAL SOCIAL LLAR DE PENSIONISTES I JUBILATS SANT JOAN"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797519" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9727512" lon="2.8240028">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE DIA ONYAR"/>
+   <tag k="social_facility" v="day_care"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847797520" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9581930" lon="2.8036408">
+   <tag k="building" v="public"/>
+   <tag k="name" v="DIPÒSIT MUNICIPAL DE VEHICLES"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798321" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9798022" lon="2.8228507">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PREVENCIÓ I PROMOCIÓ DE LA SALUT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798322" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:13Z" user="lluisvicens" uid="13446" lat="41.9634269" lon="2.8058719">
+   <tag k="amenity" v="animal_shelter"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CANERA MUNICIPAL"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798323" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="42.0123035" lon="2.8250579">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA JUST M. CASERO"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798324" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9822618" lon="2.8256408">
+   <tag k="amenity" v="cinema"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CINEMA TRUFFAUT"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798325" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9711091" lon="2.8097621">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA ÀGORA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798326" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9770875" lon="2.8095210">
+   <tag k="amenity" v="school"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="ESCOLA SANTA EUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798327" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9811496" lon="2.8212455">
+   <tag k="amenity" v="university"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="AULES D'EXTENSIÓ UNIVERSITÀRIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798328" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9645378" lon="2.8279316">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE L'INSTITUT MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798329" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9848188" lon="2.8120743">
+   <tag k="building" v="public"/>
+   <tag k="name" v="LLOTJA DE CONTRACTACIÓ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798330" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="42.0122838" lon="2.8250591">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT INFANTS PONT MAJOR"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798331" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9768429" lon="2.8058212">
+   <tag k="amenity" v="community_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CASAL DE GENT GRAN SANTA EUGÈNIA DE TER"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798332" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9731287" lon="2.8096427">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE D'INICIATIVES LOCAL - GIRONA EMPRÈN"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798333" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9726865" lon="2.8240058">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE OBERT PALAU - INFANTS"/>
+   <tag k="social_facility:for" v="child"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798334" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9629009" lon="2.8297609">
+   <tag k="amenity" v="library"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BIBLIOTECA DE LA UNIVERSITAT DE GIRONA - CAMPUS DE MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798335" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9816567" lon="2.8252015">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE CULTURAL LA MERCÈ"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798336" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:14Z" user="lluisvicens" uid="13446" lat="41.9832383" lon="2.8237756">
+   <tag k="amenity" v="arts_centre"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="BÒLIT - LA RAMBLA, SALA FIDEL AGUILAR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798337" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9869701" lon="2.8263714">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE DE DOCUMENTACIÓ DEL MUSEU D'ART"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798338" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9870025" lon="2.8250662">
+   <tag k="building" v="public"/>
+   <tag k="name" v="ARXIU MUNICIPAL DE GIRONA (AMGI)"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798339" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9709616" lon="2.8188092">
+   <tag k="amenity" v="social_facility"/>
+   <tag k="building" v="public"/>
+   <tag k="name" v="SERVEIS BÀSICS D'ATENCIÓ SOCIAL DE PALAU-MONTILIVI"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798340" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="42.0099681" lon="2.8221810">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL DE PONT MAJOR"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798341" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9875768" lon="2.8228536">
+   <tag k="building" v="public"/>
+   <tag k="name" v="PUNT DE BENVINGUDA GIRONA - GIRONÈS"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="information"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798342" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9869218" lon="2.8263723">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU D'ART"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798343" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9860053" lon="2.8252489">
+   <tag k="building" v="public"/>
+   <tag k="name" v="CENTRE BONASTRUC ÇA PORTA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798344" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9887676" lon="2.8263812">
+   <tag k="building" v="public"/>
+   <tag k="name" v="MUSEU D'ARQUEOLOGIA DE CATALUNYA GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+   <tag k="tourism" v="museum"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798345" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="42.0247752" lon="2.8309327">
+   <tag k="building" v="public"/>
+   <tag k="man_made" v="wastewater_plant"/>
+   <tag k="name" v="TRACTAMENT DE RESIDUS I D'AIGÜES RESIDUALS DE GIRONA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798346" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9737636" lon="2.8235448">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ SANT JOSEP"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798347" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9768319" lon="2.8095570">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="pitch"/>
+   <tag k="name" v="PISTA POLIESPORTIVA C.P. SANTAEUGÈNIA"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798348" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9961668" lon="2.8041419">
+   <tag k="building" v="public"/>
+   <tag k="name" v="OIAC TAIALÀ"/>
+   <tag k="office" v="government"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+ <create>
+  <node id="4847798349" visible="true" version="1" changeset="48595327" timestamp="2017-05-11T14:58:15Z" user="lluisvicens" uid="13446" lat="41.9648875" lon="2.8188001">
+   <tag k="building" v="public"/>
+   <tag k="leisure" v="sports_centre"/>
+   <tag k="name" v="PAVELLÓ MUNICIPAL D'ESPORTS DE PALAU"/>
+   <tag k="source" v="UMAT - Aj. de Girona (2017)"/>
+  </node>
+ </create>
+</osmChange>
