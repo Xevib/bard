@@ -263,7 +263,7 @@ class ChangeHandler(osmium.SimpleHandler):
         elif elem == 'relation':
             previous_elem = osm_api.RelationHistory(gid)[version - 1]
         if previous_elem:
-            previous_tags = previous_elem['tag']
+            previous_tags = previous_elem['data']['tag']
             out_tags = {}
             for key, value in previous_tags.items():
                 if re.match(watch_tags, key):
