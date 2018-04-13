@@ -1,9 +1,9 @@
 import unittest
-from changewithin import ChangeWithin
-from changewithin import ChangeHandler
+from bard import Bard
+from bard import ChangeHandler
 from osmium.osm import Location, WayNodeList, Node
-from changewithin import get_state
-from changewithin.changewithin import DbCache
+from bard import get_state
+from bard.bard import DbCache
 import osmapi
 import psycopg2
 import sys
@@ -38,8 +38,8 @@ class CacheTest(unittest.TestCase):
 
         :return:
         """
-        self.cache = DbCache("localhost", "changewithin", "postgres", "postgres")
-        self.connection = psycopg2.connect(host="localhost", database="changewithin", user="postgres", password="postgres")
+        self.cache = DbCache("localhost", "bard", "postgres", "postgres")
+        self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
 
     def tearDown(self):
         """
@@ -265,7 +265,7 @@ class ChangesWithinTest(unittest.TestCase):
         """
         Constructor
         """
-        self.cw = ChangeWithin()
+        self.cw = Bard()
 
     def test_osc1(self):
         """
