@@ -679,7 +679,7 @@ class DbCache(object):
 
 
 
-class ChangeWithin(object):
+class Bard(object):
     """
     Class that process the OSC files
     """

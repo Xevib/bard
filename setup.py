@@ -16,13 +16,13 @@ setup(
     include_package_data=True,
     entry_points='''
         [console_scripts]
-        changewithin=changewithin.cli:cli_generate_report
+        bard=bard.cli:cli_generate_report
     ''',
     package_data={
-        'changewithin': [
-            "changewithin/templates/text_template.txt",
-            "changewithin/templates/html_template.html",
-            "changewithin/schema.sql"
+        'bard': [
+            "bard/templates/text_template.txt",
+            "bard/templates/html_template.html",
+            "bard/schema.sql"
         ]
     }
 )

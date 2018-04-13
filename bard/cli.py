@@ -1,22 +1,22 @@
 # -*- coding: utf-8 -*-
 import click
 from raven import Client
-from changewithin import ChangeWithin
+from bard import Bard
 
 
 @click.group()
-def changeswithin():
+def bard():
     pass
 
 
-@changeswithin.command()
+@bard.command()
 @click.option('--host', default=None)
 @click.option('--db', default=None)
 @click.option('--user', default=None)
 @click.option('--password', default=None)
 @click.option('--initialize/--no-initialize', default=False)
 @click.option("--file",default=None)
-def changeswithin(host, db, user, password, initialize, file):
+def bard(host, db, user, password, initialize, file):
     """
     Client entry
 
@@ -31,7 +31,7 @@ def changeswithin(host, db, user, password, initialize, file):
 
     client = Client()
     try:
-        c = ChangeWithin(host, db, user, password)
+        c = Bard(host, db, user, password)
         if initialize:
             c.initialize_db()
         else:
@@ -47,4 +47,4 @@ def changeswithin(host, db, user, password, initialize, file):
 
         
 def cli_generate_report():
-    changeswithin()
+    bard()
