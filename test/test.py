@@ -1,9 +1,9 @@
 import unittest
-from changewithin import ChangeWithin
-from changewithin import ChangeHandler
+from bard import ChangeWithin
+from bard import ChangeHandler
 from osmium.osm import Location, WayNodeList, Node
-from changewithin import get_state
-from changewithin.changewithin import DbCache
+from bard import get_state
+from bard.bard import DbCache
 import osmapi
 import psycopg2
 import sys
