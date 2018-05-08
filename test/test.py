@@ -2,7 +2,6 @@ import unittest
 from bard import Bard
 from bard import ChangeHandler
 from osmium.osm import Location, WayNodeList, Node
-from bard import get_state
 from bard.bard import DbCache
 import osmapi
 import psycopg2
@@ -11,20 +10,6 @@ if sys.version_info[0] == 2:
     import mock
 else:
     from unittest.mock import MagicMock
-
-class LibTest(unittest.TestCase):
-    """
-    Unitest for the lif module
-    """
-
-    def test_get_state(self):
-        """
-        Tests get_state 
-        :return: None
-        """
-
-        state = get_state()
-        self.assertNotEqual(state, "")
 
 
 class CacheTest(unittest.TestCase):
