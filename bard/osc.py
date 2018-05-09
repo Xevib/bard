@@ -44,15 +44,17 @@ class OSC(object):
         """
         Downloads the state from OSM replication system
 
-        :return: Actual state as a str
+        :return: Actual state
+        :rtype: dict
         """
-
-        r = requests.get(
-            'http://planet.openstreetmap.org/replication/{}/state.txt'.format(
-                self.replication_name[self._periodicty]
-            )
-        )
-        return r.text.split('\n')[1].split('=')[1]
+        url = 'http://planet.openstreetmap.org/replication/{}/state.txt'.format(
+                self.replication_name[self._periodicty])
+        r = requests.get(url)
+        ret_val = {}
+        for line in r.text.splitlines():
+            if line and not line.startswith("#"):
+                ret_val[line.split("=")[0]] = line.split("=")[1]
+        return ret_val
 
     def get_last(self):
         """
@@ -64,7 +66,7 @@ class OSC(object):
         state = self.get_state()
 
         # zero-pad state so it can be safely split.
-        state = '000000000' + state
+        state = '000000000' + state["sequenceNumber"]
         path = '{0}/{1}/{2}'.format(state[-9:-6], state[-6:-3], state[-3:])
         stateurl = 'http://planet.openstreetmap.org/replication/{}/{}.osc.gz'.format(
             self.replication_name[self._periodicty],
