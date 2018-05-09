@@ -40,7 +40,7 @@ class OSC(object):
         """
         self.periodicty = value
 
-    def get_state(self):
+    def get_last_state(self):
         """
         Downloads the state from OSM replication system
 
@@ -63,7 +63,7 @@ class OSC(object):
         :return: None
         """
 
-        state = self.get_state()
+        state = self.get_last_state()
 
         # zero-pad state so it can be safely split.
         state = '000000000' + state["sequenceNumber"]
