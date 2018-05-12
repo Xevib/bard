@@ -1,4 +1,4 @@
 recursive-include locales *
-include changewithin/templates/text_template.txt
-include changewithin/templates/html_template.html
-include changewithin/schema.sql
+include bard/templates/text_template.txt
+include bard/templates/html_template.html
+include bard/schema.sql
