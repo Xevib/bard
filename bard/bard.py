@@ -33,7 +33,8 @@ psql_db = PostgresqlDatabase("bard")
 
 
 class PointField(Field):
-    db_field = 'point'
+    db_field = 'geometry(Point,4326)'
+    field_type = 'geometry(Point,4326)'
 
 
 class BaseModel(Model):
@@ -43,7 +44,7 @@ class BaseModel(Model):
 
 
 class CacheNode(BaseModel):
-    id = BigBitField()
+    id = BigIntegerField()
     version = IntegerField()
     tag = HStoreField()
     geom = PointField()
@@ -81,11 +82,12 @@ class ChangeHandler(osmium.SimpleHandler):
         :param user: database user
         :param password: database password
         :return: None
-        :rtype: None
+        :rtype: DbCache
         """
 
         self.cache = DbCache(host,db,user,password)
         self.cache_enabled = True
+        return self.cache
 
     def location_in_bbox(self, location):
         """
@@ -689,7 +691,7 @@ class Bard(object):
 
         if host is not None and db is not None and user is not None and password is not None:
             self.has_cache = True
-            self.handler.set_cache(host, db, user, password)
+            self.cache = self.handler.set_cache(host, db, user, password)
         else:
             self.has_cache = False
             self.cache = None
