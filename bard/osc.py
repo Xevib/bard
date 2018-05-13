@@ -1,5 +1,6 @@
 from tempfile import mkstemp
 import sys
+import os
 
 import requests
 
@@ -28,7 +29,7 @@ class OSC(object):
         Getter function for periodicity
         :return:
         """
-        return self.periodicty
+        return self._periodicty
 
     @periodicty.setter
     def periodicty(self, value):
@@ -38,7 +39,7 @@ class OSC(object):
         :param value: value to set
         :return: None
         """
-        self.periodicty = value
+        self._periodicty = value
 
     def get_state(self):
         """
@@ -80,7 +81,7 @@ class OSC(object):
 
         with open(filename, "w") as f:
             resp = requests.get(stateurl)
-            f.write(resp.content)
+            f.write(resp.content.encode())
         sys.stderr.write('Done\n')
         # sys.stderr.write('extracting {0}...\n'.format(filename))
         # os.system('gunzip -f {0}'.format(filename))

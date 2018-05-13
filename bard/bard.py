@@ -15,9 +15,11 @@ import psycopg2
 import psycopg2.extras
 from psycopg2.extensions import AsIs
 
-from .osc import OSC
+from bard.osc import OSC
 
 from raven import Client
+from peewee import *
+from playhouse.postgres_ext import HStoreField
 
 # Env vars:
 # AREA_GEOJSON
@@ -26,6 +28,26 @@ from raven import Client
 # EMAIL_RECIPIENTS
 # EMAIL_LANGUAGE
 # CONFIG
+
+psql_db = PostgresqlDatabase("bard")
+
+
+class PointField(Field):
+    db_field = 'geometry(Point,4326)'
+    field_type = 'geometry(Point,4326)'
+
+
+class BaseModel(Model):
+    """A base model that will use our Postgresql database"""
+    class Meta:
+        database = psql_db
+
+
+class CacheNode(BaseModel):
+    id = BigIntegerField()
+    version = IntegerField()
+    tag = HStoreField()
+    geom = PointField()
 
 
 class ChangeHandler(osmium.SimpleHandler):
@@ -60,11 +82,12 @@ class ChangeHandler(osmium.SimpleHandler):
         :param user: database user
         :param password: database password
         :return: None
-        :rtype: None
+        :rtype: DbCache
         """
 
         self.cache = DbCache(host,db,user,password)
         self.cache_enabled = True
+        return self.cache
 
     def location_in_bbox(self, location):
         """
@@ -428,6 +451,7 @@ class ChangeHandler(osmium.SimpleHandler):
         except Exception as e:
             self.sentry_client.captureException()
 
+
 class DbCache(object):
 
     def __init__(self, host, database, user, password):
@@ -447,6 +471,13 @@ class DbCache(object):
         self.database = database
         self.user = user
         self.password = password
+        psql_db = PostgresqlDatabase(
+            host=self.host,
+            database=self.database,
+            user=self.user,
+            password=self.password,
+            register_hstore=True
+        )
         self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
         psycopg2.extras.register_hstore(self.con)
         self.pending_nodes = 0
@@ -467,14 +498,14 @@ class DbCache(object):
         Initializes the database
         :return: None
         """
-
-        pkg_dir, this_filename = os.path.split(__file__)
-        schema_url = os.path.join(pkg_dir, 'schema.sql')
-        with open(schema_url, "r") as f:
-            cur = self.con.cursor()
-            sql = f.read()
-            cur.execute(sql)
-            self.con.commit()
+        psql_db.create_tables([CacheNode])
+        #pkg_dir, this_filename = os.path.split(__file__)
+        #schema_url = os.path.join(pkg_dir, 'schema.sql')
+        #with open(schema_url, "r") as f:
+        #    cur = self.con.cursor()
+        #    sql = f.read()
+        #    cur.execute(sql)
+        #    self.con.commit()
 
     def add_node(self, identifier, version, x, y, tags):
         """
@@ -660,7 +691,7 @@ class Bard(object):
 
         if host is not None and db is not None and user is not None and password is not None:
             self.has_cache = True
-            self.handler.set_cache(host, db, user, password)
+            self.cache = self.handler.set_cache(host, db, user, password)
         else:
             self.has_cache = False
             self.cache = None
