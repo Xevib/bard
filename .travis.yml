@@ -19,6 +19,7 @@ install:
  - pip install -r requirements-dev.txt
  - pip install coveralls
  - pip install osmium
+ - pip install .
 before_script:
   - sudo apt-cache search postgis
   - sudo apt-get install -y  postgresql-9.5-postgis-2.3
