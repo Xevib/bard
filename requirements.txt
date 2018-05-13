@@ -10,3 +10,4 @@ raven
 click
 osmium
 psycopg2
+peewee
