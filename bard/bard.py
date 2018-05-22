@@ -668,14 +668,15 @@ class Bard(object):
     Class that process the OSC files
     """
 
-    def __init__(self, host=None, db=None, user=None, password=None):
+    def __init__(self, host=None, db=None, user=None, password=None, initialize=False):
         """
         Initiliazes the class
 
         :param host: Database host
         :param db: Database name
         :param user: Database user
-        :param password: Databse password
+        :param password: Database password
+        :param initialize: Indicates if the db is in  initialization
         """
 
         self.conf = {}
@@ -685,9 +686,10 @@ class Bard(object):
         self.changesets = []
         self.stats = {}
 
-        if host is not None and db is not None and user is not None and password is not None:
+        if host is not None and db is not None and user is not None and password is not None and not initialize:
             self.has_cache = True
             self.handler.set_cache(host, db, user, password)
+            self.cache = DbCache(host, db, user, password)
         else:
             self.has_cache = False
             self.cache = None
