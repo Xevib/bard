@@ -518,8 +518,10 @@ class DbCache(object):
         #cur = self.con.cursor()
 
         params = (identifier, version, tags, "POINT({} {})".format(x,y))
-        cache_node = CacheNode().insert().params(params)
-        self.eng.execute(cache_node)
+
+        cache_node = CacheNode()
+        cn_query = cache_node.insert().params(params)
+        self.eng.execute(cn_query)
         #insert_sql = """INSERT INTO cache_node
         #                  VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
         #
