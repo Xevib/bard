@@ -19,6 +19,12 @@ from .osc import OSC
 
 from raven import Client
 
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.dialects.postgresql import HSTORE
+from geoalchemy2 import Geometry
+from sqlalchemy import create_engine
+
 # Env vars:
 # AREA_GEOJSON
 # MAILGUN_DOMAIN
@@ -26,6 +32,16 @@ from raven import Client
 # EMAIL_RECIPIENTS
 # EMAIL_LANGUAGE
 # CONFIG
+
+Base = declarative_base()
+
+
+class CacheNode(Base):
+    __tablename__ = "cache_node"
+    id = Column("id", Integer, primary_key=True)
+    version = Column("version", Integer)
+    tag = Column("tag",HSTORE)
+    geom = Column("geom",Geometry("POINT"))
 
 
 class ChangeHandler(osmium.SimpleHandler):
@@ -447,6 +463,13 @@ class DbCache(object):
         self.database = database
         self.user = user
         self.password = password
+        pg_url = 'postgresql://{}:{}@{}/{}'.format(
+            self.user,
+            self.password,
+            self.host,
+            self.database
+        )
+        self.eng = create_engine(pg_url, echo=True)
         self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
         psycopg2.extras.register_hstore(self.con)
         self.pending_nodes = 0
@@ -492,13 +515,17 @@ class DbCache(object):
         :type tags: dict
         :return: None
         """
-        cur = self.con.cursor()
-        insert_sql = """INSERT INTO cache_node
-                          VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
-                         
-        """
-        cur.execute(insert_sql, (identifier, version, tags, x, y))
-        cur.close()
+        #cur = self.con.cursor()
+
+        params = (identifier, version, tags, "POINT({} {})".format(x,y))
+        cache_node = CacheNode().insert().params(params)
+        self.eng.execute(cache_node)
+        #insert_sql = """INSERT INTO cache_node
+        #                  VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
+        #
+        #"""
+        #cur.execute(insert_sql, (identifier, version, tags, x, y))
+        #cur.close()
         self.pending_nodes += 1
 
     def get_pending_nodes(self):
