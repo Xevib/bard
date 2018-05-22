@@ -31,7 +31,7 @@ def bard(host, db, user, password, initialize, file):
 
     client = Client()
     try:
-        c = Bard(host, db, user, password)
+        c = Bard(host, db, user, password, initialize)
         if initialize:
             c.initialize_db()
         else:
