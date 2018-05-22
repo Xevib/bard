@@ -33,6 +33,9 @@ from sqlalchemy import create_engine
 # EMAIL_LANGUAGE
 # CONFIG
 
+
+from sqlalchemy import Table, Column, Integer, String, MetaData
+
 Base = declarative_base()
 
 
@@ -41,7 +44,7 @@ class CacheNode(Base):
     id = Column("id", Integer, primary_key=True)
     version = Column("version", Integer)
     tag = Column("tag",HSTORE)
-    geom = Column("geom",Geometry("POINT"))
+    geom = Column("geom",Geometry("POINT", srid=4326))
 
 
 class ChangeHandler(osmium.SimpleHandler):
@@ -515,13 +518,23 @@ class DbCache(object):
         :type tags: dict
         :return: None
         """
+        from sqlalchemy.orm import sessionmaker
+
+
         #cur = self.con.cursor()
 
-        params = (identifier, version, tags, "POINT({} {})".format(x,y))
-
-        cache_node = CacheNode()
-        cn_query = cache_node.insert().params(params)
-        self.eng.execute(cn_query)
+        params = {
+            "id":identifier,
+            "version":version,
+            "tag":tags,
+            "geom":"SRID=4326;POINT({} {})".format(x,y)
+        }
+        Session = sessionmaker(bind=self.eng)
+        session = Session()
+        cache_node = CacheNode(**params)
+        session.add(cache_node)
+        session.commit()
+        #self.eng.execute(cache_node)
         #insert_sql = """INSERT INTO cache_node
         #                  VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
         #
