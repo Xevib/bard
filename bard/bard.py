@@ -473,6 +473,9 @@ class DbCache(object):
             self.database
         )
         self.eng = create_engine(pg_url, echo=True)
+        from sqlalchemy.orm import sessionmaker
+        Session = sessionmaker(bind=self.eng)
+        self.session = Session()
         self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
         psycopg2.extras.register_hstore(self.con)
         self.pending_nodes = 0
@@ -487,6 +490,7 @@ class DbCache(object):
         self.pending_nodes = 0
         self.pending_ways = 0
         self.con.commit()
+        self.session.commit()
 
     def initialize(self):
         """
@@ -518,29 +522,14 @@ class DbCache(object):
         :type tags: dict
         :return: None
         """
-        from sqlalchemy.orm import sessionmaker
-
-
-        #cur = self.con.cursor()
-
         params = {
             "id":identifier,
             "version":version,
             "tag":tags,
             "geom":"SRID=4326;POINT({} {})".format(x,y)
         }
-        Session = sessionmaker(bind=self.eng)
-        session = Session()
         cache_node = CacheNode(**params)
-        session.add(cache_node)
-        session.commit()
-        #self.eng.execute(cache_node)
-        #insert_sql = """INSERT INTO cache_node
-        #                  VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
-        #
-        #"""
-        #cur.execute(insert_sql, (identifier, version, tags, x, y))
-        #cur.close()
+        self.session.add(cache_node)
         self.pending_nodes += 1
 
     def get_pending_nodes(self):

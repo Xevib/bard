@@ -11,6 +11,7 @@ if sys.version_info[0] == 2:
 else:
     from unittest.mock import MagicMock
 
+from sqlalchemy import create_engine
 
 class CacheTest(unittest.TestCase):
     """
@@ -25,6 +26,16 @@ class CacheTest(unittest.TestCase):
         """
         self.cache = DbCache("localhost", "bard", "postgres", "postgres")
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
+        pg_url = 'postgresql://{}:{}@{}/{}'.format(
+            "localohst",
+            "postgres",
+            "postgres",
+            "bard"
+        )
+        self.eng = create_engine(pg_url, echo=True)
+        from sqlalchemy.orm import sessionmaker
+        Session = sessionmaker(bind=self.eng)
+        self.session = Session()
 
     def tearDown(self):
         """
@@ -161,7 +172,7 @@ class CacheTest(unittest.TestCase):
         self.cache.add_node(42, 1, 1.23, 2.42,{"building": "yes"})
         self.cache.add_node(42, 2, 2.22, 0.23,{"building": "yes", "name":"test"})
         self.cache.add_node(43, 1, 2.99, 0.99,{})
-        self.connection.commit()
+        self.cache.commit()
         nod_42 = {
             "data":{
                 "id": 42,
