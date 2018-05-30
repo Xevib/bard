@@ -40,7 +40,7 @@ from sqlalchemy import Table, Column, Integer, String, MetaData
 Base = declarative_base()
 
 
-class CacheNode(MetaData):
+class CacheNode(Base):
     __tablename__ = "cache_node"
     id = Column("id", Integer, primary_key=True)
     version = Column("version", Integer)
@@ -502,6 +502,8 @@ class DbCache(object):
         pkg_dir, this_filename = os.path.split(__file__)
         MetaData.create_all()
         schema_url = os.path.join(pkg_dir, 'schema.sql')
+        cache_node = CacheNode()
+        cache_node.create(self.eng)
         with open(schema_url, "r") as f:
             cur = self.con.cursor()
             sql = f.read()
