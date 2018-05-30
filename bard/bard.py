@@ -23,8 +23,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.dialects.postgresql import HSTORE
 from geoalchemy2 import Geometry
-from sqlalchemy import create_engine
-from sqlalchemy import MetaData
+from sqlalchemy import create_engine, MetaData, and_
 
 # Env vars:
 # AREA_GEOJSON
@@ -502,8 +501,9 @@ class DbCache(object):
         pkg_dir, this_filename = os.path.split(__file__)
         MetaData.create_all()
         schema_url = os.path.join(pkg_dir, 'schema.sql')
-        cache_node = CacheNode()
-        cache_node.create(self.eng)
+        Base.metadata.create_all()
+        #cache_node = CacheNode()
+        #cache_node.create(self.eng)
         with open(schema_url, "r") as f:
             cur = self.con.cursor()
             sql = f.read()
