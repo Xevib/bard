@@ -15,7 +15,7 @@ import psycopg2
 import psycopg2.extras
 from psycopg2.extensions import AsIs
 
-from .osc import OSC
+from bard.osc import  OSC
 
 from raven import Client
 
