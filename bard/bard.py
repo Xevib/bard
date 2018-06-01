@@ -499,9 +499,8 @@ class DbCache(object):
         """
         print("Initializing database")
         pkg_dir, this_filename = os.path.split(__file__)
-        MetaData.create_all()
         schema_url = os.path.join(pkg_dir, 'schema.sql')
-        Base.metadata.create_all()
+        Base.metadata.create_all(self.eng)
         #cache_node = CacheNode()
         #cache_node.create(self.eng)
         with open(schema_url, "r") as f:
