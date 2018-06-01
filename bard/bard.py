@@ -477,7 +477,10 @@ class DbCache(object):
         Session = sessionmaker(bind=self.eng)
         self.session = Session()
         self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
-        psycopg2.extras.register_hstore(self.con)
+        try:
+            psycopg2.extras.register_hstore(self.con)
+        except Exception:
+            pass
         self.pending_nodes = 0
         self.pending_ways = 0
 
