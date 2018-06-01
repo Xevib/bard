@@ -497,7 +497,7 @@ class DbCache(object):
         Initializes the database
         :return: None
         """
-
+        print("Initializing database")
         pkg_dir, this_filename = os.path.split(__file__)
         MetaData.create_all()
         schema_url = os.path.join(pkg_dir, 'schema.sql')
