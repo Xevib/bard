@@ -693,8 +693,9 @@ class Bard(object):
         self.osc_file = None
         self.changesets = []
         self.stats = {}
+        self.initialize = initialize
 
-        if host is not None and db is not None and user is not None and password is not None and not initialize:
+        if host is not None and db is not None and user is not None and password is not None:
             self.has_cache = True
             self.handler.set_cache(host, db, user, password)
             self.cache = DbCache(host, db, user, password)
