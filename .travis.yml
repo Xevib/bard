@@ -25,8 +25,8 @@ before_script:
   - sudo apt-get install -y  postgresql-9.5-postgis-2.3
   - psql -c 'create database bard;' -U postgres -h localhost
   - psql -c "create extension postgis" -U postgres -h localhost -d bard
-  - bard --initialize --host localhost --db bard --user postgres --password postgres
   - psql -f bard/schema.sql -U postgres -h localhost -d bard
+  - bard --initialize --host localhost --db bard --user postgres --password postgres
 script:
  - ./update_pot.sh
  - PYTHONPATH="." coverage run --include=bard/bard.py test/test.py && coverage report
