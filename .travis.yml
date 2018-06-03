@@ -26,7 +26,6 @@ before_script:
   - psql -c 'create database bard;' -U postgres -h localhost
   - psql -c "create extension postgis" -U postgres -h localhost -d bard
   - psql -c "create extension hstore" -U postgres -h localhost -d bard
-  - psql -f bard/schema.sql -U postgres -h localhost -d bard
   - bard --initialize --host localhost --db bard --user postgres --password postgres
 script:
  - ./update_pot.sh
