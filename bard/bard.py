@@ -15,9 +15,15 @@ import psycopg2
 import psycopg2.extras
 from psycopg2.extensions import AsIs
 
-from .osc import OSC
+from bard.osc import  OSC
 
 from raven import Client
+
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.dialects.postgresql import HSTORE
+from geoalchemy2 import Geometry
+from sqlalchemy import create_engine, MetaData, and_
 
 # Env vars:
 # AREA_GEOJSON
@@ -26,6 +32,19 @@ from raven import Client
 # EMAIL_RECIPIENTS
 # EMAIL_LANGUAGE
 # CONFIG
+
+
+from sqlalchemy import Table, Column, Integer, String, MetaData
+
+Base = declarative_base()
+
+
+class CacheNode(Base):
+    __tablename__ = "cache_node"
+    id = Column("id", Integer, primary_key=True)
+    version = Column("version", Integer)
+    tag = Column("tag",HSTORE)
+    geom = Column("geom",Geometry("POINT", srid=4326))
 
 
 class ChangeHandler(osmium.SimpleHandler):
@@ -447,8 +466,21 @@ class DbCache(object):
         self.database = database
         self.user = user
         self.password = password
+        pg_url = 'postgresql://{}:{}@{}/{}'.format(
+            self.user,
+            self.password,
+            self.host,
+            self.database
+        )
+        self.eng = create_engine(pg_url, echo=True)
+        from sqlalchemy.orm import sessionmaker
+        Session = sessionmaker(bind=self.eng)
+        self.session = Session()
         self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
-        psycopg2.extras.register_hstore(self.con)
+        try:
+            psycopg2.extras.register_hstore(self.con)
+        except Exception:
+            pass
         self.pending_nodes = 0
         self.pending_ways = 0
 
@@ -461,15 +493,19 @@ class DbCache(object):
         self.pending_nodes = 0
         self.pending_ways = 0
         self.con.commit()
+        self.session.commit()
 
     def initialize(self):
         """
         Initializes the database
         :return: None
         """
-
+        print("Initializing database")
         pkg_dir, this_filename = os.path.split(__file__)
         schema_url = os.path.join(pkg_dir, 'schema.sql')
+        Base.metadata.create_all(self.eng)
+        #cache_node = CacheNode()
+        #cache_node.create(self.eng)
         with open(schema_url, "r") as f:
             cur = self.con.cursor()
             sql = f.read()
@@ -492,13 +528,14 @@ class DbCache(object):
         :type tags: dict
         :return: None
         """
-        cur = self.con.cursor()
-        insert_sql = """INSERT INTO cache_node
-                          VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
-                         
-        """
-        cur.execute(insert_sql, (identifier, version, tags, x, y))
-        cur.close()
+        params = {
+            "id":identifier,
+            "version":version,
+            "tag":tags,
+            "geom":"SRID=4326;POINT({} {})".format(x,y)
+        }
+        cache_node = CacheNode(**params)
+        self.session.add(cache_node)
         self.pending_nodes += 1
 
     def get_pending_nodes(self):
@@ -641,14 +678,15 @@ class Bard(object):
     Class that process the OSC files
     """
 
-    def __init__(self, host=None, db=None, user=None, password=None):
+    def __init__(self, host=None, db=None, user=None, password=None, initialize=False):
         """
         Initiliazes the class
 
         :param host: Database host
         :param db: Database name
         :param user: Database user
-        :param password: Databse password
+        :param password: Database password
+        :param initialize: Indicates if the db is in  initialization
         """
 
         self.conf = {}
@@ -657,10 +695,12 @@ class Bard(object):
         self.osc_file = None
         self.changesets = []
         self.stats = {}
+        self.initialize = initialize
 
         if host is not None and db is not None and user is not None and password is not None:
             self.has_cache = True
             self.handler.set_cache(host, db, user, password)
+            self.cache = DbCache(host, db, user, password)
         else:
             self.has_cache = False
             self.cache = None
