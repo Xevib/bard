@@ -2,7 +2,9 @@ from __future__ import absolute_import
 import os
 import re
 import sys
+
 from tempfile import mkstemp
+
 
 from configobj import ConfigObj
 import osmium
@@ -13,11 +15,15 @@ from osconf import config_from_environment
 import osmapi
 import psycopg2
 import psycopg2.extras
-from psycopg2.extensions import AsIs
+
 
 from .osc import OSC
 
 from raven import Client
+from pony.orm import *
+from pony.orm.ormtypes import *
+
+from bard.postgis import *
 
 # Env vars:
 # AREA_GEOJSON
@@ -27,6 +33,25 @@ from raven import Client
 # EMAIL_LANGUAGE
 # CONFIG
 
+db = Database()
+
+#def test(entrada):
+#    print(entrada)
+
+#Point = FuncType(test)
+
+class Cache_Node(db.Entity):
+    id = PrimaryKey(int, auto=True)
+    osm_id = Required(int, sql_type="BIGINT")
+    version = Optional(int)
+    tag = Optional(Json)
+    geom = Optional(Point, srid=4326)
+
+class Cache_Way(db.Entity):
+    osm_id = Required(int,sql_type="BIGINT")
+    version = Optional(int)
+    tag = Optional(Json)
+    geom = Optional(Line, srid=4326)
 
 class ChangeHandler(osmium.SimpleHandler):
     """
