@@ -11,3 +11,4 @@ click
 osmium
 psycopg2
 pony
+shapely
