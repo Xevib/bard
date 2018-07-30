@@ -16,6 +16,9 @@ class CacheTest(unittest.TestCase):
     """
     Test suite for cache
     """
+    @classmethod
+    def setUpClass(cls):
+        cls.initialized = False
 
     def setUp(self):
         """
@@ -25,6 +28,9 @@ class CacheTest(unittest.TestCase):
         """
         self.cache = DbCache("localhost", "bard", "postgres", "postgres")
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
+        if self.cache.db.schema is None:
+            self.cache.initialize()
+            self.initialized = True
 
     def tearDown(self):
         """
@@ -49,7 +55,10 @@ class CacheTest(unittest.TestCase):
         :return:
         """
         self.cur = self.connection.cursor()
-        self.cur.execute("DELETE FROM cache_node;")
+        try:
+            self.cur.execute("DELETE FROM cache_node;")
+        except:
+            pass
         self.connection.commit()
         self.cache.add_node(123, 1, 1.23, 2.42, {})
         self.cache.commit()
@@ -138,8 +147,8 @@ class CacheTest(unittest.TestCase):
             "data": {
                 "id": 1,
                 "version": 2,
-                "tag": {},
-                "coordinates": [[[1, 1], [2, 2]]]
+                "tag": None,
+                "coordinates": [[(1.0, 1.0), (2.0, 2.0)]]
             }
 
         }
@@ -182,7 +191,7 @@ class CacheTest(unittest.TestCase):
                 "version": 1,
                 "lat": 2.99,
                 "lon": 0.99,
-                "tag": {}
+                "tag": None
             }
         }
         self.assertEqual(self.cache.get_node(42, 2), nod_42)
