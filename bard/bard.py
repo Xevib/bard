@@ -480,8 +480,6 @@ class DbCache(object):
             )
         self.db.provider.converter_classes.append((Point, PointConverter))
         self.db.provider.converter_classes.append((Line, LineConverter))
-        self.con = psycopg2.connect(host=self.host, database=self.database,user=self.user,password=self.password)
-#        psycopg2.extras.register_hstore(self.con)
         self.pending_nodes = 0
         self.pending_ways = 0
 
