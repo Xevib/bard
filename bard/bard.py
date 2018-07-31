@@ -495,14 +495,23 @@ class DbCache(object):
         self.pending_ways = 0
         self.con.commit()
 
+    @db_session
+    def initialize_postigs(self):
+        """
+        Initializes teh postgis extension if its not installed
+        :return:
+        """
+        try:
+            db.execute("SELECT PostGIS_full_version();")
+        except Exception:
+            db.execute("CREATE EXTENSION POSTGIS;")
+
     def initialize(self):
         """
         Initializes the database
         :return: None
         """
-        cur = self.con.cursor()
-        cur.execute("CREATE EXTENSION POSTGIS;")
-        self.con.commit()
+        self.initialize_postigs()
         self.db.generate_mapping(create_tables=True)
 
         pkg_dir, this_filename = os.path.split(__file__)
