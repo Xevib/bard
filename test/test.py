@@ -16,6 +16,9 @@ class CacheTest(unittest.TestCase):
     """
     Test suite for cache
     """
+    @classmethod
+    def setUpClass(cls):
+        cls.initialized = False
 
     def setUp(self):
         """
@@ -25,6 +28,9 @@ class CacheTest(unittest.TestCase):
         """
         self.cache = DbCache("localhost", "bard", "postgres", "postgres")
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
+        if self.cache.db.schema is None:
+            self.cache.initialize()
+            self.initialized = True
 
     def tearDown(self):
         """
@@ -49,7 +55,10 @@ class CacheTest(unittest.TestCase):
         :return:
         """
         self.cur = self.connection.cursor()
-        self.cur.execute("DELETE FROM cache_node;")
+        try:
+            self.cur.execute("DELETE FROM cache_node;")
+        except:
+            pass
         self.connection.commit()
         self.cache.add_node(123, 1, 1.23, 2.42, {})
         self.cache.commit()
@@ -127,6 +136,7 @@ class CacheTest(unittest.TestCase):
         self.cur.execute("DELETE FROM cache_way;")
         self.connection.commit()
         self.cache.add_way(1, 2, nl, {})
+
         self.cache.commit()
 
         self.cur.execute("SELECT count(*) from cache_way;")
@@ -138,8 +148,8 @@ class CacheTest(unittest.TestCase):
             "data": {
                 "id": 1,
                 "version": 2,
-                "tag": {},
-                "coordinates": [[[1, 1], [2, 2]]]
+                "tag": None,
+                "coordinates": [[(1.0, 1.0), (2.0, 2.0)]]
             }
 
         }
@@ -148,6 +158,9 @@ class CacheTest(unittest.TestCase):
         self.assertEqual(way2, expected_data)
         way_none = self.cache.get_way(23212)
         self.assertIsNone(way_none)
+        self.cache.add_way(4, 2, nl, {"test": "ok"})
+        self.cache.get_way(4)
+
 
     def test_get_node(self):
         """
@@ -161,6 +174,7 @@ class CacheTest(unittest.TestCase):
         self.cache.add_node(42, 1, 1.23, 2.42,{"building": "yes"})
         self.cache.add_node(42, 2, 2.22, 0.23,{"building": "yes", "name":"test"})
         self.cache.add_node(43, 1, 2.99, 0.99,{})
+        self.cache.add_node(44, 1, 2.99, 0.99,None)
         self.connection.commit()
         nod_42 = {
             "data":{
@@ -182,11 +196,23 @@ class CacheTest(unittest.TestCase):
                 "version": 1,
                 "lat": 2.99,
                 "lon": 0.99,
-                "tag": {}
+                "tag": None
             }
         }
+
+        nod_44 = {
+            "data": {
+                "id": 44,
+                "version": 1,
+                "lat": 2.99,
+                "lon": 0.99,
+                "tag": None
+            }
+        }
+
         self.assertEqual(self.cache.get_node(42, 2), nod_42)
         self.assertEqual(self.cache.get_node(43), nod_43)
+        self.assertEqual(self.cache.get_node(44), nod_44)
         self.assertIsNone(self.cache.get_node(1))
 
 

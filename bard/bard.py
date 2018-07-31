@@ -2,7 +2,9 @@ from __future__ import absolute_import
 import os
 import re
 import sys
+
 from tempfile import mkstemp
+
 
 from configobj import ConfigObj
 import osmium
@@ -13,11 +15,15 @@ from osconf import config_from_environment
 import osmapi
 import psycopg2
 import psycopg2.extras
-from psycopg2.extensions import AsIs
+
 
 from .osc import OSC
 
 from raven import Client
+from pony.orm import *
+from pony.orm.ormtypes import *
+
+from bard.postgis import *
 
 # Env vars:
 # AREA_GEOJSON
@@ -27,6 +33,25 @@ from raven import Client
 # EMAIL_LANGUAGE
 # CONFIG
 
+db = Database()
+
+#def test(entrada):
+#    print(entrada)
+
+#Point = FuncType(test)
+
+class Cache_Node(db.Entity):
+    id = PrimaryKey(int, auto=True)
+    osm_id = Required(int, sql_type="BIGINT")
+    version = Optional(int)
+    tag = Optional(Json)
+    geom = Optional(Point, srid=4326)
+
+class Cache_Way(db.Entity):
+    osm_id = Required(int,sql_type="BIGINT")
+    version = Optional(int)
+    tag = Optional(Json)
+    geom = Optional(Line, srid=4326)
 
 class ChangeHandler(osmium.SimpleHandler):
     """
@@ -447,8 +472,14 @@ class DbCache(object):
         self.database = database
         self.user = user
         self.password = password
-        self.con = psycopg2.connect(host=self.host, database=self.database, user=self.user,password=self.password)
-        psycopg2.extras.register_hstore(self.con)
+        self.db = db
+        if self.db.provider is None:
+            self.db.bind(
+                provider="postgres", host=self.host, database=self.database,
+                user=self.user,password=self.password
+            )
+        self.db.provider.converter_classes.append((Point, PointConverter))
+        self.db.provider.converter_classes.append((Line, LineConverter))
         self.pending_nodes = 0
         self.pending_ways = 0
 
@@ -460,22 +491,29 @@ class DbCache(object):
         """
         self.pending_nodes = 0
         self.pending_ways = 0
-        self.con.commit()
+        self.db.commit()
+
+    @db_session
+    def initialize_postigs(self):
+        """
+        Initializes teh postgis extension if its not installed
+        :return:
+        """
+        try:
+            db.execute("SELECT PostGIS_full_version();")
+        except Exception:
+            db.rollback()
+            db.execute("CREATE EXTENSION POSTGIS;")
 
     def initialize(self):
         """
         Initializes the database
         :return: None
         """
+        self.initialize_postigs()
+        self.db.generate_mapping(create_tables=True)
 
-        pkg_dir, this_filename = os.path.split(__file__)
-        schema_url = os.path.join(pkg_dir, 'schema.sql')
-        with open(schema_url, "r") as f:
-            cur = self.con.cursor()
-            sql = f.read()
-            cur.execute(sql)
-            self.con.commit()
-
+    @db_session
     def add_node(self, identifier, version, x, y, tags):
         """
         Adds a node to the cache
@@ -492,13 +530,11 @@ class DbCache(object):
         :type tags: dict
         :return: None
         """
-        cur = self.con.cursor()
-        insert_sql = """INSERT INTO cache_node
-                          VALUES (%s,%s,%s,ST_SetSRID(ST_MAKEPOINT(%s, %s),4326));
-                         
-        """
-        cur.execute(insert_sql, (identifier, version, tags, x, y))
-        cur.close()
+        if tags is None:
+            tags = None
+        elif tags == {}:
+            tags = None
+        Cache_Node(osm_id=identifier, version=version, tag=tags, geom=(x, y))
         self.pending_nodes += 1
 
     def get_pending_nodes(self):
@@ -518,7 +554,7 @@ class DbCache(object):
         :rtype: int
         """
         return  self.pending_ways
-
+    @db_session
     def get_way(self, identifier, version=None):
         """
         Gets the way from the cache
@@ -530,38 +566,24 @@ class DbCache(object):
         :return: Data of the way
         :rtype: dict
         """
-        import json
-        sql_id = """
-                SELECT id,version,st_asgeojson(geom),tag
-                FROM cache_way where id = %s;
-                """
 
-        sql_version = """
-                SELECT id,version,st_asgeojson(geom),tag
-                FROM cache_way WHERE id= %s AND version=%s;
-                """
-        cur = self.con.cursor()
         if version is None:
-            cur.execute(sql_id, (identifier,))
+            way = Cache_Way.get(osm_id=identifier)
         else:
-            cur.execute(sql_version, (identifier, version))
+            way = Cache_Way.get(osm_id=identifier, version=version)
 
-        data = cur.fetchone()
-        if data:
-            coord = json.loads(data[2])["coordinates"]
-            pairs = []
-            for indx in range(len(coord))[::2]:
-                pairs.append([coord[indx],coord[indx + 1]])
+        if way:
             return {"data":
                 {
-                    "id": data[0],
-                    "version": data[1],
-                    "coordinates": pairs,
-                    "tag": data[3]
+                    "id": way.osm_id,
+                    "version": way.version,
+                    "coordinates": way.geom,
+                    "tag": way.tag
                 }
             }
         return None
 
+    @db_session
     def get_node(self, identifier, version=None):
         """
         Returns a node of the cache, if version is not specified returns the last version avaible
@@ -573,34 +595,23 @@ class DbCache(object):
         :return: dict with identifier, verison,x,y
         :rtype:dict
         """
-        sql_id = """
-        SELECT id,version,st_x(geom),st_y(geom),tag
-        FROM cache_node where id = %s;
-        """
-
-        sql_version = """
-        SELECT id,version,st_x(geom),st_y(geom),tag
-        FROM cache_node WHERE id= %s AND version=%s;
-        """
-        cur = self.con.cursor()
         if version is None:
-            cur.execute(sql_id, (identifier,))
+            node = Cache_Node.get(osm_id=identifier)
         else:
-            cur.execute(sql_version, (identifier, version))
-
-        data = cur.fetchone()
-        if data:
+            node = Cache_Node.get(osm_id=identifier,version=version)
+        if node:
             return {
                 "data": {
-                    "id": data[0],
-                    "version": data[1],
-                    "lat": data[2],
-                    "lon": data[3],
-                    "tag": data[4]
+                    "id": node.osm_id,
+                    "version": node.version,
+                    "lat": node.geom[0],
+                    "lon": node.geom[1],
+                    "tag": node.tag
                 }
             }
         return None
 
+    @db_session
     def add_way(self, identifier, version, nodes, tags):
         """
         Adds a way into the cache
@@ -615,11 +626,7 @@ class DbCache(object):
         :return: None
         :rtype: None
         """
-        cur = self.con.cursor()
-        insert_sql = """INSERT INTO cache_way
-                          VALUES (%s,%s,%s,ST_SetSRID(ST_MakeLine(ARRAY[%s]),4326));
 
-        """
         geom = []
         has_geom = False
         for node in nodes:
@@ -630,10 +637,11 @@ class DbCache(object):
                 return False
 
         if has_geom:
-            cur.execute(insert_sql, (identifier, version, tags, AsIs(",".join(geom))))
+            if tags and tags != {}:
+                Cache_Way(osm_id=identifier, version=version, tag=tags, geom=nodes)
+            else:
+                Cache_Way(osm_id=identifier, version=version, geom=nodes)
             self.pending_ways += 1
-
-
 
 
 class Bard(object):
