@@ -28,7 +28,7 @@ class OSC(object):
         Getter function for periodicity
         :return:
         """
-        return self.periodicty
+        return self._periodicty
 
     @periodicty.setter
     def periodicty(self, value):
@@ -38,7 +38,7 @@ class OSC(object):
         :param value: value to set
         :return: None
         """
-        self.periodicty = value
+        self._periodicty = value
 
     def get_state(self):
         """
