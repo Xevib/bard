@@ -136,6 +136,7 @@ class CacheTest(unittest.TestCase):
         self.cur.execute("DELETE FROM cache_way;")
         self.connection.commit()
         self.cache.add_way(1, 2, nl, {})
+
         self.cache.commit()
 
         self.cur.execute("SELECT count(*) from cache_way;")
@@ -157,6 +158,9 @@ class CacheTest(unittest.TestCase):
         self.assertEqual(way2, expected_data)
         way_none = self.cache.get_way(23212)
         self.assertIsNone(way_none)
+        self.cache.add_way(4, 2, nl, {"test": "ok"})
+        self.cache.get_way(4)
+
 
     def test_get_node(self):
         """
