@@ -513,14 +513,7 @@ class DbCache(object):
         """
         self.initialize_postigs()
         self.db.generate_mapping(create_tables=True)
-
-        pkg_dir, this_filename = os.path.split(__file__)
-        schema_url = os.path.join(pkg_dir, 'schema.sql')
-        with open(schema_url, "r") as f:
-
-            sql = f.read()
-            cur.execute(sql)
-            self.con.commit()
+        
     @db_session
     def add_node(self, identifier, version, x, y, tags):
         """
