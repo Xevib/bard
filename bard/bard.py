@@ -566,25 +566,11 @@ class DbCache(object):
         :rtype: dict
         """
 
-        import json
-        sql_id = """
-                SELECT id,version,st_asgeojson(geom),tag
-                FROM cache_way where id = %s;
-                """
-
-        sql_version = """
-                SELECT id,version,st_asgeojson(geom),tag
-                FROM cache_way WHERE id= %s AND version=%s;
-                """
-        cur = self.con.cursor()
         if version is None:
             way = Cache_Way.get(osm_id=identifier)
-            #cur.execute(sql_id, (identifier,))
         else:
             way = Cache_Way.get(osm_id=identifier, version=version)
-            #cur.execute(sql_version, (identifier, version))
 
-        #data = cur.fetchone()
         if way:
             return {"data":
                 {
