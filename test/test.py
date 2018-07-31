@@ -170,6 +170,7 @@ class CacheTest(unittest.TestCase):
         self.cache.add_node(42, 1, 1.23, 2.42,{"building": "yes"})
         self.cache.add_node(42, 2, 2.22, 0.23,{"building": "yes", "name":"test"})
         self.cache.add_node(43, 1, 2.99, 0.99,{})
+        self.cache.add_node(44, 1, 2.99, 0.99,None)
         self.connection.commit()
         nod_42 = {
             "data":{
@@ -194,8 +195,20 @@ class CacheTest(unittest.TestCase):
                 "tag": None
             }
         }
+
+        nod_44 = {
+            "data": {
+                "id": 44,
+                "version": 1,
+                "lat": 2.99,
+                "lon": 0.99,
+                "tag": None
+            }
+        }
+
         self.assertEqual(self.cache.get_node(42, 2), nod_42)
         self.assertEqual(self.cache.get_node(43), nod_43)
+        self.assertEqual(self.cache.get_node(44), nod_44)
         self.assertIsNone(self.cache.get_node(1))
 
 
