@@ -502,6 +502,7 @@ class DbCache(object):
         try:
             db.execute("SELECT PostGIS_full_version();")
         except Exception:
+            db.rollback()
             db.execute("CREATE EXTENSION POSTGIS;")
 
     def initialize(self):
