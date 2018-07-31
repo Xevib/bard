@@ -493,7 +493,7 @@ class DbCache(object):
         """
         self.pending_nodes = 0
         self.pending_ways = 0
-        self.con.commit()
+        self.db.commit()
 
     @db_session
     def initialize_postigs(self):
@@ -513,7 +513,7 @@ class DbCache(object):
         """
         self.initialize_postigs()
         self.db.generate_mapping(create_tables=True)
-        
+
     @db_session
     def add_node(self, identifier, version, x, y, tags):
         """
