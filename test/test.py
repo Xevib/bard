@@ -29,6 +29,7 @@ class CacheTest(unittest.TestCase):
         self.cache = DbCache("localhost", "bard", "postgres", "postgres")
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
         if self.cache.db.schema is None:
+            self.cache.initialize_postigs()
             self.cache.initialize()
             self.initialized = True
 
