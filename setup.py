@@ -21,8 +21,7 @@ setup(
     package_data={
         'bard': [
             "bard/templates/text_template.txt",
-            "bard/templates/html_template.html",
-            "bard/schema.sql"
+            "bard/templates/html_template.html"
         ]
     }
 )
