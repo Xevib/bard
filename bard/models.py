@@ -6,8 +6,8 @@ from bard.bard import db
 
 class Cache_Node(db.Entity):
     id = PrimaryKey(int, auto=True)
-    osm_id = Required(int, sql_type="BIGINT")
-    version = Optional(int)
+    osm_id = Required(int, sql_type="BIGINT", index=True)
+    version = Optional(int, index=True)
     tag = Optional(Json)
     geom = Optional(Point, srid=4326)
 
