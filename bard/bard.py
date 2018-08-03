@@ -21,7 +21,6 @@ from .osc import OSC
 
 from raven import Client
 from pony.orm import *
-from pony.orm.ormtypes import *
 
 from bard.postgis import *
 
