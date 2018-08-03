@@ -30,6 +30,8 @@ class CacheTest(unittest.TestCase):
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
         if self.cache.db.schema is None:
             self.cache.initialize()
+            # Jus to ensure that don't raises error when is initialized twice
+            self.cache.initialize()
             self.initialized = True
 
     def tearDown(self):

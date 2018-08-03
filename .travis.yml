@@ -23,7 +23,6 @@ install:
 before_script:
   - sudo apt-cache search postgis
   - sudo apt-get install -y  postgresql-9.5-postgis-2.3
-  - psql -c 'create database bard;' -U postgres -h localhost
 script:
  - ./update_pot.sh
  - PYTHONPATH="." coverage run --include=bard/bard.py test/test.py && coverage report
