@@ -284,6 +284,7 @@ class ChangesWithinTest(unittest.TestCase):
         Tests initialize_db
         :return: None
         """
+        self.cw.has_cache = True
         self.cw.initialize_db()
 
     def test_osc1(self):
