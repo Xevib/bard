@@ -401,7 +401,7 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertEqual(
             data,
             {'date': date,
-             'tags': ['building', 'housenumber', 'highway'],
+             'tags': sorted(['building', 'housenumber', 'highway']),
              'changesets': [],
              'stats': []
              }

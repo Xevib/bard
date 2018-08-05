@@ -771,7 +771,7 @@ class Bard(object):
             'changesets': self.changesets,
             'stats': self.stats,
             'date': now.strftime("%B %d, %Y"),
-            'tags': list(self.conf['tags'].keys())
+            'tags': sorted(list(self.conf['tags'].keys()))
         }
         return  template_data
 
