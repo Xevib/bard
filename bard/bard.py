@@ -137,24 +137,6 @@ class ChangeHandler(osmium.SimpleHandler):
             lon = node[1]
         return self.north > lat > self.south and self.east > lon > self.west
 
-    def way_id_in_bbox(self, way_id):
-        """
-        Checks if an id of a way is in the bounding box
-
-        :param way_id: id of the way
-        :return:
-        """
-        osm_api = osmapi.OsmApi()
-        way = self.cache.get_way(way_id)
-        if not way:
-            way = osm_api.WayGet(way_id)
-        ret = False
-        index = 0
-        while not ret and index < len(way["nd"]):
-            ret = self.node_in_bbox(way["nd"][index])
-            index += 1
-        return ret
-
     def rel_in_bbox(self, relation):
         """
         Checks if the relation is in the bounding box
