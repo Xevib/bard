@@ -228,6 +228,13 @@ class HandlerTest(unittest.TestCase):
         """
         self.handler = ChangeHandler()
 
+    def test_set_cache(self):
+        """
+        Checks set_cache function
+        :return:
+        """
+        self.handler.set_cache("localhost", "bard", "postgres", "postgres")
+
     def test_in_bbox(self):
         """
         Tests the location_in_bbox of handler
