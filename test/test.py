@@ -394,7 +394,7 @@ class ChangesWithinTest(unittest.TestCase):
         self.cw.conf = conf
         self.cw.load_config(conf)
         self.cw.stats = []
-        from _datetime import datetime
+        from datetime import datetime
         now = datetime.now()
         date = now.strftime("%B %d, %Y")
         data = self.cw.generate_report_data()
