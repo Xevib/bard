@@ -310,6 +310,9 @@ class ChangesWithinTest(unittest.TestCase):
                     'type': 'node,way'
                 }
             },
+            "email":{
+                "language":"en"
+            },
             "url_locales": "locales"
         }
         self.cw.conf = conf
