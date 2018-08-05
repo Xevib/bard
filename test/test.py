@@ -366,6 +366,47 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertEqual(len(set(self.cw.stats["building"])), len(self.cw.stats["building"]))
         self.assertTrue(48595327 in self.cw.changesets)
 
+    def test_generate_template_data(self):
+        """
+
+        :return:
+        """
+        conf = {
+            'area': {
+                'bbox': ['41.9933', '2.8576', '41.9623', '2.7847']
+            },
+            'tags': {
+                'highway': {
+                    'tags': "highway=.*",
+                    'type': 'node,way'
+                },
+                "housenumber": {
+                    "tags": "addr:housenumber=.*",
+                    "type": "way,node"
+                },
+                "building": {
+                    "tags": "building=public",
+                    "type": "way,node"
+                }
+            },
+            "url_locales": "locales"
+        }
+        self.cw.conf = conf
+        self.cw.load_config(conf)
+        self.cw.stats = []
+        from _datetime import datetime
+        now = datetime.now()
+        date = now.strftime("%B %d, %Y")
+        data = self.cw.generate_report_data()
+        self.assertEqual(
+            data,
+            {'date': date,
+             'tags': ['building', 'highway', 'housenumber'],
+             'changesets': [],
+             'stats': []
+             }
+        )
+
     def test_relation(self):
         """
         Tests load of test1.osc

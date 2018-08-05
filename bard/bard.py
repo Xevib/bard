@@ -747,14 +747,15 @@ class Bard(object):
         self.stats = self.handler.stats
         self.stats["total"] = len(self.changesets)
 
-    def report(self):
+    def generate_report_data(self):
         """
-        Generates the report and sends it
+        Generates the data for the report
 
-        :return: None
+        :return:
+        :rtype: dict
         """
         from datetime import datetime
-        print ("self.changesets:{}".format(self.changesets))
+        print("self.changesets:{}".format(self.changesets))
         if len(self.changesets) > 1000:
             self.changesets = self.changesets[:999]
             self.stats[
@@ -770,8 +771,18 @@ class Bard(object):
             'changesets': self.changesets,
             'stats': self.stats,
             'date': now.strftime("%B %d, %Y"),
-            'tags': self.conf['tags'].keys()
+            'tags': list(self.conf['tags'].keys())
         }
+        return  template_data
+
+    def report(self):
+        """
+        Generates the report and sends it
+
+        :return: None
+        """
+        template_data = self.generate_report_data()
+
         html_version = self.html_tmpl.render(**template_data)
         text_version = self.text_tmpl.render(**template_data)
 
