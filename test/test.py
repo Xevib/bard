@@ -279,6 +279,13 @@ class ChangesWithinTest(unittest.TestCase):
         """
         self.cw = Bard()
 
+    def test_initialize(self):
+        """
+        Tests initialize_db
+        :return: None
+        """
+        self.cw.initialize_db()
+
     def test_osc1(self):
         """
         Tests load of test1.osc
