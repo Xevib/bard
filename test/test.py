@@ -285,6 +285,7 @@ class ChangesWithinTest(unittest.TestCase):
         :return: None
         """
         self.cw.has_cache = True
+        self.cw.cache = DbCache("localhost", "bard", "postgres", "postgres")
         self.cw.initialize_db()
 
     def test_osc1(self):
