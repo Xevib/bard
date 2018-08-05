@@ -492,7 +492,11 @@ class DbCache(object):
         :return: None
         """
         self.initialize_postigs()
-        self.db.generate_mapping(create_tables=True)
+        from pony.orm.core import MappingError
+        try:
+            self.db.generate_mapping(create_tables=True)
+        except MappingError:
+            pass
 
     @db_session
     def add_node(self, identifier, version, x, y, tags):
