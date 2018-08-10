@@ -230,16 +230,16 @@ class HandlerTest(unittest.TestCase):
 
     def test_node_in_bbox(self):
         """
-        Tests node_in_bbox function 
+        Tests node_in_bbox function
         :return:
         """
         self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
         node = {
-            "lat":2.81372,
-            "lon": 1.98268
+            "lon":2.81372,
+            "lat": 41.98268
         }
         self.assertTrue(self.handler.node_in_bbox(node))
-        node_list = [2.81372, 41.98268]
+        node_list = [41.98268,2.81372]
         self.assertTrue(self.handler.node_in_bbox(node_list))
 
     def test_set_cache(self):
