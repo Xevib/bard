@@ -495,7 +495,7 @@ class DbCache(object):
         from pony.orm.core import MappingError
         try:
             self.db.generate_mapping(create_tables=True)
-        except MappingError:
+        except:
             pass
 
     @db_session
