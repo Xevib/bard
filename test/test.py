@@ -230,7 +230,7 @@ class HandlerTest(unittest.TestCase):
 
     def test_node_in_bbox(self):
         """
-        Tests node_in_bbox function
+        Tests node_in_bbox function 
         :return:
         """
         self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
