@@ -137,24 +137,6 @@ class ChangeHandler(osmium.SimpleHandler):
             lon = node[1]
         return self.north > lat > self.south and self.east > lon > self.west
 
-    def way_id_in_bbox(self, way_id):
-        """
-        Checks if an id of a way is in the bounding box
-
-        :param way_id: id of the way
-        :return:
-        """
-        osm_api = osmapi.OsmApi()
-        way = self.cache.get_way(way_id)
-        if not way:
-            way = osm_api.WayGet(way_id)
-        ret = False
-        index = 0
-        while not ret and index < len(way["nd"]):
-            ret = self.node_in_bbox(way["nd"][index])
-            index += 1
-        return ret
-
     def rel_in_bbox(self, relation):
         """
         Checks if the relation is in the bounding box
@@ -510,7 +492,11 @@ class DbCache(object):
         :return: None
         """
         self.initialize_postigs()
-        self.db.generate_mapping(create_tables=True)
+        from pony.orm.core import MappingError
+        try:
+            self.db.generate_mapping(create_tables=True)
+        except:
+            pass
 
     @db_session
     def add_node(self, identifier, version, x, y, tags):
@@ -761,14 +747,15 @@ class Bard(object):
         self.stats = self.handler.stats
         self.stats["total"] = len(self.changesets)
 
-    def report(self):
+    def generate_report_data(self):
         """
-        Generates the report and sends it
+        Generates the data for the report
 
-        :return: None
+        :return:
+        :rtype: dict
         """
         from datetime import datetime
-        print ("self.changesets:{}".format(self.changesets))
+        print("self.changesets:{}".format(self.changesets))
         if len(self.changesets) > 1000:
             self.changesets = self.changesets[:999]
             self.stats[
@@ -784,8 +771,18 @@ class Bard(object):
             'changesets': self.changesets,
             'stats': self.stats,
             'date': now.strftime("%B %d, %Y"),
-            'tags': self.conf['tags'].keys()
+            'tags': sorted(list(self.conf['tags'].keys()))
         }
+        return  template_data
+
+    def report(self):
+        """
+        Generates the report and sends it
+
+        :return: None
+        """
+        template_data = self.generate_report_data()
+
         html_version = self.html_tmpl.render(**template_data)
         text_version = self.text_tmpl.render(**template_data)
 

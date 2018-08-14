@@ -221,12 +221,33 @@ class HandlerTest(unittest.TestCase):
     """
     Unittest for the handler
     """
-    
+
     def setUp(self):
         """
         Initialization
         """
         self.handler = ChangeHandler()
+
+    def test_node_in_bbox(self):
+        """
+        Tests node_in_bbox function
+        :return:
+        """
+        self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
+        node = {
+            "lon":2.81372,
+            "lat": 41.98268
+        }
+        self.assertTrue(self.handler.node_in_bbox(node))
+        node_list = [41.98268,2.81372]
+        self.assertTrue(self.handler.node_in_bbox(node_list))
+
+    def test_set_cache(self):
+        """
+        Checks set_cache function
+        :return:
+        """
+        self.handler.set_cache("localhost", "bard", "postgres", "postgres")
 
     def test_in_bbox(self):
         """
@@ -250,7 +271,7 @@ class HandlerTest(unittest.TestCase):
     def test_set_bbox(self):
         """
         Test set_bbox of handler
-        :return: None 
+        :return: None
         """
 
         self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
@@ -279,6 +300,15 @@ class ChangesWithinTest(unittest.TestCase):
         """
         self.cw = Bard()
 
+    def test_initialize(self):
+        """
+        Tests initialize_db
+        :return: None
+        """
+        self.cw.has_cache = True
+        self.cw.cache = DbCache("localhost", "bard", "postgres", "postgres")
+        self.cw.initialize_db()
+
     def test_osc1(self):
         """
         Tests load of test1.osc
@@ -293,6 +323,9 @@ class ChangesWithinTest(unittest.TestCase):
                     'tags': '.*=.*',
                     'type': 'node,way'
                 }
+            },
+            "email":{
+                "language":"en"
             },
             "url_locales": "locales"
         }
@@ -346,6 +379,47 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertEqual(len(set(self.cw.stats["all"])), len(self.cw.stats["all"]))
         self.assertEqual(len(set(self.cw.stats["building"])), len(self.cw.stats["building"]))
         self.assertTrue(48595327 in self.cw.changesets)
+
+    def test_generate_template_data(self):
+        """
+
+        :return:
+        """
+        conf = {
+            'area': {
+                'bbox': ['41.9933', '2.8576', '41.9623', '2.7847']
+            },
+            'tags': {
+                'highway': {
+                    'tags': "highway=.*",
+                    'type': 'node,way'
+                },
+                "housenumber": {
+                    "tags": "addr:housenumber=.*",
+                    "type": "way,node"
+                },
+                "building": {
+                    "tags": "building=public",
+                    "type": "way,node"
+                }
+            },
+            "url_locales": "locales"
+        }
+        self.cw.conf = conf
+        self.cw.load_config(conf)
+        self.cw.stats = []
+        from datetime import datetime
+        now = datetime.now()
+        date = now.strftime("%B %d, %Y")
+        data = self.cw.generate_report_data()
+        self.assertEqual(
+            data,
+            {'date': date,
+             'tags': sorted(['building', 'housenumber', 'highway']),
+             'changesets': [],
+             'stats': []
+             }
+        )
 
     def test_relation(self):
         """
