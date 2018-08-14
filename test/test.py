@@ -235,7 +235,7 @@ class HandlerTest(unittest.TestCase):
         """
         self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
         node = {
-            "lon":2.81372,
+            "lon": 2.81372,
             "lat": 41.98268
         }
         self.assertTrue(self.handler.node_in_bbox(node))
