@@ -434,6 +434,7 @@ class ChangeHandler(osmium.SimpleHandler):
         except Exception as e:
             self.sentry_client.captureException()
 
+
 class DbCache(object):
 
     def __init__(self, host, database, user, password):
