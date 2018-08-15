@@ -1,6 +1,6 @@
 from pony.orm import *
 from pony.orm.ormtypes import *
-from bard.postgis import *
+from .postgis import *
 
 db = Database()
 
