@@ -20,8 +20,8 @@ class Cache_Way(db.Entity):
     geom = Optional(Line, srid=4326)
 
 
-class User(db.Entity):
-    id = PrimaryKey(int,auto=True, index=True)
+class Users(db.Entity):
+    id = PrimaryKey(int, auto=True)
     login = Required(str)
     password = Required(str)
 
