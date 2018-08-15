@@ -24,6 +24,7 @@ from .models import *
 # CONFIG
 
 
+
 class ChangeHandler(osmium.SimpleHandler):
     """
     Class that handles the changes
