@@ -18,3 +18,19 @@ class Cache_Way(db.Entity):
     version = Optional(int)
     tag = Optional(Json)
     geom = Optional(Line, srid=4326)
+
+
+class User(db.Entity):
+    id = PrimaryKey(int,auto=True, index=True)
+    login = Required(str)
+    password = Required(str)
+
+
+class UserTags(db.Entity):
+    id = PrimaryKey(int,auto=True, index=True)
+    description = Optional(str)
+    tags = Required(str)
+    node = Required(bool)
+    way = Required(bool)
+    relation = Required(bool)
+    bbox = Required(str)
