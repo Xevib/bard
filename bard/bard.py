@@ -1,10 +1,6 @@
 from __future__ import absolute_import
 import os
 import re
-import sys
-
-from tempfile import mkstemp
-
 
 from configobj import ConfigObj
 import osmium
@@ -13,16 +9,11 @@ import gettext
 from jinja2 import Environment
 from osconf import config_from_environment
 import osmapi
-import psycopg2
-import psycopg2.extras
-
 
 from .osc import OSC
 
 from raven import Client
-from pony.orm import *
-
-from bard.postgis import *
+from .models import *
 
 # Env vars:
 # AREA_GEOJSON
@@ -32,25 +23,6 @@ from bard.postgis import *
 # EMAIL_LANGUAGE
 # CONFIG
 
-db = Database()
-
-#def test(entrada):
-#    print(entrada)
-
-#Point = FuncType(test)
-
-class Cache_Node(db.Entity):
-    id = PrimaryKey(int, auto=True)
-    osm_id = Required(int, sql_type="BIGINT")
-    version = Optional(int)
-    tag = Optional(Json)
-    geom = Optional(Point, srid=4326)
-
-class Cache_Way(db.Entity):
-    osm_id = Required(int,sql_type="BIGINT")
-    version = Optional(int)
-    tag = Optional(Json)
-    geom = Optional(Line, srid=4326)
 
 class ChangeHandler(osmium.SimpleHandler):
     """
