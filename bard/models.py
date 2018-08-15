@@ -26,11 +26,11 @@ class User(db.Entity):
     password = Required(str)
 
 
-class UserTags(db.Entity):
-    id = PrimaryKey(int,auto=True, index=True)
-    description = Optional(str)
-    tags = Required(str)
-    node = Required(bool)
-    way = Required(bool)
-    relation = Required(bool)
-    bbox = Required(str)
+#class UserTags(db.Entity):
+#    id = PrimaryKey(int,auto=True, index=True)
+#    description = Optional(str)
+#    tags = Required(str)
+#    node = Required(bool)
+#    way = Required(bool)
+#    relation = Required(bool)
+#    bbox = Required(str)
