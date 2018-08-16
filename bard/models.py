@@ -21,13 +21,13 @@ class Cache_Way(db.Entity):
 
 
 class User(db.Entity):
-    id = PrimaryKey(int,auto=True, index=True)
+    id = PrimaryKey(int,auto=True)
     login = Required(str)
     password = Required(str)
 
 
 class UserTags(db.Entity):
-    id = PrimaryKey(int,auto=True, index=True)
+    id = PrimaryKey(int,auto=True)
     description = Optional(str)
     tags = Required(str)
     node = Required(bool)
