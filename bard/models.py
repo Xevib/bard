@@ -27,7 +27,7 @@ class User(db.Entity):
 
 
 class UserTags(db.Entity):
-    id = PrimaryKey(int,auto=True)
+    id = PrimaryKey(int, auto=True)
     description = Optional(str)
     tags = Required(str)
     node = Required(bool)
