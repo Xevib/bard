@@ -269,6 +269,16 @@ class ChangeHandler(osmium.SimpleHandler):
         self.south = float(south)
         self.west = float(west)
 
+    def load_bbox_from_db(self, user_id):
+        """
+
+        :param user_id:
+        :return:
+        """
+        user_tags = UserTags.get(id=user_id)
+        east,south,west,north = user_tags.bbox.split(",")
+        self.set_bbox(north,east,south,west)
+
     def node(self, node):
         """
         Attends the nodes in the file

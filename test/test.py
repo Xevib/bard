@@ -3,6 +3,7 @@ from bard import Bard
 from bard import ChangeHandler
 from osmium.osm import Location, WayNodeList, Node
 from bard.bard import DbCache
+from bard.models import *
 import osmapi
 import psycopg2
 import sys
@@ -242,8 +243,32 @@ class HandlerTest(unittest.TestCase):
             "lat": 41.98268
         }
         self.assertTrue(self.handler.node_in_bbox(node))
-        node_list = [41.98268,2.81372]
+        node_list = [41.98268, 2.81372]
         self.assertTrue(self.handler.node_in_bbox(node_list))
+
+    @db_session
+    def test_load_bbox(self):
+        """
+        Tests the load of the configuration to bbox from databse
+        :return: None
+        """
+        u = User(login="xevi",password="test")
+
+
+        ut = UserTags(
+            description = "test",
+            tags = "highway=residential",
+            node = False,
+            way = False,
+            relation = False,
+            bbox="1,2,3,4"
+        )
+        commit()
+        self.handler.load_bbox_from_db(ut.id)
+        self.assertEqual(self.handler.east, 1)
+        self.assertEqual(self.handler.south, 2)
+        self.assertEqual(self.handler.west, 3)
+        self.assertEqual(self.handler.north, 4)
 
     def test_set_cache(self):
         """
