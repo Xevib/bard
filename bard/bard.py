@@ -276,8 +276,8 @@ class ChangeHandler(osmium.SimpleHandler):
         :return:
         """
         user_tags = UserTags.get(id=user_id)
-        east,south,west,north = user_tags.bbox.split(",")
-        self.set_bbox(north,east,south,west)
+        east, south, west, north = user_tags.bbox.split(",")
+        self.set_bbox(north, east, south, west)
 
     def node(self, node):
         """

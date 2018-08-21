@@ -25,7 +25,7 @@ class User(db.Entity):
     login = Required(str)
     password = Required(str)
     users = Set('UserTags')
-    
+
 
 class UserTags(db.Entity):
     id = PrimaryKey(int, auto=True)
