@@ -260,7 +260,8 @@ class HandlerTest(unittest.TestCase):
             node = False,
             way = False,
             relation = False,
-            bbox="1,2,3,4"
+            bbox="1,2,3,4",
+            user=u
         )
         commit()
         self.handler.load_bbox_from_db(ut.id)
