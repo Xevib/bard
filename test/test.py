@@ -270,6 +270,7 @@ class HandlerTest(unittest.TestCase):
         self.assertEqual(self.handler.west, 3)
         self.assertEqual(self.handler.north, 4)
 
+    @db_session
     def test_load_tags_from_db(self):
         """
         Test to check the load tags from db
