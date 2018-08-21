@@ -252,8 +252,7 @@ class HandlerTest(unittest.TestCase):
         Tests the load of the configuration to bbox from databse
         :return: None
         """
-        u = User(login="xevi",password="test")
-
+        u = User(login="xevi", password="test")
 
         ut = UserTags(
             description = "test",
