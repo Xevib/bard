@@ -24,7 +24,8 @@ class User(db.Entity):
     id = PrimaryKey(int,auto=True)
     login = Required(str)
     password = Required(str)
-
+    users = Set('UserTags')
+    
 
 class UserTags(db.Entity):
     id = PrimaryKey(int, auto=True)
@@ -34,3 +35,4 @@ class UserTags(db.Entity):
     way = Required(bool)
     relation = Required(bool)
     bbox = Required(str)
+    user = Required(User)
