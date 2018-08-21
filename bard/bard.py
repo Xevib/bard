@@ -269,15 +269,39 @@ class ChangeHandler(osmium.SimpleHandler):
         self.south = float(south)
         self.west = float(west)
 
-    def load_bbox_from_db(self, user_id):
+    def load_bbox_from_db(self, tags_id):
+        """
+        Loads the bbox data from the database
+
+        :param tags_id: Id of the User tags
+        :type tags_id: int
+        :return: None
+        :rtype: None
         """
 
-        :param user_id:
-        :return:
-        """
-        user_tags = UserTags.get(id=user_id)
+        user_tags = UserTags.get(id=tags_id)
         east, south, west, north = user_tags.bbox.split(",")
         self.set_bbox(north, east, south, west)
+
+    def load_tags_from_db(self, tags_id):
+        """
+        Load the tags data from db
+        :param tags_id: Id of the User tags
+        :type tags_id: int
+        :return: None
+        :rtype: None
+        """
+
+        user_tags = UserTags.get(id=tags_id)
+        key,value = user_tags.tags.split("=")
+        element_type = []
+        if user_tags.node:
+            element_type.append("node")
+        if user_tags.way:
+            element_type.append("way")
+        if user_tags.relation:
+            element_type.append("way")
+        self.set_tags(user_tags.description, key, value, ",".join((element_type))
 
     def node(self, node):
         """
