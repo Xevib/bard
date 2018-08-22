@@ -253,7 +253,7 @@ class HandlerTest(unittest.TestCase):
         :return: None
         """
         u = User(login="xevi", password="test")
-
+        commit()
         ut = UserTags(
             description = "test",
             tags = "highway=residential",
@@ -261,7 +261,7 @@ class HandlerTest(unittest.TestCase):
             way = False,
             relation = False,
             bbox="1,2,3,4",
-            user=u
+            user=u.id
         )
         commit()
         self.handler.load_bbox_from_db(ut.id)
