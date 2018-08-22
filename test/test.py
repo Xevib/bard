@@ -281,13 +281,14 @@ class HandlerTest(unittest.TestCase):
 
         ut = UserTags(
             description = "test",
-            tags = "highway=residential",
-            node = True,
-            way = True,
+            tags="highway=residential",
+            node=True,
+            way=True,
             relation = True,
             bbox="1,2,3,4",
             user=u
         )
+        commit()
         self.handler.load_tags_from_db(ut.id)
         self.assertIsNotNone(self.handler.tags["test"]["key_re"])
         self.assertIsNotNone(self.handler.tags["test"]["value_re"])
