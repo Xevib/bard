@@ -300,7 +300,7 @@ class ChangeHandler(osmium.SimpleHandler):
         if user_tags.way:
             element_type.append("way")
         if user_tags.relation:
-            element_type.append("way")
+            element_type.append("relation")
         self.set_tags(user_tags.description, key, value, ",".join(element_type))
 
     def node(self, node):
