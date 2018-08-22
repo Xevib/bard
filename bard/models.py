@@ -36,3 +36,11 @@ class UserTags(db.Entity):
     relation = Required(bool)
     bbox = Required(str)
     user = Required(User)
+    states = Set('StateTags')
+
+
+class StateTags(db.Entity):
+    id = PrimaryKey(int, auto=True)
+    timestamp = Required(datetime)
+    user_tags = Required(UserTags)
+    changesets = Required(Json)
