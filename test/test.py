@@ -511,6 +511,81 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertTrue(41928815 in self.cw.changesets)
         self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
 
+    def test_save_results(self):
+        conf = {
+            'area': {
+                'bbox': ['41.9933', '2.8576', '41.9623', '2.7847']
+            },
+            'tags': {
+                'highway': {
+                    'tags': "highway=.*",
+                    'type': 'node,way'
+                },
+                "housenumber": {
+                    "tags": "addr:housenumber=.*",
+                    "type": "way,node"
+                },
+                "building": {
+                    "tags": "building=public",
+                    "type": "way,node"
+                }
+            },
+            "url_locales": "locales"
+        }
+        self.cw.conf = conf
+        self.cw.load_config(conf)
+
+        u = User(login="xevi", password="test")
+        commit()
+        ut_highway = UserTags(
+            description="highway",
+            tags="highway=*",
+            node=True,
+            way=True,
+            relation=False,
+            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
+            user=u.id
+        )
+
+        ut_housenumber = UserTags(
+            description="housenumber",
+            tags="addr:housenumber=*",
+            node=True,
+            way=True,
+            relation=False,
+            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
+            user=u.id
+        )
+
+        ut_bulding = UserTags(
+            description="building",
+            tags="building=public",
+            node=True,
+            way=True,
+            relation=False,
+            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
+            user=u.id
+        )
+        commit()
+        ids = [ut_bulding.id,ut_highway.id, ut_housenumber.id]
+        self.cw.handler.load_tags_from_db(ids)
+        self.cw.handler.load_bbox_from_db(ids)
+        self.cw.handler.set_bbox('41.9933', '2.8576', '41.9623', '2.7847')
+        self.assertEqual(self.cw.handler.north, 41.9933)
+        self.assertEqual(self.cw.handler.east, 2.8576)
+        self.assertEqual(self.cw.handler.south, 41.9623)
+        self.assertEqual(self.cw.handler.west, 2.7847)
+        self.cw.handler.set_tags("all", ".*", ".*", ["node", "way"])
+        self.cw.process_file("test/test_rel.osc")
+        self.assertTrue(41928815 in self.cw.changesets)
+        self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
+        self.cw.save_results()
+
+        tags_id = self.cw.handler.user_tags_id
+        st = StateTags.get(user_tags=tags_id)
+        self.assertTrue(41928815 in st.changesets)
+        self.assertTrue(343535 in st.changesets[41928815]["rids"]["all"])
+
 
 
 if __name__ == '__main__':
