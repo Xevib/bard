@@ -293,6 +293,7 @@ class HandlerTest(unittest.TestCase):
         self.assertIsNotNone(self.handler.tags["test"]["key_re"])
         self.assertIsNotNone(self.handler.tags["test"]["value_re"])
         self.assertEqual(self.handler.tags["test"]["types"], "node,way,relation")
+        self.assertEqual(self.handler.user_tags_id, ut.id)
 
     def test_set_cache(self):
         """

@@ -47,6 +47,7 @@ class ChangeHandler(osmium.SimpleHandler):
         self.cache = None
         self.cache_enabled = False
         self.sentry_client = Client()
+        self.user_tags_id = None
 
     def set_cache(self, host, db, user, password):
         """
@@ -292,6 +293,7 @@ class ChangeHandler(osmium.SimpleHandler):
         :rtype: None
         """
 
+        self.user_tags_id = tags_id
         user_tags = UserTags.get(id=tags_id)
         key,value = user_tags.tags.split("=")
         element_type = []
@@ -782,6 +784,21 @@ class Bard(object):
         }
         return  template_data
 
+    def save_results(self):
+        """
+
+        :return: None
+        :rtype: None
+        """
+        report_data = self.generate_report_data()
+
+        st = StateTags(
+            timestamp=datetime.now(),
+            user_tags=self.handler.user_tags_id,
+            changesets=report_data["changesets"]
+        )
+        commit()
+
     def report(self):
         """
         Generates the report and sends it
@@ -828,5 +845,6 @@ if __name__ == '__main__':
         c.load_config()
         c.process_file()
         c.report()
+        c.save_results()
     except Exception:
         client.captureException()
