@@ -511,6 +511,7 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertTrue(41928815 in self.cw.changesets)
         self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
 
+    @db_session
     def test_save_results(self):
         conf = {
             'area': {
