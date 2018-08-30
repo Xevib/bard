@@ -293,17 +293,20 @@ class ChangeHandler(osmium.SimpleHandler):
         :rtype: None
         """
 
+        if not isinstance(tags_id, list):
+            tags_id = [tags_id]
         self.user_tags_id = tags_id
-        user_tags = UserTags.get(id=tags_id)
-        key,value = user_tags.tags.split("=")
-        element_type = []
-        if user_tags.node:
-            element_type.append("node")
-        if user_tags.way:
-            element_type.append("way")
-        if user_tags.relation:
-            element_type.append("relation")
-        self.set_tags(user_tags.description, key, value, ",".join(element_type))
+        for user_tags in UserTags.select(lambda ut: ut.id in tags_id):
+            key,value = user_tags.tags.split("=")
+            element_type = []
+            if user_tags.node:
+                element_type.append("node")
+            if user_tags.way:
+                element_type.append("way")
+            if user_tags.relation:
+                element_type.append("relation")
+            self.set_tags(
+                user_tags.description, key, value, ",".join(element_type))
 
     def node(self, node):
         """
