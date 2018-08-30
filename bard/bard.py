@@ -280,9 +280,9 @@ class ChangeHandler(osmium.SimpleHandler):
         :rtype: None
         """
 
-        user_tags = UserTags.get(id=tags_id)
-        east, south, west, north = user_tags.bbox.split(",")
-        self.set_bbox(north, east, south, west)
+        for ut in  UserTags.UserTags.select(lambda ut: ut.id in tags_id):
+            east, south, west, north = ut.bbox.split(",")
+            self.set_bbox(north, east, south, west)
 
     def load_tags_from_db(self, tags_id):
         """
