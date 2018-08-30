@@ -540,7 +540,7 @@ class ChangesWithinTest(unittest.TestCase):
         commit()
         ut_highway = UserTags(
             description="highway",
-            tags="highway=*",
+            tags="highway=.*",
             node=True,
             way=True,
             relation=False,
@@ -550,7 +550,7 @@ class ChangesWithinTest(unittest.TestCase):
 
         ut_housenumber = UserTags(
             description="housenumber",
-            tags="addr:housenumber=*",
+            tags="addr:housenumber=.*",
             node=True,
             way=True,
             relation=False,
