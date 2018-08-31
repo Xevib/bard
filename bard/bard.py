@@ -844,7 +844,7 @@ class Bard(object):
 if __name__ == '__main__':
     client = Client()
     try:
-        c = ChangeWithin()
+        c = Bard()
         c.load_config()
         c.process_file()
         c.report()
