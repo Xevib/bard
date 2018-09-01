@@ -3,6 +3,7 @@ from bard import Bard
 from bard import ChangeHandler
 from osmium.osm import Location, WayNodeList, Node
 from bard.bard import DbCache
+from bard.models import *
 import osmapi
 import psycopg2
 import sys
@@ -238,12 +239,61 @@ class HandlerTest(unittest.TestCase):
         """
         self.handler.set_bbox(41.9933, 2.8576, 41.9623, 2.7847)
         node = {
-            "lon":2.81372,
+            "lon": 2.81372,
             "lat": 41.98268
         }
         self.assertTrue(self.handler.node_in_bbox(node))
-        node_list = [41.98268,2.81372]
+        node_list = [41.98268, 2.81372]
         self.assertTrue(self.handler.node_in_bbox(node_list))
+
+    @db_session
+    def test_load_bbox(self):
+        """
+        Tests the load of the configuration to bbox from databse
+        :return: None
+        """
+        u = User(login="xevi", password="test")
+        commit()
+        ut = UserTags(
+            description = "test",
+            tags = "highway=residential",
+            node = False,
+            way = False,
+            relation = False,
+            bbox="1,2,3,4",
+            user=u.id
+        )
+        commit()
+        self.handler.load_bbox_from_db(ut.id)
+        self.assertEqual(self.handler.east, 1)
+        self.assertEqual(self.handler.south, 2)
+        self.assertEqual(self.handler.west, 3)
+        self.assertEqual(self.handler.north, 4)
+
+    @db_session
+    def test_load_tags_from_db(self):
+        """
+        Test to check the load tags from db
+        :return:
+        """
+
+        u = User(login="xevi", password="test")
+
+        ut = UserTags(
+            description = "test",
+            tags="highway=residential",
+            node=True,
+            way=True,
+            relation = True,
+            bbox="1,2,3,4",
+            user=u
+        )
+        commit()
+        self.handler.load_tags_from_db(ut.id)
+        self.assertIsNotNone(self.handler.tags["test"]["key_re"])
+        self.assertIsNotNone(self.handler.tags["test"]["value_re"])
+        self.assertEqual(self.handler.tags["test"]["types"], ["highway=residential"])
+        self.assertEqual(self.handler.tags["test"]["tag_id"], ut.id)
 
     def test_set_cache(self):
         """
@@ -324,7 +374,7 @@ class ChangesWithinTest(unittest.TestCase):
             'tags': {
                 'all': {
                     'tags': '.*=.*',
-                    'type': 'node,way'
+                    'type': 'node,way,relation'
                 }
             },
             "email":{
@@ -461,6 +511,53 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertTrue(41928815 in self.cw.changesets)
         self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
 
+    @db_session
+    def test_save_results(self):
+        conf = {
+            'area': {
+                'bbox': ['41.9933', '2.8576', '41.9623', '2.7847']
+            },
+            'tags': {
+                'all': {
+                    'tags': ".*=.*",
+                    'type': 'node,way'
+                }
+            },
+            "url_locales": "locales"
+        }
+        self.cw.conf = conf
+        self.cw.load_config(conf)
+
+        u = User(login="xevi", password="test")
+        commit()
+        ut_all = UserTags(
+            description="all",
+            tags=".*=.*",
+            node=True,
+            way=True,
+            relation=True,
+            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
+            user=u.id
+        )
+        commit()
+        ids = [ut_all.id]
+        self.cw.handler.load_tags_from_db(ids)
+        self.cw.handler.load_bbox_from_db(ids)
+        self.cw.handler.set_bbox('41.9933', '2.8576', '41.9623', '2.7847')
+        self.assertEqual(self.cw.handler.north, 41.9933)
+        self.assertEqual(self.cw.handler.east, 2.8576)
+        self.assertEqual(self.cw.handler.south, 41.9623)
+        self.assertEqual(self.cw.handler.west, 2.7847)
+        #self.cw.handler.set_tags("all", ".*", ".*", ["node", "way"])
+        self.cw.process_file("test/test_rel.osc")
+        self.assertTrue(41928815 in self.cw.changesets)
+        self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
+        self.cw.save_results()
+
+        rt = ResultTags.get(user_tags=ut_all.id)
+
+        self.assertEqual(41928815 , rt.changesets.get("changeset"))
+        self.assertTrue(343535 in rt.changesets.get("rids")["all"])
 
 
 if __name__ == '__main__':

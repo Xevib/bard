@@ -48,6 +48,7 @@ class ChangeHandler(osmium.SimpleHandler):
         self.cache_enabled = False
         self.sentry_client = Client()
 
+
     def set_cache(self, host, db, user, password):
         """
         Sets the cache of the handler
@@ -239,7 +240,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 return True
         return False
 
-    def set_tags(self, name, key, value, element_types):
+    def set_tags(self, name, key, value, element_types, tag_id=None):
         """
         Sets the tags to wathc on the handler
         :param name: Name of the tags
@@ -252,6 +253,8 @@ class ChangeHandler(osmium.SimpleHandler):
         self.tags[name]["key_re"] = re.compile(key)
         self.tags[name]["value_re"] = re.compile(value)
         self.tags[name]["types"] = element_types
+        if tag_id:
+            self.tags[name]["tag_id"] = tag_id
         self.stats[name] = set()
 
     def set_bbox(self, north, east, south, west):
@@ -269,6 +272,50 @@ class ChangeHandler(osmium.SimpleHandler):
         self.south = float(south)
         self.west = float(west)
 
+    def load_bbox_from_db(self, tags_id):
+        """
+        Loads the bbox data from the database
+
+        :param tags_id: Id of the User tags
+        :type tags_id: int
+        :return: None
+        :rtype: None
+        """
+        if not isinstance(tags_id, list):
+            tags_id = [tags_id]
+        uts = UserTags.select(lambda ut: ut.id in tags_id)
+        for ut in uts:
+            east, south, west, north = ut.bbox.split(",")
+            self.set_bbox(north, east, south, west)
+
+    def load_tags_from_db(self, tags_id):
+        """
+        Load the tags data from db
+        :param tags_id: Id of the User tags
+        :type tags_id: int
+        :return: None
+        :rtype: None
+        """
+
+        if not isinstance(tags_id, list):
+            tags_id = [tags_id]
+        for user_tags in UserTags.select(lambda ut: ut.id in tags_id):
+            key, value = user_tags.tags.split("=")
+            element_type = []
+            if user_tags.node:
+                element_type.append("node")
+            if user_tags.way:
+                element_type.append("way")
+            if user_tags.relation:
+                element_type.append("relation")
+            self.set_tags(
+                user_tags.description,
+                key,
+                value,
+                ["{}={}".format(key, value)],
+                user_tags.id
+            )
+
     def node(self, node):
         """
         Attends the nodes in the file
@@ -284,6 +331,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 for tag_name in self.tags.keys():
                     key_re = self.tags[tag_name]["key_re"]
                     value_re = self.tags[tag_name]["value_re"]
+                    tag_id = self.tags[tag_name].get("tag_id")
                     if self.has_tag(node.tags, key_re, value_re):
                         if node.deleted:
                             add_node = True
@@ -304,7 +352,8 @@ class ChangeHandler(osmium.SimpleHandler):
                                     "uid": node.uid,
                                     "nids": {tag_name: [node.id]},
                                     "wids": {},
-                                    "rids": {}
+                                    "rids": {},
+                                    "tag_id": tag_id
                                 }
                             else:
                                 if tag_name not in self.changeset[node.changeset]["nids"]:
@@ -331,6 +380,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 for tag_name in self.tags.keys():
                     key_re = self.tags[tag_name]["key_re"]
                     value_re = self.tags[tag_name]["value_re"]
+                    tag_id = self.tags[tag_name].get("tag_id")
                     if self.has_tag(way.tags, key_re, value_re):
                         if way.deleted:
                             add_way = True
@@ -355,7 +405,8 @@ class ChangeHandler(osmium.SimpleHandler):
                                     "uid": way.uid,
                                     "nids": {},
                                     "wids": {tag_name: [way.id]},
-                                    "rids": {}
+                                    "rids": {},
+                                    "tag_id": tag_id
                                 }
             self.num_ways += 1
         except Exception:
@@ -375,6 +426,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 for tag_name in self.tags.keys():
                     key_re = self.tags[tag_name]["key_re"]
                     value_re = self.tags[tag_name]["value_re"]
+                    tag_id = self.tags[tag_name].get("tag_id")
                     if self.has_tag(rel.tags, key_re, value_re):
                         if rel.deleted:
                             add_rel = True
@@ -400,11 +452,13 @@ class ChangeHandler(osmium.SimpleHandler):
                                     "uid": rel.uid,
                                     "nids": {},
                                     "wids": {},
-                                    "rids": {tag_name: [rel.id]}
+                                    "rids": {tag_name: [rel.id]},
+                                    "tag_id": tag_id
                                 }
             self.num_rel += 1
-        except Exception as e:
+        except Exception:
             self.sentry_client.captureException()
+
 
 class DbCache(object):
 
@@ -747,6 +801,22 @@ class Bard(object):
         }
         return  template_data
 
+    def save_results(self):
+        """
+
+        :return: None
+        :rtype: None
+        """
+        report_data = self.generate_report_data()
+        for change_id, values in report_data["changesets"].items():
+            if values.get("tag_id"):
+                ResultTags(
+                    timestamp=datetime.now(),
+                    user_tags=values.get("tag_id"),
+                    changesets=values
+                )
+        commit()
+
     def report(self):
         """
         Generates the report and sends it
@@ -789,9 +859,10 @@ class Bard(object):
 if __name__ == '__main__':
     client = Client()
     try:
-        c = ChangeWithin()
+        c = Bard()
         c.load_config()
         c.process_file()
         c.report()
+        c.save_results()
     except Exception:
         client.captureException()
