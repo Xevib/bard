@@ -47,7 +47,7 @@ class ChangeHandler(osmium.SimpleHandler):
         self.cache = None
         self.cache_enabled = False
         self.sentry_client = Client()
-        self.user_tags_id = None
+
 
     def set_cache(self, host, db, user, password):
         """
