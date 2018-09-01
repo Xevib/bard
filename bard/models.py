@@ -36,10 +36,10 @@ class UserTags(db.Entity):
     relation = Required(bool)
     bbox = Required(str)
     user = Required(User)
-    states = Set('StateTags')
+    states = Set('ResultTags')
 
 
-class StateTags(db.Entity):
+class ResultTags(db.Entity):
     id = PrimaryKey(int, auto=True)
     timestamp = Required(datetime)
     user_tags = Required(UserTags)
