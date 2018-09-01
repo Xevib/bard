@@ -5,7 +5,7 @@ requirements = data.split()
 
 setup(
     name='bard',
-    version='0.2.0',
+    version='0.2.1',
     packages=find_packages(),
     url='https://github.com/Xevib/bard',
     license='MIT',
