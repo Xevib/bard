@@ -292,8 +292,8 @@ class HandlerTest(unittest.TestCase):
         self.handler.load_tags_from_db(ut.id)
         self.assertIsNotNone(self.handler.tags["test"]["key_re"])
         self.assertIsNotNone(self.handler.tags["test"]["value_re"])
-        self.assertEqual(self.handler.tags["test"]["types"], "node,way,relation")
-        self.assertEqual(self.handler.user_tags_id, [ut.id])
+        self.assertEqual(self.handler.tags["test"]["types"], ["highway=residential"])
+        self.assertEqual(self.handler.tags["test"]["tag_id"], ut.id)
 
     def test_set_cache(self):
         """
@@ -374,7 +374,7 @@ class ChangesWithinTest(unittest.TestCase):
             'tags': {
                 'all': {
                     'tags': '.*=.*',
-                    'type': 'node,way'
+                    'type': 'node,way,relation'
                 }
             },
             "email":{
@@ -518,17 +518,9 @@ class ChangesWithinTest(unittest.TestCase):
                 'bbox': ['41.9933', '2.8576', '41.9623', '2.7847']
             },
             'tags': {
-                'highway': {
-                    'tags': "highway=.*",
+                'all': {
+                    'tags': ".*=.*",
                     'type': 'node,way'
-                },
-                "housenumber": {
-                    "tags": "addr:housenumber=.*",
-                    "type": "way,node"
-                },
-                "building": {
-                    "tags": "building=public",
-                    "type": "way,node"
                 }
             },
             "url_locales": "locales"
@@ -538,37 +530,17 @@ class ChangesWithinTest(unittest.TestCase):
 
         u = User(login="xevi", password="test")
         commit()
-        ut_highway = UserTags(
-            description="highway",
-            tags="highway=.*",
+        ut_all = UserTags(
+            description="all",
+            tags=".*=.*",
             node=True,
             way=True,
-            relation=False,
-            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
-            user=u.id
-        )
-
-        ut_housenumber = UserTags(
-            description="housenumber",
-            tags="addr:housenumber=.*",
-            node=True,
-            way=True,
-            relation=False,
-            bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
-            user=u.id
-        )
-
-        ut_bulding = UserTags(
-            description="building",
-            tags="building=public",
-            node=True,
-            way=True,
-            relation=False,
+            relation=True,
             bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
             user=u.id
         )
         commit()
-        ids = [ut_bulding.id,ut_highway.id, ut_housenumber.id]
+        ids = [ut_all.id]
         self.cw.handler.load_tags_from_db(ids)
         self.cw.handler.load_bbox_from_db(ids)
         self.cw.handler.set_bbox('41.9933', '2.8576', '41.9623', '2.7847')
@@ -576,17 +548,16 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertEqual(self.cw.handler.east, 2.8576)
         self.assertEqual(self.cw.handler.south, 41.9623)
         self.assertEqual(self.cw.handler.west, 2.7847)
-        self.cw.handler.set_tags("all", ".*", ".*", ["node", "way"])
+        #self.cw.handler.set_tags("all", ".*", ".*", ["node", "way"])
         self.cw.process_file("test/test_rel.osc")
         self.assertTrue(41928815 in self.cw.changesets)
         self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
         self.cw.save_results()
 
-        tags_id = self.cw.handler.user_tags_id
-        st = StateTags.get(user_tags=tags_id)
-        self.assertTrue(41928815 in st.changesets)
-        self.assertTrue(343535 in st.changesets[41928815]["rids"]["all"])
+        rt = ResultTags.get(user_tags=ut_all.id)
 
+        self.assertEqual(41928815 , rt.changesets.get("changeset"))
+        self.assertTrue(343535 in rt.changesets.get("rids")["all"])
 
 
 if __name__ == '__main__':
