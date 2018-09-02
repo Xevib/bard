@@ -48,7 +48,6 @@ class ChangeHandler(osmium.SimpleHandler):
         self.cache_enabled = False
         self.sentry_client = Client()
 
-
     def set_cache(self, host, db, user, password):
         """
         Sets the cache of the handler
@@ -60,7 +59,7 @@ class ChangeHandler(osmium.SimpleHandler):
         :rtype: None
         """
 
-        self.cache = DbCache(host,db,user,password)
+        self.cache = DbCache(host, db, user, password)
         self.cache_enabled = True
 
     def location_in_bbox(self, location):
@@ -141,7 +140,7 @@ class ChangeHandler(osmium.SimpleHandler):
                             version = element["data"]["version"]
                             tags = element["data"]["tag"]
                         else:
-                            nodes.append([element["data"]["lat"],element["data"]["lon"]])
+                            nodes.append([element["data"]["lat"], element["data"]["lon"]])
                     if self.cache_enabled:
                         self.cache.add_way(member.ref, version, nodes, tags)
                     print("way ref:{}".format(member.ref))
@@ -150,7 +149,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 else:
                     nodes = way
                 for node in nodes:
-                    if isinstance(node, dict) and node.get("type")!="node":
+                    if isinstance(node, dict) and node.get("type") != "node":
                         for node_id in node.get("nd", []):
                             n = self.cache.get_node(node_id)
                             if node is None:
@@ -189,7 +188,7 @@ class ChangeHandler(osmium.SimpleHandler):
         osm_api = osmapi.OsmApi()
         if elem == 'node':
             if self.cache_enabled:
-                previous_elem = self.cache.get_node(gid, version -1)
+                previous_elem = self.cache.get_node(gid, version - 1)
                 if previous_elem is None:
                     previous_elem = osm_api.NodeHistory(gid)[version - 1]
             else:
@@ -421,7 +420,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 if self.cache.get_pending_nodes > 0 or self.cache.get_pending_ways > 0:
                     self.cache.commit()
 
-            print ("rel.id {} len:{}".format(rel.id,len(rel.members)))
+            print ("rel.id {} len:{}".format(rel.id, len(rel.members)))
             if not rel.deleted and self.rel_in_bbox(rel):
                 for tag_name in self.tags.keys():
                     key_re = self.tags[tag_name]["key_re"]
@@ -609,7 +608,7 @@ class DbCache(object):
         if version is None:
             node = Cache_Node.get(osm_id=identifier)
         else:
-            node = Cache_Node.get(osm_id=identifier,version=version)
+            node = Cache_Node.get(osm_id=identifier, version=version)
         if node:
             return {
                 "data": {

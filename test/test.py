@@ -126,11 +126,11 @@ class CacheTest(unittest.TestCase):
         l2 = Location(2, 2)
 
         if sys.version_info[0] == 2:
-            n1 = mock.MagicMock(id=1,location=l1)
-            n2 = mock.MagicMock(id=2,location=l2)
+            n1 = mock.MagicMock(id=1, location=l1)
+            n2 = mock.MagicMock(id=2, location=l2)
         else:
-            n1 = MagicMock(id=1,location=l1)
-            n2 = MagicMock(id=2,location=l2)
+            n1 = MagicMock(id=1, location=l1)
+            n2 = MagicMock(id=2, location=l2)
 
         if sys.version_info[0] == 2:
             nl = [n1, n2]
@@ -166,7 +166,6 @@ class CacheTest(unittest.TestCase):
         self.cache.add_way(4, 2, nl, {"test": "ok"})
         self.cache.get_way(4)
 
-
     def test_get_node(self):
         """
         Test the get_node method
@@ -176,13 +175,18 @@ class CacheTest(unittest.TestCase):
 
         self.cur = self.connection.cursor()
 
-        self.cache.add_node(42, 1, 1.23, 2.42,{"building": "yes"})
-        self.cache.add_node(42, 2, 2.22, 0.23,{"building": "yes", "name":"test"})
-        self.cache.add_node(43, 1, 2.99, 0.99,{})
-        self.cache.add_node(44, 1, 2.99, 0.99,None)
+        self.cache.add_node(42, 1, 1.23, 2.42, {"building": "yes"})
+        self.cache.add_node(
+            42, 2, 2.22, 0.23,
+            {
+                "building": "yes",
+                "name": "test"
+            })
+        self.cache.add_node(43, 1, 2.99, 0.99, {})
+        self.cache.add_node(44, 1, 2.99, 0.99, None)
         self.connection.commit()
         nod_42 = {
-            "data":{
+            "data": {
                 "id": 42,
                 "version": 2,
                 "lat": 2.22,
@@ -255,11 +259,11 @@ class HandlerTest(unittest.TestCase):
         u = User(login="xevi", password="test")
         commit()
         ut = UserTags(
-            description = "test",
-            tags = "highway=residential",
-            node = False,
-            way = False,
-            relation = False,
+            description="test",
+            tags="highway=residential",
+            node=False,
+            way=False,
+            relation=False,
             bbox="1,2,3,4",
             user=u.id
         )
@@ -280,11 +284,11 @@ class HandlerTest(unittest.TestCase):
         u = User(login="xevi", password="test")
 
         ut = UserTags(
-            description = "test",
+            description="test",
             tags="highway=residential",
             node=True,
             way=True,
-            relation = True,
+            relation=True,
             bbox="1,2,3,4",
             user=u
         )
@@ -377,8 +381,8 @@ class ChangesWithinTest(unittest.TestCase):
                     'type': 'node,way,relation'
                 }
             },
-            "email":{
-                "language":"en"
+            "email": {
+                "language": "en"
             },
             "url_locales": "locales"
         }
@@ -548,7 +552,6 @@ class ChangesWithinTest(unittest.TestCase):
         self.assertEqual(self.cw.handler.east, 2.8576)
         self.assertEqual(self.cw.handler.south, 41.9623)
         self.assertEqual(self.cw.handler.west, 2.7847)
-        #self.cw.handler.set_tags("all", ".*", ".*", ["node", "way"])
         self.cw.process_file("test/test_rel.osc")
         self.assertTrue(41928815 in self.cw.changesets)
         self.assertTrue(343535 in self.cw.changesets[41928815]["rids"]["all"])
@@ -556,7 +559,7 @@ class ChangesWithinTest(unittest.TestCase):
 
         rt = ResultTags.get(user_tags=ut_all.id)
 
-        self.assertEqual(41928815 , rt.changesets.get("changeset"))
+        self.assertEqual(41928815, rt.changesets.get("changeset"))
         self.assertTrue(343535 in rt.changesets.get("rids")["all"])
 
 
