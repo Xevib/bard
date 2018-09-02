@@ -161,8 +161,6 @@ class ChangeHandler(osmium.SimpleHandler):
                         ret = self.node_in_bbox(node)
                         if ret:
                             return True
-            else:
-                print("member.type:{}".format(member.type))
 
         # rel_data = api.RelationFull(relation.id)
         # for element in rel_data:
