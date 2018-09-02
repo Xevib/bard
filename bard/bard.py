@@ -314,7 +314,7 @@ class ChangeHandler(osmium.SimpleHandler):
                 user_tags.description,
                 key,
                 value,
-                ["{}={}".format(key, value)],
+                element_type,
                 user_tags.id
             )
 
@@ -751,7 +751,7 @@ class Bard(object):
         self.handler.set_bbox(*self.conf["area"]["bbox"])
         for name in self.conf["tags"]:
             key, value = self.conf["tags"][name]["tags"].split("=")
-            types = self.conf["tags"][name]["tags"].split(",")
+            types = self.conf["tags"][name]["type"].split(",")
             self.stats["name"] = 0
             self.handler.set_tags(name, key, value, types)
 
