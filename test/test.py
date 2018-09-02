@@ -296,7 +296,10 @@ class HandlerTest(unittest.TestCase):
         self.handler.load_tags_from_db(ut.id)
         self.assertIsNotNone(self.handler.tags["test"]["key_re"])
         self.assertIsNotNone(self.handler.tags["test"]["value_re"])
-        self.assertEqual(self.handler.tags["test"]["types"], ["highway=residential"])
+        self.assertEqual(
+            self.handler.tags["test"]["types"],
+            ["node", "way", "relation"]
+        )
         self.assertEqual(self.handler.tags["test"]["tag_id"], ut.id)
 
     def test_set_cache(self):
@@ -322,7 +325,7 @@ class HandlerTest(unittest.TestCase):
         :return: None
         """
 
-        self.handler.set_tags("test", "key_tag", "element_tag", ["nodes", "ways"])
+        self.handler.set_tags("test", "key_tag", "element_tag", ["node", "way"])
         self.assertTrue("test" in self.handler.tags)
 
     def test_set_bbox(self):
