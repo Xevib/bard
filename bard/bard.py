@@ -255,6 +255,9 @@ class ChangeHandler(osmium.SimpleHandler):
         if tag_id:
             self.tags[name]["tag_id"] = tag_id
         self.stats[name] = set()
+        for element in element_types:
+            print(element)
+            assert element in ("node", "way", "relation")
 
     def set_bbox(self, north, east, south, west):
         """
