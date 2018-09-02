@@ -695,7 +695,7 @@ class Bard(object):
         :return:
         """
         if self.has_cache:
-            self.cache.initialize()
+            self.handler.cache.initialize()
 
     def get_template(self, template_name):
         """
