@@ -24,7 +24,6 @@ def process(host, db, user, password, file):
     :param db:
     :param user:
     :param password:
-    :param initialize:
     :param file:
     :return:
     """
