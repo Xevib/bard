@@ -7,6 +7,9 @@ from bard.models import *
 import osmapi
 import psycopg2
 import sys
+from click.testing import CliRunner
+from bard.cli import bard as bardcli
+
 if sys.version_info[0] == 2:
     import mock
 else:
@@ -50,7 +53,11 @@ class CacheTest(unittest.TestCase):
 
         :return:
         """
-        self.cur = self.connection.cursor()
+
+        runner = CliRunner()
+        runner.invoke(bardcli, ["--initialize",'--host', 'localhost', "--user", "postgres", "--database", "postgres"])
+
+        #self.cur = self.connection.cursor()
         self.cur.execute("SELECT * FROM cache_node;")
 
     def test_add_node(self):
