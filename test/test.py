@@ -34,8 +34,8 @@ class CacheTest(unittest.TestCase):
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
         if self.cache.db.schema is None:
             print("Initializing database")
-            self.cache.initialize_postigs()
-            self.cache.initialize()
+            #self.cache.initialize_postigs()
+            #self.cache.initialize()
             self.initialized = True
         else:
             print("Database alredy initialized")
@@ -57,7 +57,7 @@ class CacheTest(unittest.TestCase):
         runner = CliRunner()
         runner.invoke(bardcli, ["--initialize",'--host', 'localhost', "--user", "postgres", "--database", "postgres"])
 
-        #self.cur = self.connection.cursor()
+        self.cur = self.connection.cursor()
         self.cur.execute("SELECT * FROM cache_node;")
 
     def test_add_node(self):
