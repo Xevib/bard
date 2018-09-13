@@ -34,8 +34,8 @@ class CacheTest(unittest.TestCase):
         self.connection = psycopg2.connect(host="localhost", database="bard", user="postgres", password="postgres")
         if self.cache.db.schema is None:
             print("Initializing database")
-            #self.cache.initialize_postigs()
-            #self.cache.initialize()
+            self.cache.initialize_postigs()
+            self.cache.initialize()
             self.initialized = True
         else:
             print("Database alredy initialized")
