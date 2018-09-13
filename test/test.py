@@ -55,7 +55,7 @@ class CacheTest(unittest.TestCase):
         """
 
         runner = CliRunner()
-        runner.invoke(bardcli, ["--initialize",'--host', 'localhost', "--user", "postgres", "--database", "postgres"])
+        result = runner.invoke(bardcli, ["initialize",'--host', 'localhost', "--user", "postgres", "--db", "postgres"])
 
         self.cur = self.connection.cursor()
         self.cur.execute("SELECT * FROM cache_node;")
