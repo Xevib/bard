@@ -490,14 +490,14 @@ class DbCache(object):
         self.pending_ways = 0
 
     @db_session
-    def create_user(self,username,password):
+    def create_user(self, username, password):
         """
         Adds user to the database
 
         :return: User id
         :rtype: int
         """
-        u = User(username, password)
+        u = BardUser(login=username, password=password)
         commit()
         return u.id
 
@@ -717,7 +717,7 @@ class Bard(object):
         :return: True if created
         :type: booelan
         """
-        self.cache.create_user(username, password)
+        self.handler.cache.create_user(username, password)
 
     def get_template(self, template_name):
         """
