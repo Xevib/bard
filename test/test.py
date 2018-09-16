@@ -16,6 +16,38 @@ else:
     from unittest.mock import MagicMock
 
 
+class CommandTest(unittest.TestCase):
+    """
+    Test suite for Cli commands
+    """
+
+    def setUp(self):
+        self.cache = DbCache("localhost", "bard", "postgres", "postgres")
+        self.connection = psycopg2.connect(host="localhost", database="bard",
+                                           user="postgres", password="postgres")
+        if self.cache.db.schema is None:
+            print("Initializing database")
+            self.cache.initialize_postigs()
+            self.cache.initialize()
+            self.initialized = True
+        else:
+            print("Database alredy initialized")
+
+    def test_add_user(self):
+        """
+
+        :return: None
+        """
+        runner = CliRunner()
+        runner.invoke(bardcli, ["adduser", "test", "1234" '--host', 'localhost', "--user", "postgres", "--db", "postgres"])
+
+        self.cur = self.connection.cursor()
+        self.cur.execute("SELECT login,password FROM user where login='test';")
+
+        res = self.cur.fetchall()
+        self.assertEqual(res[0][0], 'test')
+        self.assertEqual(res[0][1], '1234')
+
 class CacheTest(unittest.TestCase):
     """
     Test suite for cache
