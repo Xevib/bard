@@ -5,11 +5,11 @@ from bard import Bard
 
 
 @click.group()
-def bard():
+def bardgroup():
     pass
 
 
-@bard.command("process")
+@bardgroup.command("process")
 @click.argument("process")
 @click.option('--host', default=None)
 @click.option('--db', default=None)
@@ -42,31 +42,36 @@ def process(host, db, user, password, file):
             client.captureException()
 
 
-@bard.command("adduser")
-@click.argument("name")
-@click.argument("password")
+@bardgroup.command("adduser")
+@click.argument("login")
+@click.argument("userpassword")
 @click.option('--host', default=None)
 @click.option('--db', default=None)
 @click.option('--user', default=None)
 @click.option('--password', default=None)
-def bardadduser(login, password):
+def adduser(login, userpassword, host, db, user, password):
     """
     Adds user to bard
 
     :param login: Login name
-    :param password: User password
+    :param userpassword: User password
+    :param host:
+    :param db: Postgres database
+    :param user: Database user
+    :param password: Database password
     :return:
     """
-    bard = Bard()
-    bard.create_user(login, password)
+
+    bard = Bard(host, db, user, password)
+    bard.create_user(login, userpassword)
 
 
-@bard.command("initialize")
+@bardgroup.command("initialize")
 @click.option('--host', default=None)
 @click.option('--db', default=None)
 @click.option('--user', default=None)
 @click.option('--password', default=None)
-def initialize(host, db,user,password):
+def initialize(host, db, user, password):
     """
     Initializes database
 
@@ -79,6 +84,3 @@ def initialize(host, db,user,password):
 
     c = Bard(host, db, user, password)
     c.initialize_db()
-        
-def cli_generate_report():
-    bard()

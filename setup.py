@@ -16,7 +16,7 @@ setup(
     include_package_data=True,
     entry_points='''
         [console_scripts]
-        bard=bard.cli:cli_generate_report
+        bard=bard.cli:bardgroup
     ''',
     package_data={
         'bard': [

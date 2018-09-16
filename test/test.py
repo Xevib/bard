@@ -8,7 +8,7 @@ import osmapi
 import psycopg2
 import sys
 from click.testing import CliRunner
-from bard.cli import bard as bardcli
+from bard.cli import bardgroup as bardcli
 
 if sys.version_info[0] == 2:
     import mock
@@ -39,14 +39,15 @@ class CommandTest(unittest.TestCase):
         :return: None
         """
         runner = CliRunner()
-        runner.invoke(bardcli, ["adduser", "test", "1234" '--host', 'localhost', "--user", "postgres", "--db", "postgres"])
+        result = runner.invoke(bardcli, ["adduser", '--host', 'localhost', "--user", "postgres", "--db", "postgres", "--password","postgres", "test", "1234"])
 
         self.cur = self.connection.cursor()
-        self.cur.execute("SELECT login,password FROM user where login='test';")
+        self.cur.execute("SELECT login,password FROM barduser where login='test';")
 
         res = self.cur.fetchall()
         self.assertEqual(res[0][0], 'test')
         self.assertEqual(res[0][1], '1234')
+
 
 class CacheTest(unittest.TestCase):
     """
@@ -295,7 +296,7 @@ class HandlerTest(unittest.TestCase):
         Tests the load of the configuration to bbox from databse
         :return: None
         """
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
         commit()
         ut = UserTags(
             description="test",
@@ -320,7 +321,7 @@ class HandlerTest(unittest.TestCase):
         :return:
         """
 
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
 
         ut = UserTags(
             description="test",
@@ -574,7 +575,7 @@ class ChangesWithinTest(unittest.TestCase):
         self.cw.conf = conf
         self.cw.load_config(conf)
 
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
         commit()
         ut_all = UserTags(
             description="all",
