@@ -20,7 +20,7 @@ class Cache_Way(db.Entity):
     geom = Optional(Line, srid=4326)
 
 
-class User(db.Entity):
+class BardUser(db.Entity):
     id = PrimaryKey(int,auto=True)
     login = Required(str)
     password = Required(str)
@@ -35,7 +35,7 @@ class UserTags(db.Entity):
     way = Required(bool)
     relation = Required(bool)
     bbox = Required(str)
-    user = Required(User)
+    user = Required(BardUser)
     states = Set('ResultTags')
 
 

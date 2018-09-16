@@ -5,26 +5,25 @@ from bard import Bard
 
 
 @click.group()
-def bard():
+def bardgroup():
     pass
 
 
-@bard.command()
+@bardgroup.command("process")
+@click.argument("process")
 @click.option('--host', default=None)
 @click.option('--db', default=None)
 @click.option('--user', default=None)
 @click.option('--password', default=None)
-@click.option('--initialize/--no-initialize', default=False)
 @click.option("--file",default=None)
-def bard(host, db, user, password, initialize, file):
+def process(host, db, user, password, file):
     """
-    Client entry
+    Process file
 
     :param host:
     :param db:
     :param user:
     :param password:
-    :param initialize:
     :param file:
     :return:
     """
@@ -32,19 +31,56 @@ def bard(host, db, user, password, initialize, file):
     client = Client()
     try:
         c = Bard(host, db, user, password)
-        if initialize:
-            c.initialize_db()
+        c.load_config()
+        if file is not None:
+            c.process_file(str(file))
         else:
-            c.load_config()
-            if file is not None:
-                c.process_file(str(file))
-            else:
-                c.process_file()
-            c.report()
+            c.process_file()
+        c.report()
     except Exception as e:
-        print(e.message)
-        client.captureException()
+            print(e.message)
+            client.captureException()
 
-        
-def cli_generate_report():
-    bard()
+
+@bardgroup.command("adduser")
+@click.argument("login")
+@click.argument("userpassword")
+@click.option('--host', default=None)
+@click.option('--db', default=None)
+@click.option('--user', default=None)
+@click.option('--password', default=None)
+def adduser(login, userpassword, host, db, user, password):
+    """
+    Adds user to bard
+
+    :param login: Login name
+    :param userpassword: User password
+    :param host:
+    :param db: Postgres database
+    :param user: Database user
+    :param password: Database password
+    :return:
+    """
+
+    bard = Bard(host, db, user, password)
+    bard.create_user(login, userpassword)
+
+
+@bardgroup.command("initialize")
+@click.option('--host', default=None)
+@click.option('--db', default=None)
+@click.option('--user', default=None)
+@click.option('--password', default=None)
+def initialize(host, db, user, password):
+    """
+    Initializes database
+
+    :param host: Database host
+    :param db: Database name
+    :param user: User database
+    :param password: Database password
+    :return: None
+    """
+
+    c = Bard(host, db, user, password)
+    c.initialize_db()

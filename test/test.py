@@ -7,10 +7,46 @@ from bard.models import *
 import osmapi
 import psycopg2
 import sys
+from click.testing import CliRunner
+from bard.cli import bardgroup as bardcli
+
 if sys.version_info[0] == 2:
     import mock
 else:
     from unittest.mock import MagicMock
+
+
+class CommandTest(unittest.TestCase):
+    """
+    Test suite for Cli commands
+    """
+
+    def setUp(self):
+        self.cache = DbCache("localhost", "bard", "postgres", "postgres")
+        self.connection = psycopg2.connect(host="localhost", database="bard",
+                                           user="postgres", password="postgres")
+        if self.cache.db.schema is None:
+            print("Initializing database")
+            self.cache.initialize_postigs()
+            self.cache.initialize()
+            self.initialized = True
+        else:
+            print("Database alredy initialized")
+
+    def test_add_user(self):
+        """
+
+        :return: None
+        """
+        runner = CliRunner()
+        result = runner.invoke(bardcli, ["adduser", '--host', 'localhost', "--user", "postgres", "--db", "postgres", "--password","postgres", "test", "1234"])
+
+        self.cur = self.connection.cursor()
+        self.cur.execute("SELECT login,password FROM barduser where login='test';")
+
+        res = self.cur.fetchall()
+        self.assertEqual(res[0][0], 'test')
+        self.assertEqual(res[0][1], '1234')
 
 
 class CacheTest(unittest.TestCase):
@@ -50,6 +86,10 @@ class CacheTest(unittest.TestCase):
 
         :return:
         """
+
+        runner = CliRunner()
+        result = runner.invoke(bardcli, ["initialize",'--host', 'localhost', "--user", "postgres", "--db", "postgres"])
+
         self.cur = self.connection.cursor()
         self.cur.execute("SELECT * FROM cache_node;")
 
@@ -256,7 +296,7 @@ class HandlerTest(unittest.TestCase):
         Tests the load of the configuration to bbox from databse
         :return: None
         """
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
         commit()
         ut = UserTags(
             description="test",
@@ -281,7 +321,7 @@ class HandlerTest(unittest.TestCase):
         :return:
         """
 
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
 
         ut = UserTags(
             description="test",
@@ -535,7 +575,7 @@ class ChangesWithinTest(unittest.TestCase):
         self.cw.conf = conf
         self.cw.load_config(conf)
 
-        u = User(login="xevi", password="test")
+        u = BardUser(login="xevi", password="test")
         commit()
         ut_all = UserTags(
             description="all",
