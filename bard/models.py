@@ -22,7 +22,7 @@ class Cache_Way(db.Entity):
 
 class BardUser(db.Entity):
     id = PrimaryKey(int,auto=True)
-    login = Required(str)
+    login = Required(str, unique=True)
     password = Required(str)
     users = Set('UserTags')
 
