@@ -55,10 +55,11 @@ class CommandTest(unittest.TestCase):
         """
         runner = CliRunner()
         result = runner.invoke(
-            bardcli,["addtags", "xevi", "highway=residential",
-                     "--way", "--relation", "--node" '--host', 'localhost',
-                     "--user", "postgres", "--db", "postgres", "--password",
-                     "postgres", "test", "1234"
+            bardcli,["addtags",  '--host',
+                     'localhost', "--user", "postgres", "--db", "postgres",
+                     "--password", "postgres",
+                     "--way", "--relation", "--node",
+                     "xevi","1,2,3,4", "test", "highway=residential"
                      ]
         )
 
