@@ -744,12 +744,13 @@ class Bard(object):
         """
         self.handler.cache.create_user(username, password)
 
+    @db_session
     def create_tags(self, user, bbox, description, tags,node=False,way=False,relation=False):
         """
         Creates a user tags
 
         :param user: User to add the tags
-        :type user: id
+        :type user: str
         :param bbox: Tags bounding box
         :type bbox: str
         :param description: Description of the tags
@@ -765,7 +766,8 @@ class Bard(object):
         :return: User tags id
         :rtype: int
         """
-        ut = UserTags(user=user, bbox=bbox, description=description, tags=tags, node=node, way=way, relation=relation)
+        user_id = BardUser.get(login=user).id
+        ut = UserTags(user=user_id, bbox=bbox, description=description, tags=tags, node=node, way=way, relation=relation)
         commit()
         return ut.id
 
