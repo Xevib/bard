@@ -66,13 +66,13 @@ class CommandTest(unittest.TestCase):
         self.cur = self.connection.cursor()
         self.cur.execute("SELECT * FROM usertags where tags='highway=residential';")
 
-        res = self.cur.fetchall()
-        self.assertEqual(res[0][1], 'test')
-        self.assertEqual(res[0][2], 'highway=residential')
-        self.assertEqual(res[0][3], False)
-        self.assertEqual(res[0][4], False)
-        self.assertEqual(res[0][5], False)
-        self.assertEqual(res[0][6], "1,2,3,4")
+        res = self.cur.fetchone()
+        self.assertEqual(res[1], 'test')
+        self.assertEqual(res[2], 'highway=residential')
+        self.assertEqual(res[3], False)
+        self.assertEqual(res[4], False)
+        self.assertEqual(res[5], False)
+        self.assertEqual(res[6], "1,2,3,4")
 
 
 class CacheTest(unittest.TestCase):
