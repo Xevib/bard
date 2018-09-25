@@ -42,7 +42,29 @@ class CommandTest(unittest.TestCase):
         result = runner.invoke(bardcli, ["adduser", '--host', 'localhost', "--user", "postgres", "--db", "postgres", "--password","postgres", "test", "1234"])
 
         self.cur = self.connection.cursor()
-        self.cur.execute("SELECT login,password FROM barduser where login='test';")
+        self.cur.execute("SELECT login,password FROM usertags where tags='highway=residential';")
+
+        res = self.cur.fetchall()
+        self.assertEqual(res[0][0], 'test')
+        self.assertEqual(res[0][1], '1234')
+
+    def test_add_tag(self):
+        """
+        Test to check that the tag is created
+        :return:  None
+        """
+        runner = CliRunner()
+        result = runner.invoke(
+            bardcli,["addtags", "xevi", "highway=residential",
+                     "--way", "--relation", "--node" '--host', 'localhost',
+                     "--user", "postgres", "--db", "postgres", "--password",
+                     "postgres", "test", "1234"
+                     ]
+        )
+
+        self.cur = self.connection.cursor()
+        self.cur.execute(
+            "SELECT login,password FROM barduser where login='test';")
 
         res = self.cur.fetchall()
         self.assertEqual(res[0][0], 'test')
