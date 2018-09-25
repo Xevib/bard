@@ -68,7 +68,7 @@ class CommandTest(unittest.TestCase):
 
         res = self.cur.fetchall()
         self.assertEqual(res[0][1], 'test')
-        self.assertEqual(res[0][2], 'highwya=test')
+        self.assertEqual(res[0][2], 'highway=residential')
         self.assertEqual(res[0][3], False)
         self.assertEqual(res[0][4], False)
         self.assertEqual(res[0][5], False)

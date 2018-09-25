@@ -71,14 +71,14 @@ def adduser(login, userpassword, host, db, user, password):
 @click.argument("bbox")
 @click.argument("description")
 @click.argument("tags")
-@click.option("--node", default=False)
-@click.option("--way", default=False)
-@click.option("--relation", default=False)
+@click.option("--node/--no-node", default=False)
+@click.option("--way/--no-way", default=False)
+@click.option("--relation/--no-relation", default=False)
 @click.option('--host', default=None)
 @click.option('--db', default=None)
 @click.option('--user','dbuser', default=None)
 @click.option('--password', default=None)
-def adduser(user,bbox,description,tags, host, db, dbuser, password):
+def adduser(user,bbox,description,tags,node,way,relation, host, db, dbuser, password):
     """
     Adds user to bard
 
@@ -93,8 +93,8 @@ def adduser(user,bbox,description,tags, host, db, dbuser, password):
     :return:
     """
 
-    bard = Bard(host, db, user, password)
-    bard.create_tags(user, bbox, description, tags)
+    bard = Bard(host, db, dbuser, password)
+    bard.create_tags(user, bbox, description, tags, node, way, relation)
 
 
 @bardgroup.command("initialize")
