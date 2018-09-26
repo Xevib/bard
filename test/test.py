@@ -58,6 +58,7 @@ class CommandTest(unittest.TestCase):
         user = BardUser.get(login="xevi")
         if not user:
             user = BardUser(login="xevi",password="test")
+            commit()
         result = runner.invoke(
             bardcli,["addtags",  '--host',
                      'localhost', "--user", "postgres", "--db", "postgres",
@@ -612,7 +613,7 @@ class ChangesWithinTest(unittest.TestCase):
         if not user:
             user = BardUser(login="xevi",password="test")
             commit()
-            
+
         ut_all = UserTags(
             description="all",
             tags=".*=.*",
