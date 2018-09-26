@@ -54,6 +54,9 @@ class CommandTest(unittest.TestCase):
         :return:  None
         """
         runner = CliRunner()
+        user = BardUser.get(login="xevi")
+        if not user:
+            user = BardUser(login="xevi",password="test")
         result = runner.invoke(
             bardcli,["addtags",  '--host',
                      'localhost', "--user", "postgres", "--db", "postgres",
