@@ -42,11 +42,42 @@ class CommandTest(unittest.TestCase):
         result = runner.invoke(bardcli, ["adduser", '--host', 'localhost', "--user", "postgres", "--db", "postgres", "--password","postgres", "test", "1234"])
 
         self.cur = self.connection.cursor()
-        self.cur.execute("SELECT login,password FROM barduser where login='test';")
+        self.cur.execute("SELECT login,password FROM barduser where login='test'")
 
         res = self.cur.fetchall()
         self.assertEqual(res[0][0], 'test')
         self.assertEqual(res[0][1], '1234')
+
+    @db_session
+    def test_add_tag(self):
+        """
+        Test to check that the tag is created
+        :return:  None
+        """
+        runner = CliRunner()
+        user = BardUser.get(login="xevi")
+        if not user:
+            user = BardUser(login="xevi",password="test")
+            commit()
+        result = runner.invoke(
+            bardcli,["addtags",  '--host',
+                     'localhost', "--user", "postgres", "--db", "postgres",
+                     "--password", "postgres",
+                     "--way", "--relation", "--node",
+                     "xevi","1,2,3,4", "test", "highway=residential"
+                     ]
+        )
+
+        self.cur = self.connection.cursor()
+        self.cur.execute("SELECT * FROM usertags where tags='highway=residential';")
+
+        res = self.cur.fetchone()
+        self.assertEqual(res[1], 'test')
+        self.assertEqual(res[2], 'highway=residential')
+        self.assertEqual(res[3], True)
+        self.assertEqual(res[4], True)
+        self.assertEqual(res[5], True)
+        self.assertEqual(res[6], "1,2,3,4")
 
 
 class CacheTest(unittest.TestCase):
@@ -296,7 +327,9 @@ class HandlerTest(unittest.TestCase):
         Tests the load of the configuration to bbox from databse
         :return: None
         """
-        u = BardUser(login="xevi", password="test")
+        u = BardUser.get(login="xevi")
+        if not u:
+            u = BardUser(login="xevi", password="test")
         commit()
         ut = UserTags(
             description="test",
@@ -320,8 +353,9 @@ class HandlerTest(unittest.TestCase):
         Test to check the load tags from db
         :return:
         """
-
-        u = BardUser(login="xevi", password="test")
+        u = BardUser.get(login="xevi")
+        if not u:
+            u = BardUser(login="xevi", password="test")
 
         ut = UserTags(
             description="test",
@@ -574,9 +608,12 @@ class ChangesWithinTest(unittest.TestCase):
         }
         self.cw.conf = conf
         self.cw.load_config(conf)
+        self.cw.cache = DbCache("localhost", "bard", "postgres", "postgres")
+        user = BardUser.get(login="xevi")
+        if not user:
+            user = BardUser(login="xevi",password="test")
+            commit()
 
-        u = BardUser(login="xevi", password="test")
-        commit()
         ut_all = UserTags(
             description="all",
             tags=".*=.*",
@@ -584,7 +621,7 @@ class ChangesWithinTest(unittest.TestCase):
             way=True,
             relation=True,
             bbox=",".join(['41.9933', '2.8576', '41.9623', '2.7847']),
-            user=u.id
+            user=user.id
         )
         commit()
         ids = [ut_all.id]

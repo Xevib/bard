@@ -501,6 +501,31 @@ class DbCache(object):
         commit()
         return u.id
 
+    def create_tags(self, user_id, bbox, description, tags, node, way, relation):
+        """
+        Adds User tags
+
+        :param user_id: User id
+        :param bbox: Bounding box
+        :type bbox:str
+        :param description: Description
+        :type description: str
+        :param tags: Tags to check
+        :type tags: str
+        :param node: It apply to node
+        :type node: bool
+        :param way: It apply to way
+        :type way: bool
+        :param relation: It appy to relation
+        :type relation: bool
+        :return: User tag id
+        :rtype: int
+        """
+        ut = UserTags(user=user_id, bbox=bbox, description=description,
+                      tags=tags, node=node, way=way, relation=relation)
+        commit()
+        return ut.id
+
     def commit(self):
         """
         Commits the data of the connection
@@ -718,6 +743,33 @@ class Bard(object):
         :type: booelan
         """
         self.handler.cache.create_user(username, password)
+
+    @db_session
+    def create_tags(self, user, bbox, description, tags,node=False,way=False,relation=False):
+        """
+        Creates a user tags
+
+        :param user: User to add the tags
+        :type user: str
+        :param bbox: Tags bounding box
+        :type bbox: str
+        :param description: Description of the tags
+        :type description: str
+        :param tags: Expresion to evaluate
+        :type tags: str
+        :param node: If the tags aplies to the node
+        :type node: bool
+        :param way: If the tags aplies to the way
+        :type way: bool
+        :param relation: If the tags aplies to the relation
+        :type relation: bool
+        :return: User tags id
+        :rtype: int
+        """
+        user_id = BardUser.get(login=user).id
+        ut = UserTags(user=user_id, bbox=bbox, description=description, tags=tags, node=node, way=way, relation=relation)
+        commit()
+        return ut.id
 
     def get_template(self, template_name):
         """

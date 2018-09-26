@@ -66,6 +66,37 @@ def adduser(login, userpassword, host, db, user, password):
     bard.create_user(login, userpassword)
 
 
+@bardgroup.command("addtags")
+@click.argument("user")
+@click.argument("bbox")
+@click.argument("description")
+@click.argument("tags")
+@click.option("--node/--no-node", default=False)
+@click.option("--way/--no-way", default=False)
+@click.option("--relation/--no-relation", default=False)
+@click.option('--host', default=None)
+@click.option('--db', default=None)
+@click.option('--user','dbuser', default=None)
+@click.option('--password', default=None)
+def adduser(user,bbox,description,tags,node,way,relation, host, db, dbuser, password):
+    """
+    Adds user to bard
+
+    :param user: User to add the tags
+    :param bbox: Bounding box to apply the tags
+    :param description: Tags description
+    :param tags: Tags to evauate
+    :param host: Postgres host
+    :param db: Database name
+    :param dbuser: Database user
+    :param password: Database password
+    :return:
+    """
+
+    bard = Bard(host, db, dbuser, password)
+    bard.create_tags(user, bbox, description, tags, node, way, relation)
+
+
 @bardgroup.command("initialize")
 @click.option('--host', default=None)
 @click.option('--db', default=None)
