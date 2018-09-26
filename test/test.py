@@ -48,6 +48,7 @@ class CommandTest(unittest.TestCase):
         self.assertEqual(res[0][0], 'test')
         self.assertEqual(res[0][1], '1234')
 
+    @db_session
     def test_add_tag(self):
         """
         Test to check that the tag is created
