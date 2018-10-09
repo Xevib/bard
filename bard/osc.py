@@ -40,7 +40,7 @@ class OSC(object):
         """
         self._periodicty = value
 
-    def get_state(self):
+    def get_state(self)-> dict:
         """
         Downloads the state from OSM replication system
 

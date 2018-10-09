@@ -11,6 +11,7 @@ class Point(object):
     def __repr__(self):
         return '<Point %r>' % self.wrapped
 
+
 class Line(object):
     """A wrapper over a dict or list
     """

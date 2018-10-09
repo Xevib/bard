@@ -170,7 +170,7 @@ class ChangeHandler(osmium.SimpleHandler):
         #             return True
         # return False
 
-    def has_tag_changed(self, gid, old_tags, watch_tags, version, elem):
+    def has_tag_changed(self, gid, old_tags, watch_tags, version, elem) -> bool:
         """
         Checks if tags has changed on the changeset
 
@@ -179,7 +179,6 @@ class ChangeHandler(osmium.SimpleHandler):
         :param watch_tags: Tags to check
         :param version: version to check
         :param elem: Type of element
-        :return: Boolean
         """
 
         previous_elem = {}
@@ -221,14 +220,13 @@ class ChangeHandler(osmium.SimpleHandler):
             ret[tag.k] = tag.v
         return ret
 
-    def has_tag(self, element, key_re, value_re):
+    def has_tag(self, element, key_re, value_re) -> bool:
         """
         Checks if the element have the key,value
 
         :param element: Element to check
         :param key_re: Compiled re expression of key 
         :param value_re: Compiled re expression of value
-        :return: boolean
         """
         for tag in element:
             key = tag.k
@@ -490,36 +488,26 @@ class DbCache(object):
         self.pending_ways = 0
 
     @db_session
-    def create_user(self, username, password):
+    def create_user(self, username: str, password: str) -> int:
         """
         Adds user to the database
-
-        :return: User id
-        :rtype: int
         """
         u = BardUser(login=username, password=password)
         commit()
         return u.id
 
-    def create_tags(self, user_id, bbox, description, tags, node, way, relation):
+    def create_tags(self, user_id, bbox: str, description: str, tags: str, node: bool, way: bool, relation: bool)-> int:
         """
         Adds User tags
 
         :param user_id: User id
         :param bbox: Bounding box
-        :type bbox:str
         :param description: Description
-        :type description: str
         :param tags: Tags to check
-        :type tags: str
         :param node: It apply to node
-        :type node: bool
         :param way: It apply to way
-        :type way: bool
         :param relation: It appy to relation
-        :type relation: bool
         :return: User tag id
-        :rtype: int
         """
         ut = UserTags(user=user_id, bbox=bbox, description=description,
                       tags=tags, node=node, way=way, relation=relation)
@@ -561,20 +549,15 @@ class DbCache(object):
             pass
 
     @db_session
-    def add_node(self, identifier, version, x, y, tags):
+    def add_node(self, identifier: int, version: int, x: float, y: float, tags: dict):
         """
         Adds a node to the cache
 
         :param identifier: Node id
-        :type identifier: int
         :param version:
-        :type version: int
         :param x: X coordenate
-        :type x: float
         :param y: Y coordenate
-        :type y: float
         :param tags: Tags to store
-        :type tags: dict
         :return: None
         """
         if tags is None:
@@ -593,26 +576,22 @@ class DbCache(object):
         """
         return self.pending_nodes
 
-    def get_pending_ways(self):
+    def get_pending_ways(self)-> int:
         """
         Gets the pending to commit ways
 
         :return: Pending ways
-        :rtype: int
         """
         return  self.pending_ways
 
     @db_session
-    def get_way(self, identifier, version=None):
+    def get_way(self, identifier: int, version: int=None)-> dict:
         """
         Gets the way from the cache
 
         :param identifier: Identifier of the way
-        :type identifier: int
         :param version: Version of the way
-        :type version: int
         :return: Data of the way
-        :rtype: dict
         """
 
         if version is None:
@@ -632,16 +611,13 @@ class DbCache(object):
         return None
 
     @db_session
-    def get_node(self, identifier, version=None):
+    def get_node(self, identifier: int, version: int=None)-> dict:
         """
         Returns a node of the cache, if version is not specified returns the last version avaible
 
         :param identifier: Identifier of the node
-        :type identifier: int
         :param version: Version of the node
-        :type version: int
-        :return: dict with identifier, verison,x,y
-        :rtype:dict
+        :return: identifier, verison,x,y
         """
         if version is None:
             node = Cache_Node.get(osm_id=identifier)
@@ -660,19 +636,15 @@ class DbCache(object):
         return None
 
     @db_session
-    def add_way(self, identifier, version, nodes, tags):
+    def add_way(self, identifier: int, version: int, nodes, tags: dict):
         """
         Adds a way into the cache
 
         :param identifier: identifier of the way to store
-        :type identifier: int
         :param version: version of the way
-        :type version: int
         :param nodes: Nodes to store
         :param tags: Tags to store
-        :type tags: dict
         :return: None
-        :rtype: None
         """
 
         geom = []
@@ -697,7 +669,8 @@ class Bard(object):
     Class that process the OSC files
     """
 
-    def __init__(self, host=None, db=None, user=None, password=None):
+    def __init__(self, host: str=None, db: str=None,
+                 user: str=None, password: str=None):
         """
         Initiliazes the class
 
@@ -735,34 +708,29 @@ class Bard(object):
         if self.has_cache:
             self.cache.initialize()
 
-    def create_user(self, username, password):
+    def create_user(self, username: str, password: str)->bool:
         """
+        Creates user
 
-        :param username:
+        :param username: User name
+        :param password: User password
         :return: True if created
-        :type: booelan
         """
         self.handler.cache.create_user(username, password)
 
     @db_session
-    def create_tags(self, user, bbox, description, tags,node=False,way=False,relation=False):
+    def create_tags(self, user: str, bbox: str, description: str, tags: str,
+                    node: str=False, way: bool=False, relation: bool=False)-> int:
         """
         Creates a user tags
 
         :param user: User to add the tags
-        :type user: str
         :param bbox: Tags bounding box
-        :type bbox: str
         :param description: Description of the tags
-        :type description: str
         :param tags: Expresion to evaluate
-        :type tags: str
         :param node: If the tags aplies to the node
-        :type node: bool
         :param way: If the tags aplies to the way
-        :type way: bool
         :param relation: If the tags aplies to the relation
-        :type relation: bool
         :return: User tags id
         :rtype: int
         """
@@ -785,7 +753,7 @@ class Bard(object):
             template_text = f.read()
         return self.jinja_env.from_string(template_text)
 
-    def load_config(self, config=None):
+    def load_config(self, config: dict=None):
         """
         Loads the configuration from the file
         :config_file: Configuration as a dict
@@ -846,12 +814,11 @@ class Bard(object):
         self.stats = self.handler.stats
         self.stats["total"] = len(self.changesets)
 
-    def generate_report_data(self):
+    def generate_report_data(self)-> dict:
         """
         Generates the data for the report
 
-        :return:
-        :rtype: dict
+        :return: Report data
         """
         from datetime import datetime
         print("self.changesets:{}".format(self.changesets))

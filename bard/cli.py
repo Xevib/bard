@@ -25,7 +25,7 @@ def process(host, db, user, password, file):
     :param user:
     :param password:
     :param file:
-    :return:
+    :return: None
     """
 
     client = Client()
@@ -59,7 +59,7 @@ def adduser(login, userpassword, host, db, user, password):
     :param db: Postgres database
     :param user: Database user
     :param password: Database password
-    :return:
+    :return: None
     """
 
     bard = Bard(host, db, user, password)
@@ -90,7 +90,7 @@ def adduser(user,bbox,description,tags,node,way,relation, host, db, dbuser, pass
     :param db: Database name
     :param dbuser: Database user
     :param password: Database password
-    :return:
+    :return: None
     """
 
     bard = Bard(host, db, dbuser, password)
