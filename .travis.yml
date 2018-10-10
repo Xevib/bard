@@ -23,5 +23,6 @@ before_script:
   - psql -c 'create database bard;' -U postgres -h localhost
 script:
  - ./update_pot.sh
- - pipenv run PYTHONPATH="." coverage run --include=bard/bard.py,bard/postgis.py,bard/models.py,bard/cli.py test/test.py && coverage report
- - pipenv run coveralls
+ - pipenv shell
+ - PYTHONPATH="." coverage run --include=bard/bard.py,bard/postgis.py,bard/models.py,bard/cli.py test/test.py && coverage report
+ - coveralls
