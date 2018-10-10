@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+coverage = "*"
+babel = "*"
+mock = "*"
+
+[packages]
+lxml = "*"
+pystache = "==0.5.3"
+requests = "*"
+configobj = "*"
+osmapi = "*"
+osconf = "*"
+raven = "*"
+click = "*"
+osmium = "*"
+"psycopg2" = "*"
+pony = "*"
+ModestMaps = ">=1.4.2"
+"Jinja2" = "*"
+Shapely = "*"
+
+[requires]
+python_version = "3.6"
