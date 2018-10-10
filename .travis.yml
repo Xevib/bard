@@ -14,10 +14,8 @@ before_install:
 install:
  - sudo apt-get install gettext python-lxml gcc cmake libgeos++-dev libgdal-dev libsparsehash-dev libboost-dev libbz2-dev zlib1g-dev libexpat1-dev libutfcpp-dev libosmpbf-dev libprotobuf-dev protobuf-compiler cmake-curses-gui
  - sudo apt-get install make libboost-python-dev
- - pip install -r requirements.txt
- - pip install -r requirements-dev.txt
- - pip install coveralls
- - pip install osmium
+ - pip install pipenv
+ - pipenv sync -d
  - pip install .
 before_script:
   - sudo apt-cache search postgis
